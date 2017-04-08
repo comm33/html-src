@@ -1,0 +1,37 @@
+﻿<section class="col1 bg-soft-blue">
+    <div>
+        <article>
+            <h1 class="center">{{{header}}}</h1>
+
+            <p class="center pbottom-20 desktop-only">{{{header-subtext}}}</p>
+            {{#each service}}
+                <div class="whitebar">
+                    <div class="pricebox{{#if custom-price-class}} {{custom-price-class}}{{/if}}" id="{{custom-id}}">
+                        <strong>{{{service-price}}}</strong>
+                    </div>
+                    <strong>{{{service-title}}}</strong>
+                    {{#if mobile-text}}<br/>
+                        <span class="mobile-only">{{{mobile-text}}}</span>
+                    {{/if}}
+                    <div class="{{additional-content-custom-class}}">
+                        {{{additional-content}}}
+                    </div>
+                </div>
+            {{/each}}
+            <p class="center ptop-35 desktop-only">{{{subtext}}}</p>            
+                {{#if dynamic-disclaimers}}
+                <section id="dynamic-disclaimers" class="col1 stack">
+                    <div>
+                        <article>
+                            {{#each dynamic-disclaimers}}
+                            <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                               id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                            {{/each}}
+                        </article>
+                    </div>
+                </section>
+                {{/if}}            
+        </article>
+    </div>
+</section>
+

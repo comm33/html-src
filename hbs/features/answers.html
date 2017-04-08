@@ -1,0 +1,40 @@
+<section class="col{{#if faq}}3{{else}}2{{/if}} stack answers {{custom-class}} background-50 rf-answers">
+    <h1>{{header}}</h1>
+    <div><h1>
+        {{#if faq}}
+            {{#faq}}
+                <article>
+                    <div id="questions" class="item{{@index}}">
+                        <h2 class="center">{{{header}}}</h2>
+                        {{#each questions}}
+                        <div class="item{{@index}}">
+                            <div class="question"><i class="font_icon font_icon-sm icon-arrow-right"></i><div class='prompt'>{{{question}}}</div></div>
+                            <div class="answer">{{{answer}}}</div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </article>
+                <hr />
+            {{/faq}}
+        {{/if}}
+        <article>
+            <div id="customercare">
+                <h2>A specialist is here to help</h2>
+                <img src="/resources/img/icons/customer-care.png" alt="Customer Care" title='Ask a Specialist Questions' />
+                <p class="ccphone ccpod_phone_num phone">{{#if phone}}{{phone}}{{else}}(866) 679-2319{{/if}}</p>
+                <p class="cchours">We're available <span>{{#if first-hours}}{{{first-hours}}}{{else}}Mon-Fri 5am-7pm PT{{/if}}</span>,<br /><span>{{#if second-hours}}{{{second-hours}}}{{else}}Weekends 7am-4pm PT{{/if}}</span></p>
+                <p class="xeno"><img src="/resources/img/icons/american-flag.png" alt="American Flag" />{{#if agent-text}}{{agent-text}}{{else}}Our agents are based in the United States.{{/if}}</p>
+            </div>
+        </article>
+        <hr />
+        <article>
+            <div id="attorneyhelp">
+                <h2>Speak with an attorney</h2>
+                <img src="/resources/img/icons/atty{{#if is-bap}}-male{{/if}}.png" alt="Attorney photo" title='Talk to an Attorney - Get Legal Advice' />
+                <p>Get legal advice from an independent attorney at a price you can afford.</p>
+                <button value="/attorneys-lawyers/legal-plans/{{#if is-bap}}business{{else}}personal{{/if}}" class="button-med button-fluid-weak button-green button-pad-0 button-margin-10 button-width-240">Find out more</button>
+                <p>Pricing starts at {{#if is-bap}}$23.99/month{{else}}$9.99/month{{/if}}</p>
+            </div>
+        </article>
+    </div>
+</section>

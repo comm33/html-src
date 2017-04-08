@@ -1,0 +1,37 @@
+﻿<section class="col{{prices.length}} rf-pricing-table stack {{custom-class}} background-50" style="background-image:url('{{background}}')" {{#if background-img-title}} title='{{background-img-title}}' {{else}} title='{{title}}' {{/if}} {{#if background-img-alt}} alt='{{background-img-alt}}' {{/if}}>
+	<div>
+		<h1>{{header}}</h1>
+		{{#if subheader}}<p class="pricing-learn-more">{{{subheader}}}</p>{{/if}}
+		{{#each prices}}{{#if label}}<div class='label-spacer'></div>{{/if}}{{/each}}
+		<div class="rf-pricing-table-wrapper">
+			{{#each prices}}
+				<article class="item{{@index}} {{#if label}}article-with-label{{/if}}">
+						{{#if label}}<label class="addon">{{label}}</label>{{/if}}
+						<h2>{{{header}}}</h2>
+						{{#if subheader}} <h3>{{subheader}}</h3>{{/if}}
+						{{#if small-text}}<p class="fees">{{small-text}}</p>{{/if}}
+						<p class="pricepoint">
+							<sup class="dollar">$</sup>{{{price}}}
+							{{#if price-after}}<span class="priceAfterText">{{{price-after}}}</span>{{/if}}
+						</p>
+                        {{#if price-value}}<p class="priceValue">{{{price-value}}}</p>{{/if}}
+                        {{#if fees}}<p class="fees">{{{fees}}}</p>{{/if}}
+                        {{#if regular-price}}<p class='price-regular'>Regular price <del>{{{regular-price}}}</del></p>{{/if}}
+                        {{#if savings}}<p class='price-savings'>You save {{{savings}}}</p>{{/if}}
+						<div class="pricing-items">
+							{{#if upsell}}<p class="priceItemHilight">{{{upsell}}}</p>{{/if}}
+							{{#each details}}
+								<div class="{{custom-class}}">
+									<p class="priceItem">{{{bold-text}}}</p>
+									<p class="priceItemdesc">{{{sub-text}}}</p>
+								</div>
+							{{/each}}
+						</div>
+						<p class="priceItemlink">{{{link}}}</p>
+						<button value="{{button-value}}" id="{{button-id}}" {{#if button-onclick}}onclick="{{{button-onclick}}}"{{/if}} class="{{#unless button-value}}qstart{{/unless}}  button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240 {{button-class}}" {{#if pricing-disabled}} disabled{{/if}}>{{button-title}}</button>
+				</article>
+			{{/each}}
+		</div>
+		{{#if bottom-text}}<p class="priceBottomText">{{{bottom-text}}}</p>{{/if}}
+	</div>
+</section>

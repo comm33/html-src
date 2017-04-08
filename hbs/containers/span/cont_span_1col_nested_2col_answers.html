@@ -1,0 +1,28 @@
+<section class="col2 stack {{custom-class}} background-50">
+    <h1>{{header}}</h1>
+    <div>
+        {{#faq}}
+        <article>
+            <div id="questions">
+                <h2 class="center">{{{title}}}</h2>
+                {{#each questions}}
+                <div>
+                <div class="question" onclick="{{#if clickEvent}}{{{clickEvent}}}{{/if}}"><i class="font_icon font_icon-sm icon-arrow-right"></i>{{{question}}}</div>
+                <div class="answer">{{{answer}}}</div>
+                </div>
+                {{/each}}
+            </div>
+        </article>
+        {{/faq}}
+        <hr />
+        <article>
+            <div id="customercare">
+                <h2>A specialist is here to help</h2>
+                <img src="/resources/img/icons/customer-care.png" alt="Customer Care" title='Ask a Specialist Questions about {{ask-away-icon-alt}}' />
+                <p class="ccphone ccpod_phone_num">(866) 679-2319</p>                
+                <p class="cchours">We're available <span>{{#if customer-care-hrs}}{{customer-care-hrs}}{{else}}Mon-Fri 5am-7pm PT</span>, {{#if has-line-break}}<br />{{/if}}<span>Weekends 7am-4pm PT{{/if}}</span></p>                
+                <p class="xeno"><img src="/resources/img/icons/american-flag.png" alt="American Flag" />Our agents are based in the United States.</p>
+            </div>
+        </article>        
+    </div>
+</section>

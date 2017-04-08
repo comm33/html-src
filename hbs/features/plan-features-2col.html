@@ -1,0 +1,44 @@
+<section class="plan-features col2 stack {{custom-class}} background-50">
+    <div>
+        {{#if header}}
+        <h1 class="center">{{header}}</h1>
+        {{/if}}
+        <h4 class="center">{{sub-header}}</h4>
+        {{#each feature-items}}
+        <article>
+            {{#each col-items}}
+            <section class="col2-3_1-right">
+                <div>
+                    <aside>
+                        <p>
+                            {{#if feature-image}}
+                            <img src="/resources/img/icons/{{feature-image}}" alt="{{feature-image-alt}}" title="{{feature-image-title}}">
+                            {{/if}}
+                        </p>
+                    </aside>
+                    <article>
+                        <div>
+                            <strong>{{feature-header}}</strong>
+                            <p>{{{feature-text}}}</p>
+                            {{#if feature-list}}
+                            <ul>
+                                {{#each feature-list}}
+                                <li>{{{list-item}}}</li>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                            {{#if feature-final-text}}
+                            <p>{{feature-final-text}}</p>
+                            {{/if}}
+                        </div>
+                    </article>
+                </div>
+            </section>
+            {{/each}}
+        </article>
+        {{/each}}
+        {{#if has-rule}}
+        <hr />
+        {{/if}}
+    </div>
+</section>

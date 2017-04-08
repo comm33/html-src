@@ -1,0 +1,28 @@
+<section class="col1 {{custom-class}}">
+	<div>
+		<article>
+			<h2>{{{header}}}</h2>
+            {{#if sub-header}}<div class="final-cta-subheader">{{{sub-header}}}</div>{{/if}}
+			<p>{{{pre-cta-button-text}}}</p>
+            {{#if state-select}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="state-select" class="state-select final-state">
+                        <option value="none">{{stateselecttext}}</option>
+                    </select>
+                </div>
+            {{/if}}
+            {{#if button-type-phone}}
+            <a href="{{cta-button-value}}" id="final-cta" {{#if button-title}}title="{{button-title}}"{{/if}} title="{{{button-custom-title}}}" class="{{button-type}} button-med button-fluid-weak button-blue button-pad-0 button-width-300">{{cta-button-text}}</a>
+            {{else}}
+            <button value="{{cta-button-value}}" {{#if button-title}}title="{{button-title}}"{{/if}} {{#if ga-final-cta}} {{{ga-final-cta}}} {{/if}} id="final-cta" title="{{{button-custom-title}}}" class="button-med button-fluid-weak {{#if button-color}}{{button-color}}{{else}}button-blue{{/if}} button-pad-0 button-width-300 {{button-type}}">{{{cta-button-text}}}</button>
+            {{/if}}
+            {{#if cta-mobile-value}}
+            <button value="{{cta-mobile-value}}" {{#if button-title}}title="{{button-title}}"{{/if}} {{#if ga-final-cta}} {{{ga-final-cta}}} {{/if}} id="final-cta" title="{{{button-custom-title}}}" class="button-med button-fluid-weak {{#if button-color}}{{button-color}}{{else}}button-blue{{/if}} button-pad-0 button-width-300 mobile-only">{{{cta-button-text}}}</button>
+            {{/if}}
+            <p><a href="{{{post-cta-link}}}" id="post-cta-link">{{{post-cta-text}}}</a></p>
+		</article>
+	</div>
+</section>

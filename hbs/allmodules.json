@@ -1,0 +1,874 @@
+{
+    "allmodules": {
+        "cont_1col_seo_block": {
+            "custom-class": "seoblock",
+            "top-line": "top-line",
+            "body": [
+                { "line": "line1." },
+                { "line": "line2" },
+                { "line": "<b>line3</b>" }
+            ]
+        },
+        "pricing-header": {
+            "breadcrumbs": "breadcrumbs",
+            "headline": "headline"
+        },
+        "comparison-grid": {
+            "bg-image": "/resources/img/icons/triangle_down_grey.png",
+            "custom-class-2": "background-50 background-top grey-triangle",
+            "header": [
+                { "item": "Living Trusts" },
+                { "item": "Last Wills" },
+                { "item": "Living Wills" },
+                { "item": "item" }
+            ],
+            "row": [
+                [
+
+                    { "class": "included", "content": "Specify your last wishes and appoint someone to carry them out." },
+                    { "class": "included", "content": "Specify your last wishes and appoint someone to carry them out." },
+                    { "class": "excluded", "content": "Specify your last wishes and appoint someone to carry them out." },
+                    { "class": "excluded", "content": "excluded" }
+                ],
+                [
+                    { "class": "included", "content": "Transfer your property to beneficiaries and name guardians for minor children." },
+                    { "class": "included", "content": "Transfer your property to beneficiaries and name guardians for minor children." },
+                    { "class": "excluded", "content": "Transfer your property to beneficiaries and name guardians for minor children." },
+                    { "class": "excluded", "content": "excluded" }
+                ],
+                [
+                    { "class": "included", "content": "You must transfer assets into the trust while you're alive to help avoid probate." },
+                    { "class": "excluded", "content": "You must transfer assets into the trust while you're alive to help avoid probate." },
+                    { "class": "excluded", "content": "You must transfer assets into the trust while you're alive to help avoid probate." },
+                    { "class": "excluded", "content": "excluded" }
+                ],
+                [
+                    { "class": "excluded", "content": "Make decisions about life support and organ donation in advance." },
+                    { "class": "excluded", "content": "Make decisions about life support and organ donation in advance." },
+                    { "class": "included", "content": "Make decisions about life support and organ donation in advance." },
+                    { "class": "excluded", "content": "excluded" }
+                ],
+                [
+                    { "class": "excluded", "content": "Name someone to handle legal and financial duties on your behalf." },
+                    { "class": "excluded", "content": "Name someone to handle legal and financial duties on your behalf." },
+                    { "class": "excluded", "content": "Name someone to handle legal and financial duties on your behalf." },
+                    { "class": "included", "content": "included" }
+                ],
+                [
+                    { "class": "", "content": "<a href='/LZWeb/Preprocess/Preprocess.aspx?iPID=3'>Get started</a>" },
+                    { "class": "", "content": "<a href='/LZWeb/Preprocess/Preprocess.aspx?iPID=6'>Get started</a>" },
+                    { "class": "", "content": "<a href='/LZWeb/Preprocess/Preprocess.aspx?iPID=9&isGuest=1'>Get started</a>" },
+                    { "class": "", "content": "<a href='/LZWeb/Preprocess/Preprocess.aspx?iPID=11&isGuest=1'>content with html</a>" }
+                ]
+
+            ]
+        },
+        "cont_span_2col_stack": {
+            "header": "header",
+            "description": "description",
+            "custom-class": "custom-class",
+            "article": [
+                {
+                    "img": { },
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": { },
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "cont_1col_final_cta": {
+            "custom-class": "finalcta",
+            "header": "header",
+            "pre-cta-button-text": "pre-cta-button-text",
+            "cta-button-text": "cta-button-text",
+            "cta-button-value": "cta-button-value",
+            "post-cta-text": "post-cta-text",
+            "post-cta-link": "post-cta-link"
+        },
+        "cont_1col_fineprint": {
+            "custom-class": "custom-class",
+            "heading": "heading",
+            "content": "content"
+        },
+        "cont_1col_headline": {
+            "custom-class": "custom-class",
+            "img": "/resources/img/iphone_sweater.jpg",
+            "breadcrumbs": "breadcrumbs",
+            "sub-heading": "sub-heading",
+            "headline": "headline",
+            "subtext": "subtext",
+            "post-title-text": "post-title-text",
+            "custom-field": "custom-field"
+        },
+        "cont_1col_testimonial": {
+            "custom-class": "custom-class",
+            "quote": "quote",
+            "attribution": "attribution",
+            "city": "city"
+        },
+
+        "pricing-table3": {
+            "custom-class": "pricingtable",
+            "header": "header",
+            "img": "/resources/img/iphone_sweater.jpg",
+            "prices": [
+                {
+                    "label": "",
+                    "title": "Economy",
+                    "price": "149",
+                    "filing-fees": "+ state filing fee",
+                    "upsell": "",
+                    "bold-text_1": "The basics to get you started",
+                    "sub-text_1": "Filing of your LLC state documents and personalized operating agreement.",
+                    "bold-text_2": "Standard Turnaround",
+                    "sub-text_2": "30 business days",
+                    "more_details": "/limited-liability-company/limited-liability-company-pricing.html",
+                    "more-details-inline-style": "style='margin-top:85px;'",
+                    "button-id": "pricing-basic-cta",
+                    "link": "",
+                    "button-value": "#",
+                    "button-title": "Continue"
+                },
+                {
+                    "label": "",
+                    "title": "Standard",
+                    "price": "289",
+                    "filing-fees": "+ state filing fee",
+                    "upsell": "Everything from Economy plus:",
+                    "bold-text_1": "Deluxe LLC kit",
+                    "sub-text_1": "All of your documents organized in a custom-embossed binder",
+                    "bold-text_2": "QuickBooks Online",
+                    "sub-text_2": "3 full months of QuickBooks Online",
+                    "more_details": "/limited-liability-company/limited-liability-company-pricing.html",
+                    "more-details-inline-style": "style='margin-top:50px;'",
+                    "button-id": "pricing-basic-cta",
+                    "link": "",
+                    "button-value": "#",
+                    "button-title": "Continue"
+                },
+                {
+                    "label": "label",
+                    "title": "title",
+                    "price": "price",
+                    "filing-fees": "filing-fees",
+                    "upsell": "upsell",
+                    "bold-text_1": "bold-text_1",
+                    "sub-text_1": "sub-text_1",
+                    "bold-text_2": "bold-text_2",
+                    "sub-text_2": "sub-text_2 sub-text_2 sub-text_2 sub-text_2 sub-text_2 sub-text_2",
+                    "bold-text_3": "bold-text_3",
+                    "more_details": "more_details",
+                    "more-details-id": "more-details-id",
+                    "more-details-inline-style": "more-details-inline-style",
+                    "link": "link",
+                    "button-id": "button-id",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "category-tiles-1": {
+            "custom-class": "category blue-tiles",
+            "img": "/resources/img/heroes/hero_business-category.jpg",
+            "title": "How can we help you today?",
+            "article": [
+                {
+                    "link": "/business/intellectual-property/index.html",
+                    "img": "",
+                    "short-title": "Intellectual Property",
+                    "title": "Intellectual Property",
+                    "text": ""
+                },
+                {
+                    "link": "/business/business-formation/index.html",
+                    "img": "",
+                    "short-title": "Business Formation",
+                    "title": "Business Formation",
+                    "text": "Business Formation"
+                },
+                {
+                    "link": "/business/business-operations/index.html",
+                    "img": "",
+                    "short-title": "Business Operations",
+                    "title": "Business Operations",
+                    "text": "Business Operations"
+                }
+            ]
+        },
+        "prod-tiles-1": {
+            "custom-class": "category",
+            "title": "Our most popular business products",
+            "article": [
+                {
+                    "link": "/limited-liability-company/limited-liability-company-overview.html",
+                    "img": "/resources/img/heroes/thumb_llc.jpg",
+                    "short-title": "Create a LLC Online",
+                    "title": "LLC",
+                    "text": "Easy to set up and operate. Popular among small business owners seeking personal asset protection."
+                },
+                {
+                    "link": "/legal-incorporation/incorporation-overview.html",
+                    "img": "/resources/img/heroes/thumb_inc.jpg",
+                    "short-title": "Create an Inc Online",
+                    "title": "INC",
+                    "text": "Corporations protect your personal assets and are preferred by outside investors."
+                },
+                {
+                    "link": "/non-profits/non-profit-corporation-overview.html",
+                    "img": "/resources/img/heroes/thumb_nonprofit.jpg",
+                    "short-title": "Create a Nonprofit Online",
+                    "title": "Nonprofit",
+                    "text": "Serve the public good. Become eligible for tax breaks, grants and donations."
+                },
+                {
+                    "link": "/legal-dba/dba-doing-business-as-overview.html",
+                    "img": "/resources/img/heroes/thumb_dba.jpg",
+                    "short-title": "Create a DBA Online",
+                    "title": "DBA",
+                    "text": "Officially establish your business' identity and present it to the public."
+                },
+                {
+                    "link": "/additional-business-services/sellers-permit.html",
+                    "img": "/resources/img/heroes/thumb_sellers-permit.jpg",
+                    "short-title": "Seller's Permit",
+                    "title": "Seller's Permit",
+                    "text": "Be compliant with local and state laws so you can start selling to customers."
+                },
+                {
+                    "link": "/trademarks/trademarks-overview.html",
+                    "img": "/resources/img/heroes/thumb_tm.jpg",
+                    "short-title": "Trademark Registration",
+                    "title": "Trademark Registration",
+                    "text": "Protect your profits and keep your customers coming back to the brand they recognize."
+                }
+            ]
+        },
+        "testimonial_1col": {
+            "custom-class": "testimonial",
+            "quote": "quote",
+            "attribution-name": "attribution-name",
+            "attribution-location": "attribution-location"
+        },
+        "pricing-table2x": {
+            "table-summary": "Product Pricing - Living Trust",
+            "custom-class": "lt-pricing-table",
+            "satisfaction-guarantee": "You get lifetime customer support and our <a href=\"/assets/modals/modal-satisfaction-guaranteed.html\" class=\"fancybox fancybox.iframe\">100% satisfaction guarantee.</a>",
+            "label": "Most Popular",
+            "col-heading": "Compare our Living Trust packages and pricing.",
+            "package-title-col1": "Basic",
+            "package-title-col2": "Comprehensive",
+            "package-price-col1": "249",
+            "package-price-col2": "269",
+            "package-subtext-col1": "Our most economical package - just the basics.",
+            "package-subtext-col2": "All inclusive package with rush delivery",
+            "cta-button-title": "Get Started",
+            "cta-button-value": "#",
+            "row": [
+                {
+                    "custom-row-class": "first-content-row",
+                    "bold-text": "State-specific provisions.",
+                    "description-text": "Tailored to the requirements of your state.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Individual, Joint or Joint AB Trusts available.",
+                    "description-text": "Can hold and distribute one person's property or a couple's property. Includes tax savings provisions.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Personalized questions for 9 different types of assets.",
+                    "description-text": "Your trust can hold a variety of real and personal property, including your home, bank and brokerage accounts, business interests, etc.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Specific gifts and children's subtrusts.",
+                    "description-text": "Make gifts of specific property (such as jewelry or furniture) and create subtrusts for minor children.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "\"Pour-Over\" Last Will",
+                    "description-text": "Ensures that property not held in your trust is given to your trust beneficiaries. Can name the guardians of your minor children.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Successor & alternate successor trustees.",
+                    "description-text": "Select people in a specific order to manage your assets for you and your beneficiaries when you are unable to do so.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Documents for managing your trust.",
+                    "description-text": "Includes Certificate / Abstract of Trust, bill of transfer and transfer notices as well as instructional guides for funding and managing your trust.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "<a href=\"/assets/modals/modal-legalzoom-peace-of-mind-review.html\" class=\"fancybox fancybox.iframe\">Peace of Mind Review<sup>TM</sup></a>",
+                    "description-text": "",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "FREE revisions - up to 30 days after purchase.",
+                    "description-text": "Includes review, reprinting and mailing.",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "<a href=\"/assets/modals/modal-peace-of-mind-guarantee-livingtrusts.html\" class=\"fancybox fancybox.iframe\">$50,000 Peace of Mind Guarantee</a>",
+                    "description-text": "",
+                    "isIncludedCol1": true,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Rush processing - 2 business days",
+                    "description-text": "Expedites review and printing-processing for the Basic package takes 4 business days.",
+                    "isIncludedCol1": false,
+                    "isIncludedCol2": true
+                },
+                {
+                    "bold-text": "Email delivery",
+                    "description-text": "Emailed to you as soon as it's complete.",
+                    "isIncludedCol1": false,
+                    "isIncludedCol2": true
+                },
+                {
+                    "alwaysShowFull": true,
+                    "custom-class": "legal-advantage-cell",
+                    "custom-wrapper-class": "legal-advantage-box",
+                    "bold-text": "Legal Advantage Plus - 30-day trial<sup>*</sup>",
+                    "description-text": "<div>After the 30-day trial period, benefits will continue automatically for just $14.99 per month. Cancel any time with no further obligation by calling (877) 818-8787. We'll send you periodic emails about your benefits, which continue until canceled.</div><div>Program includes:</div><ol><li> Attorney support</li><li> Annual legal checkup with an attorney</li><li> Unlimited revisions to your living trust through us</li><li> Secure storage and delivery of your living trust</li><li> Unlimited access to our downloadable legal forms</li></ol>",
+                    "isIncludedCol1": false,
+                    "isIncludedCol2": true
+                }
+            ]
+        },
+        "pricing-table2": {
+            "custom-class": "pricingtable",
+            "header": "Get started today",
+            "img": "/resources/img/iphone_sweater.jpg",
+            "prices": [
+                {
+                    "label": "",
+                    "title": "Economy",
+                    "price": "149",
+                    "filing-fees": "+ state filing fee",
+                    "upsell": "",
+                    "bold-text_1": "The basics to get you started",
+                    "sub-text_1": "Filing of your LLC state documents and personalized operating agreement.",
+                    "bold-text_2": "Standard Turnaround",
+                    "sub-text_2": "30 business days",
+                    "more_details": "/limited-liability-company/limited-liability-company-pricing.html",
+                    "more-details-inline-style": "style='margin-top:85px;'",
+                    "button-id": "pricing-basic-cta",
+                    "link": "",
+                    "button-value": "#",
+                    "button-title": "Continue"
+                },
+                {
+                    "label": "label",
+                    "title": "title",
+                    "price": "price",
+                    "filing-fees": "filing-fees",
+                    "upsell": "upsell",
+                    "bold-text_1": "bold-text_1",
+                    "sub-text_1": "sub-text_1",
+                    "bold-text_2": "bold-text_2",
+                    "sub-text_2": "sub-text_2 sub-text_2 sub-text_2 sub-text_2 sub-text_2 sub-text_2",
+                    "bold-text_3": "bold-text_3",
+                    "more_details": "more_details",
+                    "more-details-id": "more-details-id",
+                    "more-details-inline-style": "more-details-inline-style",
+                    "link": "",
+                    "button-id": "button-id",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "head": {
+            "page-title": "Marriage and Divorce - Create a Prenuptial Agreement, Change Your Name, File for Divorce | LegalZoom",
+            "meta-description": "Get legal help with matters involving marriage and divorce. Create a prenuptial agreement, change your name, or file for divorce through LegalZoom.",
+            "meta-keywords": "file for divorce,filing for divorce,how to file for divorce,getting divorced,prenuptial agreement,prenuptial agreements, prenup agreement,creating a prenuptial agreement,prenuptial agreement cost,getting Married,name change,change your name,changing your name,legal help",
+            "meta-og-title": "Marriage and Divorce - Create a Prenuptial Agreement, Change Your Name, File for Divorce | LegalZoom",
+            "meta-og-url": "http://www.legalzoom.com/personal/marriage-and-divorce.html",
+            "meta-og-description": "Get legal help with matters involving marriage and divorce. Create a prenuptial agreement, change your name, or file for divorce through LegalZoom."
+        },
+        "hero": {
+            "breadcrumbs": "<a href=\"/\">Breadcrumbs</a>",
+            "product-title": "product-title",
+            "img": "/resources/img/heroes/hero_poa.jpg",
+            "title": "hero &gt; title: can contain HTML",
+            "sub-heading": "sub-heading",
+            "pre-cta-button-text": "pre-cta-button-text",
+            "cta-button-text": "cta-button-text",
+            "cta-button-value": "cta-button-value",
+            "cta-button-id": "cta-button-id",
+            "button-subtext": "button-subtext",
+            "button-subtext-followup": "button-subtext-followup"
+        },
+        "feature_boxes": {
+            "header": "header",
+            "module": [
+                {
+                    "title": "Prenuptial Agreement",
+                    "text": "Specify whether the assets each of you bring to the marriage, and earn during the marriage, are separate or shared property.",
+                    "button_text": "Learn more",
+                    "button_value": "/prenuptial/prenuptial-overview.html"
+                },
+                {
+                    "title": "Uncontested Divorce",
+                    "text": "If you and your spouse agree on the decisions that need to be made, complete your divorce more quickly and affordably.",
+                    "button_text": "Learn more",
+                    "button_value": "/legal-divorce/divorce-overview.html"
+                },
+                {
+                    "title": "title",
+                    "text": "text",
+                    "button_text": "button_text",
+                    "button_value": "button_value"
+                }
+            ]
+        },
+        "answers": {
+            "custom-class": "answers",
+            "header": "header",
+            "faq": {
+                "title": "title",
+                "questions": [
+                    {
+                        "question": "Can a prenup protect children from a prior marriage?",
+                        "answer": "Yes, a prenuptial agreement can help assure that children from a prior marriage will be financially provided for as intended by their parent."
+                    },
+                    {
+                        "question": "Do prenup agreements cover alimony?",
+                        "answer": "In many states, your agreement can include provisions to establish, limit or eliminate alimony in the event of a divorce."
+                    },
+                    {
+                        "question": "What’s the difference between a contested and uncontested divorce?",
+                        "answer": "An uncontested divorce is when you and your spouse want to get a divorce and you agree on all significant issues, including the division of property and debts, spousal and child support and child custody. A contested divorce is when you and your spouse can’t resolve disagreements regarding these types of issues."
+                    },
+                    {
+                        "question": "How do I divorce a spouse I can’t find?",
+                        "answer": "If you can’t find your spouse despite your best efforts, you can still get a divorce. You'll need court approval to publish notice of your intent to divorce your spouse in the local newspaper. If your spouse doesn't respond to your service by publication, you can proceed to finalizing your divorce by default."
+                    },
+                    {
+                        "question": "question",
+                        "answer": "answer"
+                    }
+                ]
+            }
+        },
+        "helpful_info": {
+            "custom-class": "helpful_info",
+            "header": "header",
+            "article": [
+                {
+                    "title": "Tips for Creating a Legally Sound Domestic Partnership",
+                    "text": "Wondering whether you should tie the knot? A domestic partnership might give you the protections and benefits you want without a ring. Find out if it’s right for you.",
+                    "link": "/articles/tips-for-creating-a-legally-sound-domestic-partnership"
+                },
+                {
+                    "title": "Prenuptial Agreements: Not Just for the Wealthy",
+                    "text": "Although “prenups” have been around in some form for thousands of years, the controversy surrounding them doesn't seem to be ending any time soon.",
+                    "link": "/articles/prenuptial-agreements-not-just-for-the-wealthy"
+                },
+                {
+                    "title": "Annulment vs. Divorce – What’s the Legal Difference?",
+                    "text": "Your state law and particular situation will determine whether getting an annulment or getting a divorce will be simple or complex. Find out more about each option.",
+                    "link": "/articles/whats-the-legal-difference-between-annulment-and-divorce"
+                },
+                {
+                    "title": "title",
+                    "text": "text",
+                    "link": "link"
+                }
+            ],
+            "follow_up_txt": "More marriage and divorce articles",
+            "follow_up_link": "/articles/family-legal-matters"
+        },
+        "supplemental_forms": {
+            "custom-class": "supplemental_forms",
+            "title": "Buy supplemental legal forms",
+            "link": [
+                {
+                    "title": "Cohabitation agreement",
+                    "value": "/legalforms/cohabitation-agreement"
+                },
+                {
+                    "title": "Wedding planning services agreement",
+                    "value": "/legalforms/wedding-planning-services-agreement"
+                },
+                {
+                    "title": "Catering services agreement",
+                    "value": "/legalforms/catering-services-agreement"
+                },
+                {
+                    "title": "Performance agreement",
+                    "value": "/legalforms/performance-agreement"
+                },
+                {
+                    "title": "Photography services agreement",
+                    "value": "/legalforms/photography-services-agreement"
+                },
+                {
+                    "title": "title",
+                    "value": "value"
+                }
+            ]
+        },
+        "testimonial": {
+            "custom-class": "testimonial",
+            "quote": "I needed to end a very wrong marriage quickly and in a cost-effective manner. This was all of that and more.",
+            "attribution": "TK",
+            "city": "Minneapolis, MN"
+        },
+        "fine_print": {
+            "heading": "Get Legal Help with Marriage and Divorce – Create a Prenuptial Agreement, Change Your Name or File for Divorce",
+            "content": "LegalZoom can help make the process of marriage and divorce easier by offering <strong>legal help</strong>. If you’re <strong>getting married</strong> and you and your spouse want to decide which property belongs to which person you can do so by <strong>creating a prenuptial agreement</strong>. A<strong> prenup agreement </strong>can provide peace of mind and a sense of financial security ensuring that property is distributed properly if the marriage ends in divorce. The <strong>prenuptial agreement cost</strong> is affordable through LegalZoom; for one low, flat fee an attorney will prepare your prenuptial agreement. <strong>Filing for divorce</strong> is never easy, but LegalZoom can help make the process less stressful by taking care of some of the legal details. LegalZoom can help you <strong>file for divorce</strong>, offering an easier and less costly way to take care of the paperwork. Many people aren’t sure <strong>how to file for divorce</strong>, but LegalZoom<strong> </strong>will help you every step of the way. Adults and children can change their name for a variety of reasons. LegalZoom makes it easy to legally <strong>change your name</strong> through the court. Once granted a <strong>name change</strong>, you can officially use your new name on all government and financial records. Let LegalZoom help you with major life changes involving <a href=\"https://www.legalzoom.com/prenuptial/prenuptial-overview.html\" class=\"external-link\" rel=\"nofollow\">prenuptial agreements</a>, <a href=\"https://www.legalzoom.com/legal-divorce/divorce-overview.html\" class=\"external-link\" rel=\"nofollow\">getting divorced</a>, or <a href=\"https://www.legalzoom.com/legal-name-change/name-change-overview.html\" class=\"external-link\" rel=\"nofollow\">changing your name</a>. If you need <strong>legal advice</strong> or guidance regarding any of these matters, consider signing up for the <a href=\"https://www.legalzoom.com/attorneys-lawyers/legal-plans\" class=\"external-link\" rel=\"nofollow\">LegalZoom Advantage Plan</a> where you will receive access to an attorney for a low monthly fee."
+        },
+        "model-link": "http://www.objgen.com/json/models/KQmqe",
+        "question-stack": {
+                        "header": "header",
+            "description":  "description",
+            "custom-class": "questionstack",
+            "question": [
+                {
+                    "title": "It doesn't change your financial affairs",
+                    "answer": "A living trust lets you do whatever you want with your money - buy and sell assets, open bank accounts and make investments just like you do now.<p></p><p>You can amend or change the trust any time, or even revoke it and pull your assets out. It remains on the shelf, ready to act if something happens to you or your spouse.",
+                    "link": "<a href=\"/knowledge/living-trust\">Learn more about living trusts</a>"
+                },
+                {
+                    "title": "title",
+                    "answer": "answer",
+                    "link": "<a href=\"/\">link (contains html)</a>"
+                }
+            ]
+        },
+        "how-it-works": {
+            "custom-class": "custom-class",
+            "header": "header",
+            "text": "text",
+            "group": [
+                {
+                    "icon": "/assets/images/icons/icon-checklist.png",
+                    "icon-alt": "Complete our living trust questionnaire",
+                    "title": "1. Complete our living trust<br />questionnaire"
+                },
+                {
+                    "icon": "/assets/images/icons/icon-searchdoc.png",
+                    "icon-alt": "We make sure your work is consistent and complete",
+                    "title": "2. We make sure your work<br />is consistent and complete"
+                },
+                {
+                    "icon": "/assets/images/icons/icon-emaildoc.png",
+                    "icon-alt": "icon-alt",
+                    "title": "title (contains html)"
+                }
+            ]
+        },
+        "optional-services": {
+            "custom-class": "custom-class",
+            "header": "header",
+            "header-subtext": "header-subtext",
+            "service": [
+                {
+                    "mobile-text": "Please call (800) 773-0888",
+                    "service-title": "Same-Day Processing",
+                    "service-price": "$95.00"
+                },
+                {
+                    "custom-id": "state-filing-fee-livingtrust-standard",
+                    "mobile-text": "",
+                    "service-title": "Real Estate Deed",
+                    "service-price": "select state",
+                    "additional-content": " <select id=\"state-filing-fee-select-livingtrust\"><option value=\"none\">Select a state</option></select>"
+                },
+                {
+                    "mobile-text": "Please call (800) 773-0888",
+                    "service-title": "Living Will",
+                    "service-price": "$39.00"
+                },
+                {
+                    "mobile-text": "mobile-text",
+                    "service-title": "service-title",
+                    "service-price": "service-price"
+                }
+            ],
+            "subtext": "subtext (contains html)"
+        },
+        "reasons": {
+            "custom-class": "reasons",
+            "header": "header",
+            "sub-heading": "sub-heading",
+            "group": [
+                {
+                    "icon": "/resources/img/icons/pen.png",
+                    "title": "Appoint someone to settle your affairs.",
+                    "text": "This person will also ensure that your beneficiaries receive their inheritance."
+                },
+                {
+                    "icon": "/resources/img/icons/key.png",
+                    "title": "Choose who will receive your property.",
+                    "text": "Specify how you'd like to transfer your property to your heirs."
+                },
+                {
+                    "icon": "/resources/img/icons/mom-daughter.png",
+                    "title": "title",
+                    "text": "text"
+                }
+            ]
+        },
+        "cont_span_2col_stack": {
+            "custom-class": "custom-class",
+            "article": [
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "cont_span_3col_stack": {
+            "custom-class": "custom-class category blue-tiles",
+            "article": [
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "cont_span_4col_stack": {
+            "custom-class": "custom-class",
+            "article": [
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-14.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "cont_span_5col_stack": {
+            "custom-class": "custom-class",
+            "article": [
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-14.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-13.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "cont_span_6col_stack": {
+            "custom-class": "custom-class",
+            "article": [
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-14.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-13.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                },
+                {
+                    "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-14.jpg",
+                    "title": "title",
+                    "text": "text",
+                    "button-value": "button-value",
+                    "button-title": "button-title"
+                }
+            ]
+        },
+        "list-items": {
+            "header": "header",
+            "col1": [
+                {
+                    "sub-heading": "Estate Planning Resources",
+                    "items": [
+                        { "prompt": "Last Will and Testament", "link": "/legal-wills/wills-overview.html" },
+                        { "prompt": "Living Trust", "link": "/living-trusts/living-trusts-overview.html" },
+                        { "prompt": "Living Will (Advance Health Care Directive)", "link": "/living-wills/living-wills-overview.html" },
+                        { "prompt": "Financial Power of Attorney", "link": "/power-of-attorney/power-of-attorney-overview.html" },
+                        { "prompt": "Health Care Power of Attorney", "link": "/knowledge/living-will/topic/health-care-power-of-attorney" },
+                        { "prompt": "Pet Protection Agreement", "link": "/pet-trust-agreement/pet-protection-overview.html" },
+                        { "prompt": "Estate Plan Bundle", "link": "/personal/estate-planning/estate-planning-bundle.html" },
+                        { "prompt": "Estate Plan Tool", "link": "/personal/estate-planning/help-me-decide.html#/questions-1" },
+                        { "prompt": "Compare Estate Planning Products", "link": "/personal/estate-planning/index.html" }
+                    ]
+                }
+            ],
+            "col2": [
+                {
+                    "sub-heading": "Marriage and Divorce",
+                    "items": [
+                        { "prompt": "Prenuptial Agreement", "link": "/prenuptial/prenuptial-overview.html" },
+                        { "prompt": "Divorce", "link": "/legal-divorce/divorce-overview.html" },
+                        { "prompt": "Name Change", "link": "/legal-name-change/name-change-overview.html" }
+                    ]
+                },
+                {
+                    "sub-heading": "Real Estate",
+                    "items": [
+                        { "prompt": "Residential Lease", "link": "/real-estate-leases/real-estate-leases-overview.html" },
+                        { "prompt": "Property Deed", "link": "/real-estate-deed-transfer/real-estate-deed-transfer-overview.html" }
+                    ]
+                },
+                {
+                    "sub-heading": "Financial",
+                    "items": [
+                        { "prompt": "Student Loan Forgiveness", "link": "/student-loan-forgiveness-overview.html" },
+                        { "prompt": "Bankruptcy", "link": "/bankruptcy/bankruptcy-overview.html" },
+                        { "prompt": "Financial Power of Attorney", "link": "/power-of-attorney/power-of-attorney-overview.html" }
+                    ]
+                }
+            ],
+            "col3": [
+                {
+                    "sub-heading": "sub-heading",
+                    "items": [
+                        { "prompt": "prompt", "link": "/green-card/green-card-overview.html" },
+                        { "prompt": "prompt", "link": "/work-visa/work-visa-overview.html" },
+                        { "prompt": "prompt", "link": "/disability/social-security-disability-overview.html" }
+                    ]
+                },
+                {
+                    "sub-heading": "sub-heading",
+                    "items": [
+                        { "prompt": "prompt", "link": "/disability/social-security-disability-overview.html" },
+                        { "prompt": "prompt", "link": "/personal-injury/personal-injury-overview.html" },
+                        { "prompt": "prompt", "link": "/dui/dui-overview.html" }
+                    ]
+                }
+            ]
+        },
+        "side_img_container": {
+            "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+            "title": "title",
+            "text": "text"
+        },
+        "cont_1col_ctr": {
+            "header": "header",
+            "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+            "title": "title",
+            "text": "text"
+        }
+    }
+}

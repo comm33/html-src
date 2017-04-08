@@ -1,0 +1,29 @@
+<section class="col1 stack item-list {{custom-class}}">
+   {{#if header}}<h1>{{{header}}}</h1>{{/if}}
+   <div>
+	  <article class='col'>
+		 {{#each col1}}
+		 <div class='sub-heading {{custom-sub-heading-class}}'>{{{sub-heading}}}</div>
+		 {{#each items}}
+		 <div><a href='{{link}}' id="{{link-id}}" {{#if new-window}} target="_blank" {{/if}}>{{{prompt}}}</a></div>
+		 {{/each}}
+		 {{/each}}
+	  </article>
+	  <article class='col'>
+		 {{#each col2}}
+		 <div class='sub-heading {{custom-sub-heading-class}}'>{{{sub-heading}}}</div>
+		 {{#each items}}
+		 <div><a href='{{link}}' id="{{link-id}}" {{#if new-window}} target="_blank" {{/if}}>{{{prompt}}}</a></div>
+		 {{/each}}
+		 {{/each}}
+	  </article>
+	  <article class='col'>
+		 {{#each col3}}
+		 <div class='sub-heading {{custom-sub-heading-class}}'>{{{sub-heading}}}</div>
+		 {{#each items}}
+		 <div><a href='{{link}}' id="{{link-id}}" {{#if new-window}} target="_blank" {{/if}}>{{{prompt}}}</a></div>
+		 {{/each}}
+		 {{/each}}
+	  </article>
+   </div>
+</section>

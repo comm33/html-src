@@ -1,0 +1,77 @@
+﻿<section class="col1 bg-soft-blue {{custom-class}}">
+    {{#if breadcrumbs}}
+        <div class="crumbswrapper">
+            <ul class="breadcrumbs">{{{breadcrumbs}}}</ul>
+        </div>{{/if}}
+    <h1 class="pricing_header">{{{headline}}}</h1>
+    {{#if subheading}}<p class="pricing_subheading">{{{subheading}}}</p>{{/if}}
+    <div id="pricing-dropdown-col-{{pricingdropdowncount}}" class="pricing-dropdown-column">
+        <article>
+            {{#if dropdownbiztype}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="biz-type-select-{{product}}" class="state-select">
+                        {{#if bizselecttext}}
+                            <option value="none">{{bizselecttext}}</option>
+                        {{else}}
+                            <option value="none">Your type of business</option>
+                        {{/if}}
+                        <option value="Corp">Corporation</option>
+                        <option value="LLC">LLC</option>
+                        <option value="LLP">LLP</option>
+                        <option value="LP">LP</option>
+                        <option value="NP">Nonprofit</option>
+                    </select>
+                </div>
+            {{/if}}
+            {{#if dropdownconversiontype}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="biz-type-select-{{product}}" class="state-select">
+                        {{#if bizselecttext}}
+                            <option value="none">{{bizselecttext}}</option>
+                        {{else}}
+                            <option value="none">Your type of business</option>
+                        {{/if}}
+                        <option value="Corp">Convert LLC to Corporation</option>
+                        <option value="LLC">Convert Corporation to LLC</option>
+                    </select>
+                </div>
+            {{/if}}
+            {{#if showstateselect}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="state-filing-fee-select-{{product}}" class="state-select">
+                        <option value="none">{{stateselecttext}}</option>
+                    </select>
+                </div>
+            {{/if}}
+            {{#if showstateselect2}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="state-filing-fee-select-2-{{product}}" class="state-select">
+                        <option value="none">{{stateselecttext2}}</option>
+                    </select>
+                </div>
+            {{/if}}
+            {{#if show-country-select}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="county-filing-fee-select-{{product}}" class="state-select">
+                        <option value="none">{{show-country-text}}</option>
+                    </select>
+                </div>
+            {{/if}}
+        </article>
+    </div>
+</section>

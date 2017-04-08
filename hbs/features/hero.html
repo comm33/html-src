@@ -1,0 +1,67 @@
+<section class="hero1 hero-left background-60 background-top height500 {{custom-class}}" style="background-image:url('{{img}}');" {{#if background-img-title}} title='{{background-img-title}}' {{/if}} {{#if background-img-alt}} alt='{{background-img-alt}}' {{else}} title='{{title}}' {{/if}}>
+    <div>
+        <article>
+            <div class="">
+                {{#if breadcrumbs}}<ul class="breadcrumbs">{{{breadcrumbs}}}</ul>{{/if}}
+                {{#if product-title}}<p class="product-title">{{{product-title}}}{{#if action}}<span class='action'>{{{action}}}</span>{{/if}}</p>{{/if}}
+                {{#if product-note}}<div class="product-note">{{{product-note}}}</div>{{/if}}
+                <h1>{{{title}}}</h1>
+                <p class='subheading'>{{{sub-heading}}}</p>
+                {{#if sub-heading-list}}
+                    <ul>{{{sub-heading-list}}}</ul>
+                {{/if}}
+                <div class="overview-pricing-cta {{mobile-cta}}">
+                    <p class="button-top">{{{pre-cta-button-text}}}</p>
+                    {{#if mobile-cta}}
+                       	<a href="tel:800-773-0888" id="hero-cta-call" class="button button-med button-fluid-weak button-blue button-pad-0 button-width-300 mobile-only">Call to get started</a>
+                    {{/if}}
+                    {{#if button-type-phone}}
+                    <a href="{{cta-button-value}}" id="hero-cta" class="{{button-type}} button-med button-fluid-weak button-blue button-pad-0 button-width-300{{#if cta-button-value-mobile}} desktop-only{{/if}}">{{cta-button-text}}</a>
+                        {{#if cta-button-value-mobile}}
+                            <a href="{{cta-button-value-mobile}}" id="hero-cta" class="{{button-type}} button-med button-fluid-weak button-blue button-pad-0 button-width-300 mobile-only">{{cta-button-text-mobile}}</a>
+                        {{/if}}
+                    {{else}}
+                        <button value="{{cta-button-value}}" {{#if cta-button-title}}title="{{cta-button-title}}"{{/if}} id="hero-cta" class="button-med button-fluid-weak button-{{#if button-color}}{{button-color}}{{else}}blue{{/if}} button-pad-0 button-width-300 {{button-type}}{{#if cta-button-value-mobile}} desktop-only{{/if}}">{{cta-button-text}}</button>
+    					{{#if cta-button-value-mobile}}
+                            <button value="{{cta-button-value-mobile}}" id="hero-cta" class="mobile-only button-med button-fluid-weak button-{{#if button-color}}{{button-color}}{{else}}blue{{/if}} button-pad-0 button-width-300 {{button-type}}">{{cta-button-text}}</button>
+                        {{/if}}
+                    {{/if}}
+                    {{#if mobile-cta}}
+                        <p id="mobile-contact-us" class="button-bottom mobile-only">Or <a href="/contact-us" id="contact">contact us</a></p>
+                    {{/if}}
+					{{#if mobile-quick-form}}
+						<p id="mobile-contact-us-quick-form" class="button-bottom mobile-only">{{{mobile-quick-form.lead-in}}}<a href="/customer-support/customer-support.html" id="contact" class="ccpod_phone_num">contact us</a></p>
+                    {{/if}}
+                        <p class="button-bottom">{{{button-subtext}}}</p>
+                        <p class="cta-links {{custom-cta-links-class}}">{{{button-subtext-followup}}}</p>
+                    {{#if button-subtext-promotion}}
+                        <p class="cta-links {{custom-cta-links-class}}">{{{button-subtext-promotion}}}</p>
+                    {{/if}}
+
+                </div>
+                <p class="final-copy-class {{final-copy-custom-class}}">{{{final-copy}}}</p>
+            </div>
+        </article>
+    </div>
+    {{#if caption}}<div class="caption">{{{caption}}}</div>{{/if}}
+</section>
+{{#if mobile-cta}}
+    <script type="text/javascript">
+        try {
+            mobileCTATasks.init();
+        }
+        catch (e) {
+            mobileCtaChangeFail = true;
+        }
+    </script>
+{{/if}}
+{{#if mobile-quick-form}}
+    <script type="text/javascript">
+        try {
+            mobileCTATasks.init();
+        }
+        catch (e) {
+            mobileCtaChangeFail = true;
+        }
+    </script>
+{{/if}}

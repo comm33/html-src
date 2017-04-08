@@ -1,0 +1,59 @@
+<section class="col1 background-60 {{custom-class}}" style="background-image:url('{{img}}');" {{#if background-img-title}} title='{{background-img-title}}' {{else}} title='{{title}}' {{/if}}>
+    <!--will change class to col2 in javascript -->
+    <a name="{{section-name}}" id="{{section-id-name}}"></a>
+    <div>
+        {{#each categories}}
+        {{#if onlyor}}
+        <article class="article-or">
+            <div><p>OR</p><img src="/resources/img/white_line_bundle.png" style="margin-bottom: -20px;" alt="separator line"></div>
+        </article>
+        {{else}}
+        <article class="article-{{@index}}">
+            <div>
+                <!-- item-name contains the name for product. LWT vs LT -->
+                <input type="hidden" id="item-name" value="{{item-name}}" />
+
+                {{#if items}}<label class="addon">
+                    {{#each items}}<span class="{{custom-class}}">{{label}}</span>{{/each}}
+                </label>
+                {{/if}}
+
+                <h2>{{{title}}}</h2>
+
+                <div>
+                    {{#each items}}
+                    <span class="select-option-{{custom-class}}">
+                        <input type="radio" name="{{input-name}}" value="{{input-value}}" id="{{input-id}}" {{#if checked}} checked="checked" {{/if}}>
+                        <label for="{{input-id}}">{{input-label}}</label>
+                    </span>
+                    {{/each}}
+                </div>
+
+                {{#each items}}
+                <p class="pricepoint {{custom-class}}"><sup class="dollar">$</sup>{{{price}}}</p>
+                <p class='og-price ep-bundle for-one {{custom-class}}'>unbundled price <del>{{{unbundled-price}}}</del></p>
+                <p class="included-title {{custom-class}}">{{{included-title}}}</p>
+                <p class="priceItem included-items {{custom-class}}">{{{included-items}}}</p>
+                {{/each}}
+
+                {{#if link-href}}
+                <a id="{{link-id}}" href="{{link-href}}" class="button fancybox fancybox.ajax button-med button-fluid-weak button-blue button-pad-0 button-width-200">{{link-title}}</a>
+                {{/if}}
+
+                {{#each items}}
+                <p class="priceItemdesc {{custom-class}}">{{{includes_disclaimer}}}</p>
+                {{/each}}
+
+            </div>
+        </article>
+        {{/if}}
+        {{/each}}
+        <div class="bundle_questions_box">
+            <div class="any_questions">
+                Any Questions? Start with the Last Will Bundle. Get advice. Upgrade later.
+                <br>
+                <a href="javascript:void window.open('/assets/modals/modal-satisfaction-guaranteed.html', '_blank', 'height=800,width=800,scrollbars=1,resizable=1');" class="header-modal-link any-questions-link">No hassle refund available for 60 days.</a>
+            </div>
+        </div>
+    </div>
+</section>

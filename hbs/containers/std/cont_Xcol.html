@@ -1,0 +1,14 @@
+<section class="col{{cols}} {{custom-class}}">
+    <div>
+        {{#if title}}<h1 class="center">{{title}}</h1>{{/if}}
+        {{#if sub_text}}<div class="center">{{{sub_text}}}</div>{{/if}}
+        {{#each article}}
+        <article class="item{{@index}}">
+            <h2>{{#if link-value}}<a href="{{link-value}}" aria-label="Learn more about {{{title}}}">{{{title}}}</a>{{else}}{{{title}}}{{/if}}</h2>
+            <p>{{{text}}} {{#if link}} <a href="{{link}}" aria-label="Read the full article about {{title}}">Read full article</a>{{/if}}</p>
+            {{#if img}}<p><img src="{{img}}" alt="{{alt}}"></p>{{/if}}
+        </article>
+        {{/each}}
+        {{#if follow_up_link}}<div class="center clear follow_up" aria-label="{{{follow_up_txt}}}"><a href="{{follow_up_link}}" id="followup_link">{{follow_up_txt}}</a></div>{{/if}}
+    </div>
+</section>

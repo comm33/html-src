@@ -1,0 +1,26 @@
+<section class="col2 stack {{custom-class}} background-50" id="why-choose-plan">
+    <div>
+        {{#each colitem}}
+        <article class="colitem{{@index}} {{custom-class}}">
+            <h4 class="center">{{headline}}</h4>
+            {{#if atty-thumb}}
+            <div class="center"><img src="{{atty-thumb}}" alt="{{img-alt}}" title='{{img-title}}' /></div>
+            {{/if}}
+            {{#if subtitle}}
+            <p class="center subtitle"><strong>{{{subtitle}}}</strong></p>
+            {{/if}}
+            {{#if sub-text}}
+            <p>{{sub-text}}</p>
+            {{/if}}
+            <ul>
+                {{#each list-items}}
+                <li>{{{list-item}}}</li>
+                {{/each}}
+            </ul>
+            {{#if bottom-text}}
+            <p class="center">{{{bottom-text}}}</p>
+            {{/if}}
+        </article>
+        {{/each}}
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="col1 ttInlineBlock {{custom-class}}">
+    <div>
+        <article>
+            <div itemscope="" itemtype="http://schema.org/Product">
+                <div class='wrapper'>
+                    <div class='tt-top {{top-custom-class}}'>
+                        {{#if show-heading}}<h2 class='ttHeader'>{{#if heading}}{{{heading}}}{{else}}Questions and answers{{/if}}</h2>{{/if}}
+                        {{#if show-blurb}}
+                            <p class='ttBlurb'>
+                                {{#if blurb}}
+                                    {{{blurb}}}
+                                {{else}}
+                                    This public forum is not intended to provide legal advice and is not a substitute for professional legal advice. Unless specifically indicated, the content is not drafted, supported, or vetted by LegalZoom. It is simply a place for customers to help customers. If you need legal advice, LegalZoom can connect you to a licensed and independent attorney. If you are providing answers, please do not provide legal advice if you are not qualified or licensed to do so.
+                                {{/if}}
+                            </p>
+                        {{/if}}
+                    </div>
+                    <div id="AAWrapperTabContainer"{{#if tt-custom-class}} class="{{tt-custom-class}}"{{/if}}>
+                        <div id="TurnToContent"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+﻿<section class="col1 bg-white {{custom-class}}">
+    {{#each testimonial}}
+    <div>
+        <div class="slider-div">
+            {{#if stars}}<img src="{{stars}}" class="stars" />{{/if}}
+            {{#if quote-product}}<a href="{{product-link}}" id="{{ga_event_label}}" onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{ga_event_label}}'});">{{quote-product}}</a>{{/if}}
+            <blockquote>
+                "{{{quote}}}"
+            </blockquote> <div class="attribution">-  <strong>{{{attribution-name}}}</strong>, {{{attribution-location}}}</div>
+        </div>
+    </div>
+    {{/each}}
+</section>

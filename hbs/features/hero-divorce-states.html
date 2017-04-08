@@ -1,0 +1,88 @@
+<section class="hero1 hero-left background-60 background-top height500 {{custom-class}}" style="background-image:url('{{img}}');" {{#if background-img-title}} title='{{background-img-title}}' {{/if}} {{#if background-img-alt}} alt='{{background-img-alt}}' {{else}} title='{{title}}' {{/if}}>
+    <div>
+        <article>
+            <div class="">
+                {{#if breadcrumbs}}<ul class="breadcrumbs">{{{breadcrumbs}}}</ul>{{/if}}
+                {{#if product-title}}<p class="product-title">{{{product-title}}}{{#if action}}<span class='action'>{{{action}}}</span>{{/if}}</p>{{/if}}
+                {{#if product-note}}<div class="product-note">{{{product-note}}}</div>{{/if}}
+                <h1>{{{title}}}</h1>
+                <p class='subheading'>{{{sub-heading}}}</p>
+                {{#if sub-heading-list}}
+                    <ul>{{{sub-heading-list}}}</ul>
+                {{/if}}
+                <div class="overview-pricing-cta {{mobile-cta}}">
+                    <p class="button-top">{{{pre-cta-button-text}}}</p>
+                    <div class="select-field">
+                        <div class="select-arrow-container">
+                            <div class="select-arrow llc-redesign-sprite"></div>
+                        </div>
+                        <select class="state-select hero-divorce-state-select j-divorce-state-select">
+                            <option value="">Select your state</option>
+                            <option data-type="wevorce" value="alabama">Alabama</option>
+                            <option data-type="wevorce" value="alaska">Alaska</option>
+                            <option data-type="lz" value="arizona">Arizona</option>
+                            <option data-type="wevorce" value="arkansas">Arkansas</option>
+                            <option data-type="wevorce" value="california">California</option>
+                            <option data-type="wevorce" value="colorado">Colorado</option>
+                            <option data-type="wevorce" value="connecticut">Connecticut</option>
+                            <option data-type="wevorce" value="delaware">Delaware</option>
+                            <option data-type="lz" value="florida">Florida</option>
+                            <option data-type="lz" value="georgia">Georgia</option>
+                            <option data-type="wevorce" value="hawaii">Hawaii</option>
+                            <option data-type="wevorce" value="idaho">Idaho</option>
+                            <option data-type="lz" value="illinois">Illinois</option>
+                            <option data-type="wevorce" value="indiana">Indiana</option>
+                            <option data-type="wevorce" value="iowa">Iowa</option>
+                            <option data-type="wevorce" value="kansas">Kansas</option>
+                            <option data-type="wevorce" value="kentucky">Kentucky</option>
+                            <option data-type="wevorce" value="lousiana">Lousiana</option>
+                            <option data-type="wevorce" value="maine">Maine</option>
+                            <option data-type="wevorce" value="maryland">Maryland</option>
+                            <option data-type="wevorce" value="massachusetts">Massachusetts</option>
+                            <option data-type="lz" value="michigan">Michigan</option>
+                            <option data-type="wevorce" value="minnesota">Minnesota</option>
+                            <option data-type="wevorce" value="mississippi">Mississippi</option>
+                            <option data-type="wevorce" value="missouri">Missouri</option>
+                            <option data-type="wevorce" value="montana">Montana</option>
+                            <option data-type="wevorce" value="nebraska">Nebraska</option>
+                            <option data-type="wevorce" value="nevada">Nevada</option>
+                            <option data-type="wevorce" value="new-hampshire">New Hampshire</option>
+                            <option data-type="lz" value="new-jersey">New Jersey</option>
+                            <option data-type="wevorce" value="new-mexico">New Mexico</option>
+                            <option data-type="lz" value="new-york">New York</option>
+                            <option data-type="wevorce" value="north-carolina">North Carolina</option>
+                            <option data-type="wevorce" value="north-dakota">North Dakota</option>
+                            <option data-type="wevorce" value="ohio">Ohio</option>
+                            <option data-type="wevorce" value="oklahoma">Oklahoma</option>
+                            <option data-type="wevorce" value="oregon">Oregon</option>
+                            <option data-type="lz" value="pennsylvania">Pennsylvania</option>
+                            <option data-type="wevorce" value="rhode-island">Rhode Island</option>
+                            <option data-type="wevorce" value="south-carolina">South Carolina</option>
+                            <option data-type="wevorce" value="south dakota">South Dakota</option>
+                            <option data-type="wevorce" value="tennessee">Tennessee</option>
+                            <option data-type="lz" value="texas">Texas</option>
+                            <option data-type="wevorce" value="utah">Utah</option>
+                            <option data-type="wevorce" value="vermont">Vermont</option>
+                            <option data-type="wevorce" value="virginia">Virginia</option>
+                            <option data-type="lz" value="washington">Washington</option>
+                            <option data-type="wevorce" value="west-virginia">West Virginia</option>
+                            <option data-type="wevorce" value="wisconsin">Wisconsin</option>
+                            <option data-type="wevorce" value="wyoming">Wyoming</option>
+                        </select>
+                    </div>
+                    <a href="javascript:void(0);" class="button button-med button-fluid-weak button-blue button-pad-0 button-width-300 j-divorce-state-button">{{cta-button-text}}</a>
+                    <p class="button-bottom">{{{button-subtext}}}</p>
+                    <p class="cta-links {{custom-cta-links-class}}">{{{button-subtext-followup}}}</p>
+                    {{#if button-subtext-promotion}}
+                        <p class="cta-links {{custom-cta-links-class}}">{{{button-subtext-promotion}}}</p>
+                    {{/if}}
+
+                </div>
+                <p class="final-copy-class {{final-copy-custom-class}}">{{{final-copy}}}</p>
+            </div>
+        </article>
+    </div>
+    {{#if caption}}<div class="caption">{{{caption}}}</div>{{/if}}
+</section>
+
+<script src="/resources/js/lz-divorce-states.js"></script>

@@ -1,0 +1,121 @@
+{
+  "": {
+    "head": {
+      "page-title": "",
+      "meta-description": "",
+      "meta-keywords": "",
+      "meta-og-title": "",
+      "product-id": "",
+      "meta-og-url": "",
+      "meta-og-description": ""
+    },
+    "headline": "Headline",
+    "breadcrumbs": "<li><a href='/'>Home</a> &#9656;</li><li><a href='/personal/'>Personal</a> &#9656;</li><li><a href='/personal/marriage-and-divorce'>Marriage and Divorce</a> &#9656;</li><li>Name Change</li>",
+    "pricing-table": {
+      "table-summary" :  "",
+      "custom-class": "lt-pricing-table last-column-white-background",
+      "satisfaction-guarantee": "Line above the table",
+      "label": "Green Label",
+      "col-heading": "Top left corner cell",
+      "package-title-col1": "Basic",
+      "package-title-col2": "Comprehensive",
+      "package-price-col1": "249",
+      "package-price-col2": "269",
+      "package-subtext-col1": "",
+      "package-subtext-col2": "",
+      "cta-button-title": "Get Started",
+      "cta-button-value": "#",
+      "row": [
+        {
+          "custom-row-class": "first-content-row",
+          "bold-text": "State-specific provisions.",
+          "description-text": "Tailored to the requirements of your state.",
+          "isIncludedCol1": true,
+          "isIncludedCol2": true
+        }
+      ]
+    },
+    "how-it-works": {
+      "custom-class": "",
+      "header": "How it works",
+      "text": "",
+      "bottom-sub-text": "For a more detailed view of our divorce process, <a href='/assets/modals/modal-trademark-process.html' class='fancybox fancybox.iframe'>click here</a>.",
+      "group": [
+        {
+          "icon": "/resources/img/icons/checklist.png",
+          "icon-alt": "",
+          "title": ""
+        },
+        {
+          "icon": "/resources/img/icons/search-doc.png",
+          "icon-alt": "",
+          "title": ""
+        },
+        {
+          "icon": "/resources/img/icons/mail-doc.png",
+          "icon-alt": "",
+          "title": ""
+        }
+      ]
+    },
+    "optional-services": {
+      "custom-class": "",
+      "header": "Optional Services",
+      "header-subtext": "You can also select additional products and services at checkout.",
+      "service": [
+        {
+          "mobile-text": "Please call (800) 773-0888",
+          "service-title": "Same-Day Processing",
+          "service-price": "$95.00"
+        },
+        {
+          "custom-id": "state-filing-fee-livingtrust-standard",
+          "mobile-text": "",
+          "service-title": "Real Estate Deed",
+          "service-price": "select state",
+          "additional-content": " <select id=\"state-filing-fee-select-livingtrust\"><option value=\"none\">Select a state</option></select>"
+        },
+        {
+          "mobile-text": "Please call (800) 773-0888",
+          "service-title": "Living Will",
+          "service-price": "$39.00"
+        },
+        {
+          "mobile-text": "",
+          "service-title": "Power Of Attorney",
+          "service-price": "$35.00"
+        }
+      ],
+      "subtext": "Questions? Contact us at <strong>(800) 733-0888</strong> or <a href=\"/customer-support/customer-support.html\">Send us an email</a>"
+    },
+    "testimonial": {
+      "custom-class": "testimonial",
+      "quote": "Had it not been for LegalZoom, I would not have been able to afford to create a Living Trust for my four children.",
+      "attribution-name": "Richard C.",
+      "attribution-location": "Bethany, IL"
+    },
+    "answers": {
+      "custom-class": "",
+      "header": "Ask away. We have answers. ",
+      "faq": {
+        "header": "Common questions",
+        "questions": [
+          {
+            "question": "",
+            "answer": ""
+          }
+        ]
+      },
+      "phone": "",
+      "is-bap": false
+    },
+    "seo-block": {
+      "top-line": "",
+      "body": [
+        { "line": "" }
+      ]
+    },
+    "model-link": "http://www.objgen.com/json/models/NMjJ",
+    "model-type": "pricing page"
+  }
+}

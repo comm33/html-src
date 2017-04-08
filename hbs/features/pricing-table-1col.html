@@ -1,0 +1,105 @@
+﻿<section class="col1 mobile-only">
+    <p class="center ptop-35"><strong>{{{satisfaction-guarantee}}}</strong></p>
+</section>
+
+<section class="col1 desktop-only">
+    <div>
+        <article>
+            <table border="0" cellspacing="0" cellpadding="0" summary="{{table-summary}}" class="{{custom-class}}" align="center">
+                <tbody>
+                    <tr>
+                        <th scope="col" colspan="2" class="satisfaction-guarantee">{{{satisfaction-guarantee}}}</th>
+                    </tr>
+                    <tr>
+                        <td class="col-heading">{{{col-heading}}}</td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col1}}}</h2>
+                            <p class="state-fees">{{{pre-price}}}</p>
+                            <p><sup>$</sup>{{{package-price-col1}}}</p>
+                            <p class="state-fees">{{{fee-description}}}{{#unless no-asterix}}<sup>*</sup>{{/unless}}</p>
+                            {{#if top-cta-button}}
+                                <button value="{{{top-cta-button-value}}}" {{top-cta-button-disabled}} type="button" class="{{#unless top-cta-button-value}}qstart{{/unless}}  button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{top-cta-button-title}}}</button>
+                            {{/if}}
+                        </td>
+                    </tr>
+                    {{#each row}}
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}">
+                            <div class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                                {{{description-text}}}
+                            </div>
+                        </td>
+                        {{#unless custom-content}}
+                            <td class="{{#if alwaysShowFull}}top-align{{/if}} row-amount-col1-{{@index}} {{custom-td-class}} {{table-cell-class}}" align="center"><strong>{{{Col1Content}}}</strong></td>
+                        {{else}}
+                            <td {{#if alwaysShowFull}}class="top-align" {{/if}}align="center">{{#if isIncludedCol1}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}</td>
+                        {{/unless}}
+                    </tr>
+                    {{/each}}
+                    {{#unless hide-bottom-cta-button}}
+                        <tr>
+                            <td class="bottomrow"></td>
+                            <td class="bottomrow" align="center"><button value="{{{cta-button-value}}}" {{cta-button-disabled}} type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button></td>
+                        </tr>
+                    {{/unless}}
+                </tbody>
+            </table>
+            {{#if dynamic-disclaimers}}
+                <section class="col1 stack dynamic-disclaimers">
+                    <div>
+                        <article>
+                            {{#each dynamic-disclaimers}}
+                                <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                                   id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                            {{/each}}
+                        </article>
+                    </div>
+                </section>
+            {{/if}}
+        </article>
+    </div>
+</section>
+<section class="modules-accordion col2 stack mobile-only">
+    <div>
+        <article>
+            <h2>{{{package-title-col1}}}</h2>
+            <p class="state-fees">{{{pre-price}}}</p>
+            <p class="pricepoint"><sup>$</sup>{{{package-price-col1}}}</p>
+            <p>{{{fee-description}}}</p>
+            <div class="hidden_content {{mobile-custom-detail-container-class}}">
+                {{#each row}}
+                <p>
+                    <div class="{{custom-wrapper-class}}">
+                        {{#unless custom-content}}
+                        <div class='mobile-price-row clear'>
+                            <span class='row-description-col1 inline-block'><strong>{{{bold-text}}}</strong><br />{{{description-text}}}</span>
+                            <span class='row-amount-col1 inline-block {{table-cell-class}}' >{{{Col1Content}}}</span>
+                        </div>
+                        {{else}}
+                            {{#if isIncludedCol1}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}<strong>{{{bold-text}}}</strong>
+                            {{#if alwaysShowFull}}{{{description-text}}}{{/if}}
+                        {{/unless}}
+                    </div>
+                </p>
+                {{/each}}
+            </div>
+            {{#unless hide-mobile-cta-button}}
+                <button value="{{{cta-button-value}}}" {{cta-button-disabled}} type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+            {{/unless}}
+            <div>{{#unless hide-expand}}<a class="viewmode">View details</a>{{/unless}}</div>
+        </article>
+        {{#if dynamic-disclaimers}}
+            <section class="col1 stack dynamic-disclaimers">
+                <div>
+                    <article>
+                        {{#each dynamic-disclaimers}}
+                            <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                               id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                        {{/each}}
+                    </article>
+                </div>
+            </section>
+        {{/if}}
+    </div>
+</section>

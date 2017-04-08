@@ -1,0 +1,62 @@
+<script type="text/javascript">
+    var turnToConfig = {
+        siteKey: "upFVXovZG2B93dTsite",
+        itemInputTeaserFunc: lzTurnTo.addCustomTeaser,
+        setupType: "dynamicEmbed"
+    };
+    (function () {
+        var tt = document.createElement('script'); tt.type = 'text/javascript'; tt.async = true;
+        tt.src = document.location.protocol + "//static.www.turnto.com/traServer4_2/trajs/" + turnToConfig.siteKey + "/tra.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tt, s);
+    })();
+</script>
+<script type="text/javascript" src="https://legalzoom.ugc.bazaarvoice.com/static/5016/bvapi.js" async></script>
+<section class="col1 bvtt hasBV hasAA">
+	<div>
+		<article>
+            <div id="reviewAATab">
+                <span id="ReviewsTab" class="pageTab tabOn">CUSTOMER REVIEWS</span>
+                <span id="AAWrapperTab" class="pageTab tabOff">QUESTIONS & ANSWERS</span>
+            </div>
+            <div id="ReviewsTabContainer" class="pageDivTab tabDivOn">
+                <div id="BVRRContainer">
+                    <script type="text/javascript">
+                        $BV.ui("rr", "show_reviews", {
+                            /*************************************/
+                            /* CHANGE PRODUCTID BASED ON PRODUCT */
+                            /*************************************/
+							productId: "6", 
+
+							submissionContainerUrl: "https://www.legalzoom.com/bazaarvoice/submissionPage.html",
+							onEvent: function (json) {
+								//modify reviews to ensure that attorneys text don't show up
+							    if (json.eventSource == "Display") {
+							        console.log(json);
+									LegalZoomBV.getStars(json.attributes.avgRating,null,'Read our customer reviews');
+									$('.hasBV .review-percent').text(json.attributes.percentRecommend + '% of reviewers recommend our Last Will & Testament');
+									$('#bvReviewBottomContainer .review-percent').text(json.attributes.percentRecommend + '% of reviewers recommend a LegalZoom Last Will & Testament');
+								}
+							}
+						});
+						//toggle tab click
+						$(document).ready(function () {
+							$("#reviewAATab .pageTab").click(function() {
+								lzTurnTo.openTab(this);
+							});
+						});
+                    </script>
+                    <div id="cta-BV-customize">
+                        <span id="cta-BV-text">Start Customizing Your Power of Attorney</span>
+                        <span>
+                            <a class="button button-orange button-large getstartedbutton" href="#" id="{{link-id}}"><div class="button-inner"><img alt="Get Started" src="/assets/images/button-large-text-getstarted.png"></div></a>
+                            <span id="cta-BV-button-text-below" style="left:220px;">It's about Peace of Mind</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="AAWrapperTabContainer" class="pageDivTab tabDivOff">
+                <div id="TurnToContent"></div>
+            </div>
+		</article>
+	</div>
+</section>

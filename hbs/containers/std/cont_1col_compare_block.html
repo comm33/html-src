@@ -1,0 +1,14 @@
+    <section class="col1 compareblock {{custom-class}}">
+        <div style="background-image:URL('{{bg-image}}')" class="{{custom-class-2}}"></div>
+        <div>
+            {{#each col}}
+                <article>
+                    <div class='col'>
+                        {{#each this}}
+                        <div class='cell {{class}} item{{@index}}'>{{{content}}}</div>
+                        {{/each}}
+                    </div>
+                </article>
+            {{/each}}
+        </div>
+    </section>

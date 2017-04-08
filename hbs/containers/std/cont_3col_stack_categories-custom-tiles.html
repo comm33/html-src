@@ -1,0 +1,27 @@
+<section class="col3 stack {{custom-class}}" {{#if background-image}} style='background-image:url({{img}});' {{/if}}>
+    {{#if title}}<h1 class="center">{{{title}}}</h1>{{/if}}
+    <div>
+        {{#each article}}
+        <article class="item{{@index}}" {{#if ga_event_label}}onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{ga_event_label}}'});"{{/if}}>
+            <a href="{{link}}" id="{{link-id}}">
+                <div class="{{#if bg-image}}background-50 background-top{{/if}} {{custom-class}}" {{#if bg-image}} style="background-image:URL('{{bg-image}}')" {{/if}} title="{{{short-title}}}">
+                    {{#if top-banner}}<div class="{{banner-class}}">{{{top-banner}}}</div>{{/if}}
+                    <div class='wrapper'>
+                        {{#if icon}}<img src='{{icon}}' />{{/if}}
+                        <h2 class="ep-categories">{{{title}}}</h2>
+                        <p>{{{text}}}</p>
+                        {{#if button}}<div class="button button-med button-fluid-weak button-pad-0 button-margin-10 button-width-200 {{button-class}}">{{{button}}}</div>{{/if}}
+                        <i class="font_icon font_icon-sm-med icon-arrow-right-circle"></i>
+                        {{#if rating}}
+                        <div id="{{rating}}" class="bvRatingsHome">
+                            <span class="review-stars"></span>
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+            </a>
+        </article>
+        {{/each}}
+    </div>
+    {{#if more-link}}<div class='more-link'><a href='{{more-link}}' id="more-link">{{{more-prompt}}}</a></div>{{/if}}
+</section>

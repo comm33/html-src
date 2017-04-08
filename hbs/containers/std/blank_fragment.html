@@ -1,0 +1,13 @@
+<section class="col1 {{custom-class}}">
+	<div>
+		<article>
+			<h1 class="{{h1-custom-class}}">{{{h1-copy}}}</h1>
+
+            {{#if h4-copy}}
+            {{#each h4-copy}}
+            <h4 class="top-copy{{#if h4-custom-class}} {{h4-custom-class}}{{/if}}">{{{h4-copy}}}</h4>
+            {{/each}}
+            {{/if}}
+		</article>
+	</div>
+</section>

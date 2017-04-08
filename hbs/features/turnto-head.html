@@ -1,0 +1,31 @@
+    <script type="text/javascript">
+        function ttAttachClick(){
+            $(".TTteaSearchLink").click(function() {
+                $('html, body').animate({scrollTop: $("#AAWrapperTabContainer").offset().top-200}, 500);
+            });
+            $("#TTinputTeaserBox a").css({"display":"none"});
+            $(".sidebyside-bv-turnto #TTinputTeaserBox").css({"margin-right":"0"});
+            $(".sidebyside-bv-turnto .TTteaSearchLink").css({"margin-left":"5px"});
+            //$(".sidebyside-bv-turnto .TTinputTeaserSearchline").css({"width":"48%"});
+        }
+          var turnToConfig = {
+            siteKey: turn_to_key,
+            setupType: "dynamicEmbed",
+            paginationQuestionsShownInitially: 5,
+            paginationQuestionsShownOnExpand: 5,
+            onloadFn: ttAttachClick
+            //optional, if you have reviews turned on you can define your reviews setup type by un-commenting the following line
+            //reviewsSetupType: "overlay" | "dynamicEmbed"
+          };
+
+          (function() {
+              var tt = document.createElement('script'); tt.type = 'text/javascript'; tt.async = true;
+              tt.src = document.location.protocol + "//static.www.turnto.com/traServer4_3/trajs/" + turnToConfig.siteKey + "/tra.js";
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tt, s);
+          })();
+        (function() {
+            var tt = document.createElement('script'); tt.type = 'text/javascript'; tt.async = true;
+            tt.src = document.location.protocol + "//static.www.turnto.com/sitedata/" + turn_to_key + "/v4_3/" + TurnToItemSku + "/d/itemjs";
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tt, s);
+        })();
+    </script>

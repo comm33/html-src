@@ -1,0 +1,13 @@
+<section class="col1 custom-disclaimer {{custom-class}}">
+    <div class="disclaimer">
+        {{#each disclaimers}}
+            <p{{#if custom-class}} class="{{custom-class}}"{{/if}}>{{{disclaimer}}}</p>
+        {{/each}}
+
+        {{#if dynamic-disclaimers}}
+            {{#each dynamic-disclaimers}}
+                <p class="deed_disclaimer" id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+            {{/each}}
+        {{/if}}
+    </div>
+</section>

@@ -1,0 +1,20 @@
+﻿<section class="col3 stack bg-white {{custom-class}}">
+    <div>
+        <center>
+            <h1>{{{header}}}</h1>
+            <p class="subheading">{{{text}}}</p>
+            {{#each group}}
+            <article class="{{@index}}">
+                <img src="{{icon}}" alt="{{icon-alt}}" title="{{icon-title}}">
+                <p><strong>{{{title}}}</strong></p>
+                {{#if sub-text}}
+                    <p>{{{sub-text}}}</p>
+                {{/if}}                
+            </article>
+            {{/each}}
+            {{#if bottom-sub-text}}
+                <p class="subheading-bottom clear">{{{bottom-sub-text}}}</p>
+            {{/if}}
+        </center>
+    </div>
+</section>

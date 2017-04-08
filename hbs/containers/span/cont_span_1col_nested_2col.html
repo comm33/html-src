@@ -1,0 +1,26 @@
+<section class="col2 {{custom-class}} stack background-50">
+    <div>{{#if header}}<h1>{{header}}</h1>{{/if}}
+    {{#if description}}<p class="subheading">{{{description}}}</p>{{/if}}
+        {{#each question}}
+        <article class="item{{@index}}">
+            <div>
+                <h2 class="header center">{{{title}}}</h2>
+                {{#if answer}}<p>{{{answer}}}</p>{{/if}}
+                {{#if answers}}
+                    {{#each answers}}
+                        <p class="{{answer-class}}">{{{answeritem}}}</p>
+                    {{/each}}
+                {{/if}}
+                {{#if answerbullets}}
+                    <ul>
+                        {{#each answerbullets}}
+                        <li>{{{answerbullet}}}</li>
+                        {{/each}}
+                    </ul>
+                {{/if}}
+                {{#if link}}{{{link}}}{{/if}}
+            </div>
+        </article>
+        {{/each}}
+    </div>
+</section>

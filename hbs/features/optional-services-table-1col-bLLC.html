@@ -1,0 +1,76 @@
+<section class="col1 desktop-only optional-services">
+    <div>
+        <article>
+            <center>               
+                <div align="center" class="optionalServicesContainer">
+                    <div align="center">
+                        <h2 class="optionalServicesHeader">{{{header}}}</h2>
+                        <p>{{{sub-header}}}</p>
+                    </div>
+                    <div align="center" class="optionalServicesItemsContainer">
+                        <div class="optionalServicesColLeft">
+                            {{#each left}}
+                            <div align="left" class="optionalServicesElement">
+                                {{{text}}}<br>
+                            </div>
+                            {{/each}}
+                        </div>
+                        <div class="optionalServicesColRight">
+                            {{#each right}}
+                            <div align="left" class="optionalServicesElement">
+                                {{{text}}}<br>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <p class="strong additional-copy">{{{additional}}}</p>
+                <p class="normal-text">{{{questions}}}</p>
+                <p id="addDisclaimerAZNV" class="dynamic_disclaimer_addon" style="display:none">{{additional-disclaimer}}</p>
+            </center>
+        </article>
+    </div>
+</section>
+<section class="modules-accordion col2 mobile-only stack optional-services">
+    <h2 class="center">{{{header}}}</h2>
+    <p class="center">{{{sub-header}}}</p>
+    <div>
+        <article>
+            <h2>{{{package-title-col1}}}</h2>
+            <div>
+                {{#each left}}
+                <div align="left" class="optionalServicesElementMobile">
+                    {{{text}}}<br>
+                </div>
+                {{/each}}
+            </div>
+            <div>
+                {{#each right}}
+                <div align="left" class="optionalServicesElementMobile">
+                    {{{text}}}<br>
+                </div>
+                {{/each}}
+            </div>
+        </article>
+    </div>
+    {{#unless hide-footer}}
+    <div>
+        <article>
+            <table border="0" cellspacing="0" cellpadding="0" class="footer {{custom-class}}">
+                <tbody>
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}" colspan="2">
+                            <div class="{{custom-wrapper-class}}">
+                                <p class="strong">{{{footer.bold-text}}}</p>
+                                <span class="normal-text">{{{footer.includedColText}}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </div>
+    {{/unless}}
+    <p class="center strong additional-copy">{{{additional}}}</p>
+    <p class="center">{{{questions}}}</p>
+</section>

@@ -1,0 +1,24 @@
+<section class="hero1 {{custom-class}}">
+    <div class="main-container">
+        <h1>{{header}}</h1>
+        <h3>{{subheader}}</h3>
+        <div class="four-blocks-container ">
+            {{#each individual-block}}
+            <div class="individual-block {{custom-class}}">
+                <a href="{{main-link}}" onclick="{{{main-link-onclick}}}" class="top-block"><span>{{{top-block-copy}}}</span><img src="/resources/img/icons/arrow-icon.svg" /></a>
+                <div class="bottom-block"><span>{{{bottom-block-copy}}}</span></div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+
+{{#if get-started-dropdown}}
+<div id="hero-get-started-dropdown">
+    <ul>
+        {{#each get-started-dropdown}}
+        <li><a href="{{dropdown-link}}" id="{{dropdown-link}}" {{#if ga_event_label}} onclick="utag.link({ ga_event_action: 'click', ga_event_category: 'global_home', ga_event_label: '{{ga_event_label}}' });" {{/if}}>{{dropdown-text}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+{{/if}}

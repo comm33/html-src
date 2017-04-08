@@ -1,0 +1,56 @@
+<section class="hero1 hero-left background-60 background-top desktop-only {{custom-class}}" id="hero-video">
+    <video autoplay poster="{{img}}" id="bgvid" loop preload="none">
+        <source id="hero-mp4" src="" type="video/mp4">
+        <source id="hero-webm" src="" type="video/webm">
+    </video>
+    <div title='{{title-tag}}' class="video-wrapper">
+        <article>
+            <h1>{{{title}}}</h1>
+            {{#if sub-heading}}
+            <p class='subheading'>{{{sub-heading}}}</p>
+            {{/if}}
+            <div class="overview-pricing-cta">
+                <a href="javascript:void(0)" id="hero-cta" class="button button-med button-fluid-weak button-blue button-pad-0 button-width-300" onclick="utag.link({ ga_event_action: 'click', ga_event_category: 'global_home', ga_event_label: 'home_hero_cta_button' });">{{{cta-button-text}}}<i class="font_icon font_icon-med icon-arrow-right"></i></a>
+            </div>
+        </article>
+        {{#if hero-anchor}}
+        <a id="hero-anchor-link" href="#product-leadin-home" onclick="utag.link({ ga_event_action: 'click', ga_event_category: 'global_home', ga_event_label: 'home_hero_arrow_icon' });"></a>
+        {{/if}}
+    </div>
+    {{#if quick-links}}
+    <section class="col5 stack quick-links">
+        <div>
+            {{#each quick-links}}
+            <article class="{{@index}}">
+                <a href="{{quick-link-url}}" title="Go to {{quick-link-text}}" id="hero_quick_link_{{quick-link-id}}" {{#if ga_event_label}} onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{ga_event_label}}'});" {{/if}}>
+                    <span class="quick-link-icon" style="background-image:url({{{quick-link-icon}}})"></span>
+                    <span class="quick-link-icon-hover" style="background-image:url({{{quick-link-icon-hover}}})"></span>
+                    <span class="quick-link-text">{{{quick-link-text}}}</span>
+                </a>
+            </article>
+            {{/each}}
+        </div>
+    </section>
+    {{/if}}
+</section>
+<section class="hero1 hero-left background-60 background-top {{mobile.custom-class}} mobile-only" id="hero-video-m">
+    <h1>{{{mobile.title}}}</h1>
+    {{#if mobile.links}}
+    {{#each mobile.links}}
+    <a href="{{link-url}}" style="background: url('{{background-img}}')" title="Go to {{{link-text}}}" id="hero_quick_link_{{link-id}}_mobile" {{#if ga_event_label}} onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{ga_event_label}}'});" {{/if}}>
+        {{{link-text}}}
+    </a>
+    {{/each}}
+    {{/if}}
+</section>
+{{#if get-started-dropdown}}
+<div id="hero-get-started-dropdown">
+    <ul>
+        {{#each get-started-dropdown}}
+        <li><a href="{{dropdown-link}}" id="{{dropdown-link}}" {{#if ga_event_label}} onclick="utag.link({ ga_event_action: 'click', ga_event_category: 'global_home', ga_event_label: '{{ga_event_label}}' });" {{/if}}>{{dropdown-text}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+{{/if}}
+<style>
+</style>

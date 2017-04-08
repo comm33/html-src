@@ -1,0 +1,53 @@
+<section class="col2 stack {{custom-class}} background-50" style="background-image:url('{{img}}')" {{#if background-img-alt}} alt='{{background-img-alt}}' {{/if}} {{#if background-img-title}} title='{{background-img-title}}' {{else}} title='{{title}}' {{/if}}>
+    <div>
+        <h1>{{header}}</h1>
+        {{#if pricing-learn-more}}<p class="pricing-learn-more">{{{pricing-learn-more}}}</p>{{/if}}
+        {{#each prices}}
+        <article class="item{{@index}}">
+            <div>
+                {{#if label}}<label class="addon">{{label}}</label>{{/if}}
+                <h2>{{{title}}}</h2>
+                {{#if subtitle}} <h3>{{subtitle}}</h3>{{/if}}
+                {{#if small-subtitle}} <p class="fees">{{small-subtitle}}</p>{{/if}}
+                <p class="pricepoint">
+                    <sup class="dollar">$</sup>{{{price}}}
+                    {{#if price-after}}<span class="priceAfterText">{{{price-after}}}</span>{{/if}}
+                </p>
+                {{#if fees}} <p class="fees">+ fees</p>{{/if}}
+                {{#if federal-filling-fees}} <p class="fees">+ federal filling fees*</p>{{/if}}
+                {{#if custom-fees}} <p class="fees">+ {{custom-fees}} fee{{#unless single-fee}}s{{/unless}}{{#if custom-fees-star}}*{{/if}}</p>{{/if}}
+                {{#if custom-all-fees}} <p class="fees">{{custom-all-fees}}</p>{{/if}}
+                <div class="pricing-items">
+                    {{#if upsell}}<p class="priceItemHilight">{{{upsell}}}</p>{{/if}}
+                    <p class="priceItem" {{{sub-text_1-inline-style}}}>{{{bold-text_1}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_1}}}</p>
+                    <p class="priceItem">{{{bold-text_2}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_2}}}</p>
+                    <p class="priceItem">{{{bold-text_3}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_3}}}</p>
+                    <p class="priceItem">{{{bold-text_4}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_4}}}</p>
+                    <p class="priceItem">{{{bold-text_5}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_5}}}</p>
+                    <p class="priceItem">{{{bold-text_6}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_6}}}</p>
+                    {{#if priceitems}}
+                    {{#each priceitems}}
+                    <p class="priceItem">{{{bold-text_item}}}</p>
+                    <p class="priceItemdesc">{{{sub-text_item}}}</p>
+                    {{/each}}
+                    {{/if}}
+                </div>
+                <p class="priceItemlink">{{{link}}}</p>
+                {{#if more_details}}
+                <p class="moreDetailsLink {{more-details-link-custom-class}}" {{{more-details-inline-style}}}><a href="{{more_details}}" class="center" id="{{link-id}}">More details</a></p>
+                {{/if}}
+                <button value="{{button-value}}" id="{{button-id}}" class="{{#unless no-qstart}}qstart {{/unless}}button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240 {{button-class}}" {{#if pricingDisabled}} disabled{{/if}}>{{button-title}}</button>
+            </div>
+        </article>
+        {{/each}}
+        {{#if bottom-text}}
+        <p class="priceBottomText">{{{bottom-text}}}</p>
+        {{/if}}
+    </div>
+</section>

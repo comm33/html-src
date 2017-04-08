@@ -1,0 +1,108 @@
+<section class="hero1 {{custom-class}}">
+    <div class="main-container">
+        <h1>
+            {{{header}}}
+        </h1>
+        <h3>
+            {{{sub-header}}}
+        </h3>
+        <div class="tiles-container {{tiles-container-class}}">
+
+            <div class="individual-container container-1">
+                <a href="{{item-1-anchor}}" onclick="{{item-1-anchor-onclick}}">
+                    <h3>
+                        {{{tile-1-header}}} <i class="font_icon font_icon-med icon-arrow-right"></i>
+                    </h3>
+                </a>
+                <a href="{{item-1-anchor}}" onclick="{{item-1-anchor-onclick}}">
+                    <h4>
+                        {{{tile-1-sub-header}}}
+                    </h4>
+                </a>
+                {{#if tile-1-bottom-links}}
+                <div class="tile-bottom">
+                    {{#each tile-1-bottom-links}}
+                    <a href="{{tile-1-anchor-href}}" onclick="{{tile-1-anchor-onclick}}">{{{tile-1-anchor-copy}}}</a>
+                    {{/each}}
+                </div>
+                {{/if}}
+            </div>
+
+            <div class="container-2">
+                <div class="container-2-top">
+
+                    <div class="individual-container container-2-top-left">
+                        <a href="{{item-2-anchor}}" onclick="{{item-2-anchor-onclick}}">
+                            <h3>
+                                {{{tile-2-header}}} <i class="font_icon font_icon-med icon-arrow-right"></i>
+                            </h3>
+                        </a>
+                        <a href="{{item-2-anchor}}" onclick="{{item-2-anchor-onclick}}">
+                            <h4>
+                                {{{tile-2-sub-header}}}
+                            </h4>
+                        </a>
+                        {{#if tile-2-bottom-links}}
+                        <div class="tile-bottom">
+                            {{#each tile-2-bottom-links}}
+                            <a href="{{tile-2-anchor-href}}" onclick="{{tile-2-anchor-onclick}}">{{{tile-2-anchor-copy}}}</a>
+                            {{/each}}
+                        </div>
+                        {{/if}}
+                    </div>
+
+                    <div class="individual-container container-2-top-right">
+                        <a href="{{item-4-anchor}}" onclick="{{item-4-anchor-onclick}}">
+                            <h3>
+                                {{{tile-4-header}}} <i class="font_icon font_icon-med icon-arrow-right"></i>
+                            </h3>
+                        </a>
+                        <a href="{{item-4-anchor}}" onclick="{{item-4-anchor-onclick}}">
+                            <h4>
+                                {{{tile-4-sub-header}}}
+                            </h4>
+                        </a>
+                        {{#if tile-4-bottom-links}}
+                        <div class="tile-bottom">
+                            {{#each tile-4-bottom-links}}
+                            <a href="{{tile-4-anchor-href}}" onclick="{{tile-4-anchor-onclick}}">{{{tile-4-anchor-copy}}}</a>
+                            {{/each}}
+                        </div>
+                        {{/if}}
+                    </div>
+                </div>
+
+                <div class="individual-container container-2-bottom">
+                    <a href="{{item-3-anchor}}" onclick="{{item-3-anchor-onclick}}">
+                        <h3>
+                            {{{tile-3-header}}} <i class="font_icon font_icon-med icon-arrow-right"></i>
+                        </h3>
+                    </a>
+                    <a href="{{item-3-anchor}}" onclick="{{item-3-anchor-onclick}}">
+                        <h4>
+                            {{{tile-3-sub-header}}}
+                        </h4>
+                    </a>
+                    {{#if tile-3-bottom-links}}
+                    <div class="tile-bottom">
+                        {{#each tile-3-bottom-links}}
+                        <a href="{{tile-3-anchor-href}}" onclick="{{tile-3-anchor-onclick}}">{{{tile-3-anchor-copy}}}</a>
+                        {{/each}}
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{#if get-started-dropdown}}
+<div id="hero-get-started-dropdown">
+    <ul>
+        {{#each get-started-dropdown}}
+        <li><a href="{{dropdown-link}}" id="{{dropdown-link}}" {{#if ga_event_label}} onclick="utag.link({ ga_event_action: 'click', ga_event_category: 'global_home', ga_event_label: '{{ga_event_label}}' });" {{/if}}>{{dropdown-text}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+{{/if}}

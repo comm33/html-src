@@ -1,0 +1,279 @@
+﻿<section class="col1 mobile-only">
+    <p class="center ptop-35"><strong class="satisfactionGuarantee">{{{satisfaction-guarantee}}}</strong></p>
+</section>
+
+<section class="col1 desktop-only {{desktop-custom-class}}">
+    <div>
+        <article>
+            <table border="0" cellspacing="0" cellpadding="0" summary="{{table-summary}}" class="pricing-table {{custom-class}}" align="center">
+                <tbody>
+                    <tr>
+                        <th scope="col" colspan="3" class="satisfactionGuarantee">{{{satisfaction-guarantee}}}</th>
+                        <th align="center" scope="col"><div class="addon">{{{label}}}</div></th>
+                    </tr>
+                    <tr>
+                        <td class="col-heading">{{{col-heading}}}</td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col1}}}</h2><p class="subtext">{{{package-subtext-col1}}}</p>
+                            <p class="package-price"><sup>$</sup>{{{package-price-col1}}}</p>
+                            {{#if show-state-fees}}
+                                {{#if custom-state-fee-text}}
+                                    {{#if product}}
+                                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy">{{{custom-state-fee-text}}}</span></p>
+                                    {{else}}
+                                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy">{{{custom-state-fee-text}}}</span></p>
+                                    {{/if}}
+                                {{else}}
+                                    {{#if product}}
+                                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy"></span></p>
+                                    {{else}}
+                                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy"></span></p>
+                                    {{/if}}
+                                {{/if}}
+                            {{/if}}
+                            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+                        </td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col2}}}</h2><p class="subtext">{{{package-subtext-col2}}}</p>
+                            <p class="package-price"><sup>$</sup>{{{package-price-col2}}}</p>
+                            {{#if show-state-fees}}
+                                {{#if custom-state-fee-text}}
+                                    {{#if product}}
+                                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-standard" class="state-filing-fee-{{product}}-standard">{{{custom-state-fee-text}}}</span></p>
+                                    {{else}}
+                                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-standard" class="state-filing-fee-{{../../product}}-standard">{{{custom-state-fee-text}}}</span></p>
+                                    {{/if}}
+                                {{else}}
+                                    {{#if product}}
+                                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-standard" class="state-filing-fee-{{product}}-standard"></span></p>
+                                    {{else}}
+                                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-standard" class="state-filing-fee-{{../../product}}-standard"></span></p>
+                                    {{/if}}
+                                {{/if}}
+                            {{/if}}
+                            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+                        </td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col3}}}</h2><p class="subtext">{{{package-subtext-col3}}}</p>
+                            <p class="package-price"><sup>$</sup>{{{package-price-col3}}}</p>
+                            {{#if show-state-fees}}
+                                {{#if custom-state-fee-text}}
+                                    {{#if product}}
+                                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-expressgold" class="state-filing-fee-{{product}}-expressgold">{{{custom-state-fee-text}}}</span></p>
+                                    {{else}}
+                                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-expressgold" class="state-filing-fee-{{../../product}}-expressgold">{{{custom-state-fee-text}}}</span></p>
+                                    {{/if}}
+                                {{else}}
+                                    {{#if product}}
+                                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-expressgold" class="state-filing-fee-{{product}}-expressgold"></span></p>
+                                    {{else}}
+                                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-expressgold" class="state-filing-fee-{{../../product}}-expressgold"></span></p>
+                                    {{/if}}
+                                {{/if}}
+                            {{/if}}
+                            {{#if package-price-below-text-col3}}<p class="subtext">{{{package-price-below-text-col3}}}</p>{{/if}}
+                            {{#if cta-go-to-3}}
+                            <button value="{{{cta-go-to-3}}}" type="button" class="button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+                            {{else}}
+                            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+                            {{/if}}
+                        </td>
+                    </tr>
+                    {{#each row}}
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}">
+                            <div class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                                {{{description-text}}}
+                            </div>
+                        </td>
+                        <td {{#if alwaysShowFull}} class="top-align" {{/if}} align="center">{{#if includeImage}}{{#if isIncludedCol1}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedCol1Text}}}{{/if}}</td>
+                        <td {{#if alwaysShowFull}} class="top-align" {{/if}} align="center">{{#if includeImage}}{{#if isIncludedCol2}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedCol2Text}}}{{/if}}</td>
+                        <td {{#if alwaysShowFull}} class="top-align" {{/if}} align="center">{{#if includeImage}}{{#if isIncludedCol3}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedCol3Text}}}{{/if}}</td>
+                    </tr>
+                    {{/each}}
+                    <tr>
+                        <td class="bottomrow"></td>
+                        <td class="bottomrow" align="center"><button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button></td>
+                        <td class="bottomrow" align="center"><button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button></td>
+                        <td class="bottomrow" align="center">{{#if cta-go-to-3}}<button value="{{{cta-go-to-3}}}" type="button" class="button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>{{else}}<button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>{{/if}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {{#if dynamic-disclaimers}}
+                <section class="col1 stack dynamic-disclaimers">
+                    <div>
+                        <article>
+                            {{#each dynamic-disclaimers}}
+                                <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                                   id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                            {{/each}}
+                        </article>
+                    </div>
+                </section>
+            {{/if}}
+        </article>
+    </div>
+</section>
+<section class="modules-accordion col2 stack mobile-only {{mobile-custom-class}}">
+    <div>
+        <article>
+            <h2>{{{package-title-col1}}}</h2>
+            <p><strong>{{{package-subtext-col1}}}</strong></p>
+            <p class="pricepoint package-price"><sup>$</sup>{{{package-price-col1}}}</p>
+            {{#if package-subtext-col1-mobile}}<p><strong>{{{package-subtext-col1-mobile}}}</strong></p>{{/if}}
+            {{#if show-state-fees}}
+                {{#if custom-state-fee-text}}
+                    {{#if product}}
+                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy">{{{custom-state-fee-text}}}</span></p>
+                    {{else}}
+                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy">{{{custom-state-fee-text}}}</span></p>
+                    {{/if}}
+                {{else}}
+                    {{#if product}}
+                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy"></span></p>
+                    {{else}}
+                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy"></span></p>
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+            <div class="hidden_content">
+                {{#each row}}
+                    <p>
+                        <div class="{{custom-wrapper-class}}">
+                            {{#if includeImageMobile}}
+                                {{#if isIncludedCol1}}
+                                    <img src="/assets/images/blue_check.png" alt="available"/>
+                                {{else}}
+                                    <img src="/assets/images/red_x.png" alt="not available"/>
+                                {{/if}}
+                            {{/if}}
+                            <strong>{{{bold-text}}}</strong>
+
+                            {{#unless hide-includedCol1Text}}
+                                <br/>
+                                {{#if includedColRegular}}
+                                    <span class="included-col-text {{includedColRegularClass}}">{{{includedCol1Text}}}</span>
+                                {{else}}
+                                <strong>{{{includedCol1Text}}}</strong>
+                                {{/if}}
+                            {{/unless}}
+
+                            {{#if alwaysShowFull}}
+                                {{{description-text}}}
+                            {{/if}}
+                        </div>
+                    </p>
+                {{/each}}
+            </div>
+            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+            <div><a class="viewmode">View details</a></div>
+        </article>
+    </div>
+
+    <div>
+        <article>
+            <h2>{{{package-title-col2}}}</h2>
+            <p><strong>{{{package-subtext-col2}}}</strong></p>
+            <p class="pricepoint package-price"><sup>$</sup>{{{package-price-col2}}}</p>
+            {{#if package-subtext-col2-mobile}}<p><strong>{{{package-subtext-col2-mobile}}}</strong></p>{{/if}}
+            {{#if show-state-fees}}
+                {{#if custom-state-fee-text}}
+                    {{#if product}}
+                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-standard" class="state-filing-fee-{{product}}-standard">{{{custom-state-fee-text}}}</span></p>
+                    {{else}}
+                        <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-standard" class="state-filing-fee-{{../../product}}-standard">{{{custom-state-fee-text}}}</span></p>
+                    {{/if}}
+                {{else}}
+                    {{#if product}}
+                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-standard" class="state-filing-fee-{{product}}-standard"></span></p>
+                    {{else}}
+                        <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-standard" class="state-filing-fee-{{../../product}}-standard"></span></p>
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+            <div class="hidden_content">
+                {{#each row}}
+                <p>
+                    <div class="{{custom-wrapper-class}}">
+                        {{#if includeImageMobile}}{{#if isIncludedCol2}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{/if}}
+                        <strong>{{{bold-text}}}</strong>
+                        {{#unless hide-includedCol2Text}}
+                            <br/>
+                            {{#if includedColRegular}}
+                        <span class="included-col-text {{includedColRegularClass}}">{{{includedCol2Text}}}</span>
+                            {{else}}
+                            <strong>{{{includedCol2Text}}}</strong>
+                            {{/if}}
+                        {{/unless}}
+                        {{#if alwaysShowFull}}{{{description-text}}}{{/if}}
+                    </div>
+                </p>
+                {{/each}}
+            </div>
+            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+            <div><a class="viewmode">View details</a></div>
+        </article>
+    </div>
+    <div>
+        <article class="bg-soft-blue">
+            <label class="addon">{{{label}}}</label>
+            <h2>{{{package-title-col3}}}</h2>
+            <p><strong>{{{package-subtext-col3}}}</strong></p>
+            <p class="pricepoint package-price"><sup>$</sup>{{{package-price-col3}}}</p>
+            {{#if package-subtext-col3-mobile}}{{#if package-price-below-text-col3}}<span class="mobile-package-price-subtext">{{{package-price-below-text-col3}}}</span><br/>{{/if}}<p><strong>{{{package-subtext-col3-mobile}}}</strong></p>{{/if}}
+            {{#if show-state-fees}}
+            {{#if custom-state-fee-text}}
+            {{#if product}}
+            <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-expressgold" class="state-filing-fee-{{product}}-expressgold">{{{custom-state-fee-text}}}</span></p>
+            {{else}}
+            <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-expressgold" class="state-filing-fee-{{../../product}}-expressgold">{{{custom-state-fee-text}}}</span></p>
+            {{/if}}
+            {{else}}
+            {{#if product}}
+            <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-expressgold" class="state-filing-fee-{{product}}-expressgold"></span></p>
+            {{else}}
+            <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-expressgold" class="state-filing-fee-{{../../product}}-expressgold"></span></p>
+            {{/if}}
+            {{/if}}
+            {{/if}}
+            <div class="hidden_content">
+                {{#each row}}
+                <p>
+                    <div class="{{custom-wrapper-class}}">
+                        {{#if includeImageMobile}}{{#if isIncludedCol3}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{/if}}
+                        <strong>{{{bold-text}}}</strong>
+                        {{#unless hide-includedCol3Text}}
+                        <br />
+                        {{#if includedColRegular}}
+                        <span class="included-col-text {{includedColRegularClass}}">{{{includedCol3Text}}}</span>
+                        {{else}}
+                        <strong>{{{includedCol3Text}}}</strong>
+                        {{/if}}
+                        {{/unless}}
+                        {{#if alwaysShowFull}}{{{description-text}}}{{/if}}
+                    </div>
+                </p>
+                {{/each}}
+            </div>
+            {{#if cta-go-to-3}}
+            <button value="{{{cta-go-to-3}}}" type="button" class="button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+            {{else}}
+            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+            {{/if}}
+            <div><a class="viewmode">View details</a></div>
+        </article>
+    </div>
+    {{#if dynamic-disclaimers}}
+        <section class="col1 stack dynamic-disclaimers">
+            <div>
+                <article>
+                    {{#each dynamic-disclaimers}}
+                        <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                           id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                    {{/each}}
+                </article>
+            </div>
+        </section>
+    {{/if}}
+</section>

@@ -1,0 +1,85 @@
+<section class="{{custom-class}}" style="background-image:url('{{img}}');" {{#if background-img-title}} title='{{background-img-title}}' {{/if}} {{#if background-img-alt}} alt='{{background-img-alt}}' {{else}} title='{{title}}' {{/if}}>
+    <div>
+        <article>
+            <div class="{{main-container}}">
+                <section class="{{bundle-1}}">
+                    <header class="{{header-1}}">
+                        <p>
+                            {{{header-1-copy}}}
+                        </p>
+                    </header>
+                    <header class="{{header-2}}">
+                        <img class="{{header-image-class}}" src="{{header-image-src}}" alt="{{header-image-alt}}">
+                        <h3>
+                            {{{header-2-copy}}}
+                        </h3>
+                    </header>
+                    <main class="hero-main">
+                        {{#each items}}
+                        <article class="item-{{@index}}">
+                            <div class="{{item-mark-class}}">
+                                <img src="{{item-mark-img-path}}" alt="{{item-mark-img-alt}}">
+                            </div>
+                            <div class="{{item-copy-class}}">
+                                <p>
+                                    <span class="{{item-p-class}}">
+                                        {{{item-copy}}}
+                                    </span>
+                                    <span class="more-details">
+                                        More details
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="{{item-value-class}}">
+                                <p>
+                                    {{{item-value-copy}}} <span class="item-value">{{{item-value-money}}}</span>
+                                </p>
+                            </div>
+                        </article>
+                        {{/each}}
+                    </main>
+                    <summary>
+                        <div class="{{summary-cta}}">
+                            <button class="{{cta-class}}">{{{cta-copy}}}</button>
+                        </div>
+                        <div class="{{summary-cost}}">
+                            <p class="{{summary-value}}">
+                                {{{summary-value-copy}}} <span class="summary-value-money">{{{summary-value-money}}}</span>
+                            </p>
+                            <p class="{{summary-save}}">
+                                {{{summary-save-copy}}} <span class="summary-save-money">{{{summary-save-money}}}</span>
+                            </p>
+                            <p class="{{summary-price}}">
+                                {{{summary-price-copy}}} <span class="summary-price-money">{{{summary-price-money}}}</span>
+                            </p>
+                        </div>
+                    </summary>
+                </section>
+                <section class="{{bundle-2}}">
+                    <header>
+                        <img src="{{bundle-2-header-image-path}}" alt="{{bundle-2-header-image-alt}}">
+                        <h3>
+                            {{{bundle-2-header-copy}}}
+                        </h3>
+                    </header>
+                    <main class="hero-main hero-main-only-one">
+                        <div class="{{bundle-2-item-mark-class}}">
+                            <img src="{{bundle-2-item-mark-img-path}}" alt="{{bundle-2-item-mark-img-alt}}">
+                        </div>
+                        <div class="{{bundle-2-item-copy-class}}">
+                            <p>
+                                {{{bundle-2-main-copy}}}
+                            </p>
+                        </div>
+                    </main>
+                    <summary>
+                        <p>
+                            {{{bundle-2-summary-price-copy}}} <span class="product-price">{{{bundle-2-summary-price-money}}}</span>
+                        </p>
+                        <button class="{{bundle-2-summary-button-class}}">{{{bundle-2-summary-button-copy}}}</button>
+                    </summary>
+                </section>
+            </div>
+        </article>
+    </div>
+</section>

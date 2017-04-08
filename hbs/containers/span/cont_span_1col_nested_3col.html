@@ -1,0 +1,22 @@
+<section class="col3 stack {{custom-class}}">
+    {{#if article}}
+        <h1>{{article.header}}</h1>
+        <p class="subheading">{{{article.sub-header}}}</p>
+    {{/if}}
+    <h1>{{{header}}}</h1>
+    {{#if sub-heading}}<p class='subheading'>{{{sub-heading}}}</p>{{/if}}
+    <div>
+        {{#each group}}
+            <article class="item{{@index}}">
+                <div>
+                    <img src="{{icon}}"
+                     alt="{{img-alt}}"
+                     title="{{img-title}}"
+                     class="{{img-class}}"/>
+                    {{#if title}}<h2>{{{title}}}</h2>{{/if}}
+                    <p>{{{text}}}</p>
+                </div>
+            </article>
+        {{/each}}
+    </div>
+</section>

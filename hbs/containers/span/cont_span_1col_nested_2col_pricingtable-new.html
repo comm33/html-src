@@ -1,0 +1,47 @@
+<section class="col2 stack {{custom-class}} " >
+    <div>
+        <h1>{{header}}</h1>
+        {{#if pricing-learn-more}}<p class="pricing-learn-more">{{{pricing-learn-more}}}</p>{{/if}}
+        <div  class="center">
+        {{#each prices}}
+            <article class="item{{@index}}">
+                <div>
+                    {{#if label}}<label class="addon">{{label}}</label>{{/if}}
+                    <h2>{{{title}}}</h2>
+                    {{#if subtitle}} <h3>{{subtitle}}</h3>{{/if}}
+                    {{#if small-subtitle}} <p class="fees">{{small-subtitle}}</p>{{/if}}
+                    <p class="pricepoint">
+                        <span class="dollar">$</span>{{{price}}}
+                        {{#if price-after}}
+                    <p class="priceAfterText">{{{price-after}}}</p>{{/if}}
+                 
+                    {{#if fees}} <p class="fees">+ fees</p>{{/if}}
+                    {{#if federal-filling-fees}} <p class="fees">+ federal filling fees*</p>{{/if}}
+                    {{#if custom-fees}} <p class="fees">+ {{custom-fees}} fee{{#unless single-fee}}s{{/unless}}{{#if custom-fees-star}}*{{/if}}</p>{{/if}}
+                    {{#if custom-all-fees}} <p class="fees">{{custom-all-fees}}</p>{{/if}}
+
+                    <p class="{{custom-class}}">{{{disclaimer}}}</p>
+                    {{#if more_details}}
+                    <p class="moreDetailsLink {{more-details-link-custom-class}}" {{{more-details-inline-style}}}><a href="{{more_details}}" class="center" id="{{link-id}}">More details</a></p>
+                    {{/if}}
+                    <button value="{{button-value}}" id="{{button-id}}" class="{{#unless no-qstart}}qstart {{/unless}}button-med-lg button-fluid-weak  button-pad-0 button-width-240 {{button-class}}" {{#if pricingDisabled}} disabled{{/if}}>{{button-title}}</button>
+                </div>
+            </article>
+        {{/each}}
+        </div>
+        <section class="legal-includes">
+            <h1>{{legal-plan-header}}</h1>
+            {{#each legal-plan-feature}}
+            <article>
+                {{#each legal-plan-subtext}}
+                <div class="{{custom-class}}"><div class="img-div"><img src="{{{custom-img-src}}}" class="{{custom-img-class}}" /></div>{{{legal-plan-text}}}</div>
+                {{/each}}
+               </article>
+            {{/each}}
+         
+        </section>
+        {{#if bottom-text}}
+        <p class="priceBottomText">{{{bottom-text}}}</p>
+        {{/if}}
+    </div>
+</section>

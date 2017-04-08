@@ -1,0 +1,20 @@
+﻿<section class="{{custom-class}} col4 stack bg-white">
+    <div>
+        <center>
+            <h1>{{{header}}}</h1>
+            {{#if text}}<p class="subheading">{{{text}}}</p>{{/if}}
+            {{#each group}}
+            <article class="article{{@index}}">
+                <img src="{{icon}}" alt="{{icon-alt}}">
+                <p><strong>{{{title}}}</strong></p>
+                {{#if sub-text}}
+                    <p>{{sub-text}}</p>
+                {{/if}}                
+            </article>
+            {{/each}}
+        </center>
+        {{#if special-content}}
+        <div class="process_module_subtext">{{{special-sub-text}}}</div>
+        {{/if}}
+    </div>
+</section>    

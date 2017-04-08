@@ -1,0 +1,48 @@
+<script type="text/javascript" src="https://legalzoom.ugc.bazaarvoice.com/static/5016/bvapi.js" async></script>
+<section class="col1 bvtt hasBV hasAA">
+	<div>
+		<article>
+            <div id="ReviewsWrapper" class="pageDivTab tabDivOn">
+                <div id="BVRRContainer">
+                    <script type="text/javascript">
+                        var giProduct = 0;
+                        try { giProduct = fkProduct; } catch (e) { }
+                        $BV.ui("rr", "show_reviews", {
+                            productId: giProduct,
+                            submissionContainerUrl: "https://www.legalzoom.com/bazaarvoice/submissionPage.html",
+                            onEvent: function (json) {
+                                var product = legalzoomProducts.where({ productID: giProduct });
+                                var sProduct = product ? product[0].get('product') : "";
+                                //modify reviews to ensure that attorneys text don't show up
+                                if (json.eventSource == "Display") {
+                                    LegalZoomBV.getStars(json.attributes.avgRating, null);
+                                    $('.hasBV .review-percent').text(json.attributes.percentRecommend + '% of reviewers recommend our ' + sProduct);
+                                    $('#bvReviewBottomContainer .review-percent').text(json.attributes.percentRecommend + '% of Reviewers Recommend a LegalZoom ' + sProduct);
+                                    $("#cta-BV-text").text("Start Customizing Your " + sProduct);
+                                }
+                            }
+                        });
+                        //toggle tab click
+                        $(document).ready(function () {
+                            $("#reviewAATab .pageTab").click(function () {
+                                lzTurnTo.openTab(this);
+                            });
+                        });
+                    </script>
+                    <div id="cta-BV-customize">
+                        <span id="cta-BV-text">Start Customizing Your Power of Attorney</span>
+                        <span>
+                            <a class="button button-orange button-large getstartedbutton" href="#" id="getStarted"><div class="button-inner"><img alt="Get Started" src="/assets/images/button-large-text-getstarted.png"></div></a>
+                            <span id="cta-BV-button-text-below" style="left:220px;">It's about Peace of Mind</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div id="AAWrapperTabContainer" class="pageDivTab tabDivOff">
+                <div id="TurnToContent"></div>
+            </div>
+            -->
+		</article>
+	</div>
+</section>

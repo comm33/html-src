@@ -1,0 +1,23 @@
+<section class="col1 comparetable {{custom-class}}">
+   <div style="background-image:URL('{{bg-image}}')" class="{{custom-class-2}}"></div>
+   <div class="{{custom-table-class}}">
+	  <article>
+		 <table>
+			<tbody>
+			    <tr>
+				   {{#each header}}
+				   <th class="item{{@index}}">{{{item}}}</th>
+				   {{/each}}
+			    </tr>
+			    {{#each row}}
+			    <tr>
+				   {{#each this}}
+				   <td class='{{class}} item{{@index}}'>{{{content}}}</td>
+				   {{/each}}
+			    </tr>
+			    {{/each}}
+			</tbody>
+		 </table>
+	  </article>
+   </div>
+</section>

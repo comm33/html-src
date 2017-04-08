@@ -1,0 +1,63 @@
+{{#file.data.global_nav}}
+    <header id="nav-test-wrapper" style="display:none;">
+        <section id="test-navigation" class="col1 nav_outer">
+            <div class="hdr_ccare_number">Customer Care:<strong id="headerPhoneNumber" class="ccpod_phone_num"></strong></div>
+            <div class="nav_upper">
+                <a href="/" name="TopLogo-Home" id="{{id}}"> <img id="lzLogo" src="/assets/images/logos/legalzoom_logo_site_upper_left.gif" title="LegalZoom" alt="LegalZoom" style="border:none;"></a>
+                <div class="login_block">
+                    <span id="loggedout">
+                        <a href="/LZWeb/Welcome/SignIn.aspx?sReturnPage=/LZWeb/MyAccount/" id="home-page-sign-in" class="button button-sm button-fluid-weak button-blue button-pad-10" name="My%20Account-_-Top%20Text-_-Membership">Sign In</a>
+                    </span>
+                    <span id="loggedin" style="display:none;">
+                        <a href="/LZWeb/Welcome/LogOut.aspx" id="{{id}}">Log Out</a>
+                        <a href="/LZWeb/MyAccount/" id="home-page-my-account" class="button button-sm button-fluid-weak button-blue button-pad-10" name="My%20Account-_-Top%20Text-_-Membership">My Account</a>
+                    </span>
+                    <a href="#" id="help_link" class="dropdown_links">
+                        Help<i class="font_icon font_icon-sm icon-arrow-down"></i>
+                        <div id="help_dropdown" class="nav_dropdowns"><ul><li><a href="/LZWeb/MyAccount/OrderStatus.aspx?sReturnPage=/LZWeb/MyAccount/OrderStatus.aspx" id="{{id}}">Check order status</a></li><li><a href="/customer-support/customer-support.html" id="{{id}}">Contact us</a></li></ul></div>
+                    </a>
+                    <a href="#" id="search_link" class="dropdown_links"><i class="font_icon font_icon-sm icon-search"></i></a>
+                    <div id="search_dropdown" class="nav_dropdowns">
+                        <div class="feature-search">
+                            <form id="cse-search-box-1" class="search-box" style="display:inline" action="//www.legalzoom.com/search.html" role="search">
+                                <input type="hidden" name="cx" value="013796009449807619047:i9brh-ikdma">
+                                <input type="hidden" name="ie" value="UTF-8">
+                                <input type="text" name="q" placeholder="I&apos;m looking for..." size="20" autocomplete="off" id="search-input-1" class="ac_input">
+                            </form>
+                            <img class="feature-search-icon" src="/assets/images/header-feature-search-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_menu" role="navigation">
+                <div class="scrollbox">
+                    <ul id="topnav" role="menubar" aria-label="Primary">
+                        {{#each top_item}}
+                        <li aria-labelledby="category-link" role="presentation">
+                            <a href="#" class="category-link" id="{{id}}">{{#if image}}<img src="{{image}}" alt="{{alt_title}} link" title="{{alt_title}}">{{else}}{{name}}{{/if}}<i class="font_icon font_icon-sm icon-arrow-down"></i></a> {{#if sub_nav}}
+                            <ul class="subnav" role="menu" aria-label="Secondary">
+                                {{#each sub_nav}}
+                                <li {{#if nav_promo}} class="nav_promo" {{/if}} role="presentation">
+                                    <a href="{{link}}" class="subnavheading" id="{{id}}">{{#if nav_promo}}<img src="{{bg_img}}" class="promo-image" alt="">{{else}}{{heading}}{{/if}}</a> {{#if sub_items}}
+                                    <ul id="" class="sub_sub_nav" role="menu">
+                                        {{#each sub_items}}
+                                        <li 
+                                            {{#if is_promo}} class="is_promo" {{/if}} role="presentation">{{#if is_promo}}<div class="promoheading">{{promoheading}}{{#if promo-image}}<img src='{{promo-image}}' class="promo-side-image {{promo-custom-class}}" alt='{{{promo-title}}}' title='{{{promo-title}}}'>{{/if}}</div>{{/if}}<a href="{{link}}" class="subsubnavlink" id="{{id}}" role="menuitem">{{name}}</a> {{#if pro_icon}}<img src="/assets/images/icons/nav-pro-sign.png" alt="{{name}} is a Pro package">{{/if}}
+                                            {{#if post-promo}}{{{post-promo}}}{{/if}}
+                                        </li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--#include virtual="/resources/includes/nav_version2.html" -->
+{{/file.data.global_nav}}

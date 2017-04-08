@@ -1,0 +1,32 @@
+﻿<section class="col2 stack specatty {{custom-class}}">
+    <h1>Ask away.  We have answers.</h1>
+    <div>
+        <article>
+            <div id="customercare">
+                <h2>A specialist is here to help</h2>
+                <img src="/resources/img/icons/customer-care.png" alt="Customer Care" title='Ask a Specialist Questions about {{ask-away-icon-alt}}' />
+                <p class="ccphone ccpod_phone_num">(866) 738-2980</p>
+                <p class="cchours">We're available <span>{{#if first-hours}}{{{first-hours}}}{{else}}Mon-Fri 5am-7pm PT{{/if}}</span>, <span>{{#if second-hours}}{{{second-hours}}}{{else}}Weekends 7am-4pm PT.{{/if}}</span></p>
+                <p class="xeno"><img src="/resources/img/icons/american-flag.png" alt="American Flag" />{{#if agent-text}}{{agent-text}}{{else}}Our agents are based in the United States.{{/if}}</p>
+            </div>
+        </article>
+        <hr />
+        <article>
+            <div id="attorneyhelp">
+                <h2>Speak with an attorney</h2>
+                <img src="{{#if alt-atty-image}}{{alt-atty-image}}{{else}}/resources/img/icons/atty.png{{/if}}" alt="Attorney" title='Talk to an Attorney &ndash; Get Legal Advice' />
+                <p>Get legal advice from an independent attorney at a price you can afford.</p>
+                {{#if biz_plan_type}}
+                <button class="button-med-lg button-fluid-weak button-green button-pad-0 button-margin-10 button-width-240" value='/attorneys-lawyers/legal-plans/business' id="legal-plans_business">Find out more</button>
+                {{else}}
+                <button class="button-med-lg button-fluid-weak button-green button-pad-0 button-margin-10 button-width-240" value='/attorneys-lawyers/legal-plans/personal' id="legal-plans_personal">Find out more</button>
+                {{/if}}
+                {{#if biz_plan_type}}
+                    <p>Pricing starts at {{#if biz_plan_price}}{{biz_plan_price}}/month{{else}}$23.99/month{{/if}}</p>
+                {{else}}
+                    <p>Pricing starts at $9.99/month</p>
+                {{/if}}
+            </div>
+        </article>
+    </div>
+</section>

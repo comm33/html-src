@@ -1,0 +1,109 @@
+{{#file.data.global_nav_version2}}
+<header id="nav-version2-wrapper" style="display:none;">
+    <section id="navigation-version2" class="col1 nav_outer">
+        <div class="nav_menu" id="desktop_menu" role="navigation">
+            <div class="scrollbox">
+                <div id="nav_content_wrapper">
+                    <a href="/" name="TopLogo-Home" id="{{id}}"> <img id="lzLogo" src="/assets/images/logos/legalzoom_logo_site_upper_left.gif" title="LegalZoom" alt="LegalZoom" style="border:none;"></a>
+                    <ul id="topnav-version2" role="menubar" aria-label="Primary">
+                        {{#each top_item}}
+                        <li aria-labelledby="category-link" role="presentation">
+                            <a href="#" {{#if id}} id="{{id}}" {{/if}}class="category-link">{{#if image}}<img src="{{image}}" alt="{{alt_title}} link" title="{{alt_title}}">{{else}}{{name}}{{/if}}<i class="font_icon font_icon-sm icon-arrow-down"></i></a> {{#if sub_nav}}
+                            <ul class="subnav dontsplit" role="menu" aria-label="Secondary">
+                                {{#each sub_nav}}
+                                <li class="dontsplit{{#if nav_promo}} nav_promo {{/if}} {{custom-class}}" role="presentation">
+                                    <a href="{{link}}" class="subnavheading" id="{{id}}">{{#if nav_promo}}<img src="{{bg_img}}" class="promo-image" alt="">{{else}}{{heading}}{{/if}}</a> {{#if sub_items}}
+                                    <ul id="" class="sub_sub_nav" role="menu">
+                                        {{#each sub_items}}
+                                        <li class="{{#if is_promo}}is_promo{{/if}} {{#if custom-class}}{{custom-class}}{{/if}}" role="presentation">{{#if is_promo}}<div class="promoheading">{{promoheading}}</div>{{/if}}<a href="{{link}}" class="subsubnavlink" id="{{id}}" {{#if target}} target="{{target}}" {{/if}} role="menuitem">{{name}}</a> {{#if pro_icon}}<img src="/assets/images/icons/nav-pro-sign.png" alt="{{name}} is a Pro package">{{/if}}</li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                <div id="login_block_wrapper">
+                    <div class="hdr_ccare_number">Customer Care:<strong id="headerPhoneNumber-version2" class="ccpod_phone_num"></strong></div>
+                    <div class="login_block">
+                        <span id="loggedout-version2">
+                            <a href="/LZWeb/Welcome/SignIn.aspx?sReturnPage=/LZWeb/MyAccount/" id="home-page-sign-in-version2" class="button button-sm button-fluid-weak button-blue button-pad-10" name="My%20Account-_-Top%20Text-_-Membership">Log In</a>
+                        </span>
+                        <span id="loggedin-version2" style="display:none;">
+                            <a href="/LZWeb/Welcome/LogOut.aspx" id="nav-log-out-link">Log Out</a>
+                            <a href="/LZWeb/MyAccount/" id="home-page-my-account-version2" class="button button-sm button-fluid-weak button-blue button-pad-10" name="My%20Account-_-Top%20Text-_-Membership">My Account</a>
+                        </span>
+                        <a href="#" id="help_link-version2" class="dropdown_links">
+                            Help<i class="font_icon font_icon-sm icon-arrow-down"></i>
+                            <div id="help_dropdown-version2" class="nav_dropdowns"><span id="helpDropdownCloseButton"><i class="font_icon font_icon-sm-med icon-x"></i></span> <ul><li><a href="/LZWeb/MyAccount/OrderStatus.aspx?sReturnPage=/LZWeb/MyAccount/OrderStatus.aspx" id="help-check-order-status">Check order status</a></li><li><a href="/customer-support/customer-support.html" id="help-contact-us">Contact us</a></li></ul></div>
+                        </a>
+                        <a href="#" id="search_link-version2" class="dropdown_links"><i class="font_icon font_icon-sm icon-search"></i></a>
+                        <div id="search_dropdown-version2" class="nav_dropdowns">
+                            <div class="feature-search">
+                                <form id="cse-search-box-2" class="search-box" style="display:inline" action="//www.legalzoom.com/search.html" role="search">
+                                    <input type="hidden" name="cx" value="013796009449807619047:i9brh-ikdma">
+                                    <input type="hidden" name="ie" value="UTF-8">
+                                    <input type="text" name="q" placeholder="I&apos;m looking for..." size="20" autocomplete="off" id="search-input-2" class="ac_input">
+                                </form>
+                                <img class="feature-search-icon" src="/assets/images/header-feature-search-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobile_menu" role="navigation">
+            <div id="mobile_header">
+                <a id="hamburger">
+                    <img id="hamburger_icon" src="/resources/img/icons/nav_icons/mobile_nav_hamburger_rounded.png" alt="hamburger">
+                    <img id="hamburger_close" src="/resources/img/icons/nav_icons/mobile_nav_close.png" alt="hamburger active">
+                </a>
+                <span class="lz-logo">
+                    <a href="/" id="{{id}}"><img id="lzLogo" src="/resources/img/icons/nav_icons/legalzoom-logo.png" title="LegalZoom" alt="LegalZoom" style="border:none;"></a>
+                </span>
+                <span href="" id="mobile_header_cta-a"></span>
+            </div>
+            <div class="scrollbox">
+                <div id="topnav_mobile" role="menubar" aria-label="Primary">
+                    {{#each top_item}}
+                    <div class="mobile-header-group" aria-labelledby="category-link" role="presentation">
+                        <div class="group-header inactive indent-left" {{#if id}} id="{{id}}" {{/if}}>{{{name}}}</div>
+                        <div class="content hide">
+                            {{#each sub_nav}}
+                            {{#unless nav_promo}}
+                            <div class="subheader inactive" {{#if id}} id="{{id}}" {{/if}}>{{{heading}}}</div>
+                            <div class="links hide">
+                                {{#each sub_items}}
+                                <div><a class="subsubnavlink" {{#if id}} id="{{id}}" {{/if}} role="menuitem" href="{{link}}">{{{name}}}</a>{{#if pro_icon}}<img src="/assets/images/icons/nav-pro-sign.png" alt="{{name}} is a Pro package">{{/if}}</div>
+                                {{/each}}
+                            </div>
+                            {{/unless}}
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/each}}
+                    <div class="mobile-header-group">
+                        <div class="group-header login">
+                            <a name="My Account-_-Top Text-_-Membership" class="status" id="home-page-my-account" href="/LZWeb/MyAccount/">My account</a>
+                            <a href="/LZWeb/Welcome/LogOut.aspx" id="home-page-logout" class="action">Log Out</a>
+                        </div>
+                    </div>
+                    <div class='mobile-header-group'>
+                        <div class="group-header" id="mobile-search">
+                            <form id='cse-search-box-3' class="search-box indent-left" style='display:inline' action='//www.legalzoom.com/search.html' role="search">
+                                <input type='hidden' name='cx' value='013796009449807619047:i9brh-ikdma' />
+                                <input type='hidden' name='ie' value='UTF-8' />
+                                <input type='text' name='q' placeholder="Search" size='20' autocomplete='off' id="search-input-3" class='ac_input' />
+                            </form>
+                            <img id="mobile-search-icon" class="feature-search-icon" src="/resources/img/icons/nav_icons/mobile_nav_search.png" alt="Search" title="Search" width="15" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div></section>
+</header>
+{{/file.data.global_nav_version2}}

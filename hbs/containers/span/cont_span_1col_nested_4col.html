@@ -1,0 +1,28 @@
+<section class="stack {{custom-class}}">
+    {{#if top-hr}}<hr class="top-seo-hr">{{/if}}
+    <h1>{{header}}</h1>
+    {{#if sub-heading}}<p class='subheading'>{{{sub-heading}}}</p>{{/if}}
+    <div class='outer-div'>
+        {{#each group}}
+        <article class="item{{@index}}">
+            <div>
+                <div class='image-wrapper'><img src="{{icon}}" alt="{{title}}" title="{{img-title}}" class='{{img-class}}' /></div>
+                {{#if title}}<h2 class='{{title-class}}'>{{{title}}}</h2>{{/if}}
+                <p>{{{text}}}</p>
+                {{#if link}}<div class='link-wrapper'><a href='{{link}}' id="{{link-id}}" {{#if target}} target='{{target}}' {{/if}} {{#if ga_event_label}} onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{ga_event_label}}'});" {{/if}}>{{{link-prompt}}}</a></div>{{/if}}
+            </div>
+        </article>
+        {{/each}}
+    </div>
+    {{#if banner}}
+        <section id="banner-section" class="col1 {{banner.custom-class}}">
+            <div>
+                <h2>{{banner.title}}</h2>
+                <p>{{banner.content}}</p>
+                <a href='{{banner.link}}' id="{{link-id}}"  class="button button-med button-fluid-weak button-blue button-pad-0 button-margin-10 button-width-240 button-clear" onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{banner.ga_event_label}}'});">{{banner.prompt}}</a>
+            </div>
+        </section>
+    {{/if}}
+    {{#if bottom-content}}<div>{{{bottom-content}}}</div>{{/if}}
+    {{#if bottom-hr}}<hr class="bottom-seo-hr" />{{/if}}
+</section>

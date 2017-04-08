@@ -1,0 +1,16 @@
+<section class="col{{article.length}} stack {{custom-class}}">
+    <div>
+        {{#each article}}
+        <article class="item{{@index}}">
+            <h2>{{{title}}}</h2>
+            <hr noshade class="desktop-only">
+            {{#each item}}
+            <p class="qualifier">{{{qualifier}}}</p>
+            <p>{{{text}}}</p>
+            {{/each}}
+            <button value="{{button-value}}" class="{{#unless button-value}}qstart{{/unless}} button-med button-fluid-weak button-blue button-pad-0" id="{{button-id}}">{{button-title}}</button>
+        </article>
+        {{/each}}
+    </div>
+</section>
+<!--json model http://www.objgen.com/json/models/dls -->

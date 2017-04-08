@@ -1,0 +1,36 @@
+<section class="col{{cols}} stack {{custom-class}}" {{#if background-image}} style='background-image:url({{img}});' {{/if}}>
+    {{#if title}}<h1 class="center">{{{title}}}</h1>{{/if}}
+    <div>
+        {{#each article}}
+        <article class="item{{@index}}">
+            <a href="{{link}}" {{#if new-window}} target="_blank" {{/if}}>
+                <div class="background-50 background-top" style="background-image:URL('{{img}}')" title="{{{short-title}}}" alt="{{{short-alt}}}">
+                    <h2 class="ep-categories">{{{title}}}</h2>
+                    {{#if text}}
+                    {{#if mobile-text}}
+                    <p class="desktop-only">{{{text}}}</p>
+                    <p class="mobile-only mobile-text">{{{mobile-text}}}</p>
+                    {{else}}
+                    <p>{{{text}}}</p>
+                    {{/if}}
+                    {{else}}
+                    {{#if mobile-text}}
+                    <p class="desktop-only">{{{mobile-text}}}</p>
+                    <p class="mobile-only mobile-text">{{{mobile-text}}}</p>
+                    {{else}}
+                    <p></p>
+                    {{/if}}
+                    {{/if}}
+                    {{#if custom-button}}
+                    <div class="button {{custom-button-class}}" {{#if custom-button-title}}title="{{custom-button-title}}"{{/if}}>{{{custom-button}}}</div>
+                    {{else}}
+                    <div class="button button-med button-fluid-weak button-blue button-pad-0 button-margin-10 button-width-200">Learn more</div>
+                    {{/if}}
+                    <i class="font_icon font_icon-sm-med icon-arrow-right-circle"></i>
+                </div>
+            </a>
+        </article>
+        {{/each}}
+    </div>
+    {{#if more-link}}<div class='more-link'><a href='{{more-link}}' id="more-link">{{{more-prompt}}}</a></div>{{/if}}
+</section>

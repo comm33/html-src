@@ -1,0 +1,141 @@
+﻿<section class="col1 mobile-only">
+    <p class="center ptop-35"><strong class="satisfactionGuarantee">{{{satisfaction-guarantee}}}</strong></p>
+</section>
+
+<section class="col1 desktop-only {{desktop-custom-class}}">
+    <div>
+        <article>
+            <div align="center" class="satisfactionGuarantee"><strong>{{{satisfaction-guarantee}}}</strong></div>
+            <div align="center" class="llcFormationEssentialsContainer">
+                <div class="pricepoint" align="center">
+                    <h2 class="llcFormationEssentialsHeader">{{{package-title}}}</h2><p class="subtext">{{{package-subtext}}}</p>
+                    <p style="{{package-price-style}}"><sup class="llcFormationEssentialsSup">$</sup>{{{package-price}}}</p>
+                    {{#if show-state-fees}}
+                    {{#if custom-state-fee-text}}
+                    {{#if product}}
+                    <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy">{{{custom-state-fee-text}}}</span></p>
+                    {{else}}
+                    <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy">{{{custom-state-fee-text}}}</span></p>
+                    {{/if}}
+                    {{else}}
+                    {{#if product}}
+                    <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy"></span></p>
+                    {{else}}
+                    <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy"></span></p>
+                    {{/if}}
+                    {{/if}}
+                    {{/if}}
+                </div>
+                <div align="center">
+                    <div class="llcFormationEssentialsColContainerLeft">
+                        {{#each left}}
+                        <div align="left">
+                            <span>
+                                {{#if includeImage}}{{#if isIncluded}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedText}}}{{/if}}
+                            </span>
+                            <span class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                                {{{description-text}}}
+                            </span>
+                        </div>
+                        {{/each}}
+                    </div>
+                    <div class="llcFormationEssentialsColContainerRight">
+                        {{#each right}}
+                        <div align="left">
+                            <span>
+                                {{#if includeImage}}{{#if isIncluded}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedText}}}{{/if}}
+                            </span>
+                            <span class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                                {{{description-text}}}
+                            </span>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <div>
+                    <div class="bottomrow" align="center"><button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240 llcFormationEssentialsButton" onclick="{{{cta-utag}}}">{{{cta-button-title}}}</button></div>
+                </div>
+            </div>
+            {{#if dynamic-disclaimers}}
+            <section class="col1 stack dynamic-disclaimers">
+                <div>
+                    <article>
+                        {{#each dynamic-disclaimers}}
+                        <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                           id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                        {{/each}}
+                    </article>
+                </div>
+            </section>
+            {{/if}}
+        </article>
+    </div>
+</section>
+<section class="modules-accordion col2 stack mobile-only {{mobile-custom-class}}">
+    <div>
+        <article>
+            <h2>{{{package-title}}}</h2>
+            <p><strong>{{{package-subtext}}}</strong></p>
+            <p class="pricepoint package-price"><sup>$</sup>{{{package-price}}}</p>
+            {{#if package-subtext-mobile}}<p><strong>{{{package-subtext-mobile}}}</strong></p>{{/if}}
+            {{#if show-state-fees}}
+            {{#if custom-state-fee-text}}
+            {{#if product}}
+            <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy">{{{custom-state-fee-text}}}</span></p>
+            {{else}}
+            <p class="state-fees"><span class="stateforfee" id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy">{{{custom-state-fee-text}}}</span></p>
+            {{/if}}
+            {{else}}
+            {{#if product}}
+            <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{product}}-economy" class="state-filing-fee-{{product}}-economy"></span></p>
+            {{else}}
+            <p class="state-fees">+ <span class="stateforfee"></span> state fee <span id="state-filing-fee-{{../../product}}-economy" class="state-filing-fee-{{../../product}}-economy"></span></p>
+            {{/if}}
+            {{/if}}
+            {{/if}}
+            <div>
+                {{#each left}}
+                <div align="left" class="llcFormationEssentialsElementMobile">
+                    <span>
+                        {{#if includeImage}}{{#if isIncluded}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedText}}}{{/if}}
+                    </span>
+                    <span class="{{custom-wrapper-class}}">
+                        <strong>{{{bold-text}}}</strong><br>
+                        {{{description-text}}}
+                    </span>
+                </div>
+                {{/each}}
+            </div>
+            <div>
+                {{#each right}}
+                <div align="left" class="llcFormationEssentialsElementMobile">
+                    <span>
+                        {{#if includeImage}}{{#if isIncluded}}<img src="/assets/images/blue_check.png" alt="available">{{else}}<img src="/assets/images/red_x.png" alt="not available">{{/if}}{{else}}{{{includedText}}}{{/if}}
+                    </span>
+                    <span class="{{custom-wrapper-class}}">
+                        <strong>{{{bold-text}}}</strong><br>
+                        {{{description-text}}}
+                    </span>
+                </div>
+                {{/each}}
+            </div>
+
+            <button value="{{{cta-button-value}}}" type="button" class="{{#unless cta-button-value}}qstart{{/unless}} button-med-lg button-fluid-weak button-blue button-pad-0 button-width-240">{{{cta-button-title}}}</button>
+            <div><a class="viewmode">View details</a></div>
+        </article>
+    </div>
+    {{#if dynamic-disclaimers}}
+    <section class="col1 stack dynamic-disclaimers">
+        <div>
+            <article>
+                {{#each dynamic-disclaimers}}
+                <p class="{{#unless showing}}deed_disclaimer{{/unless}} {{state-short-name}}_disclaimer_{{type}} {{custom-class}}"
+                   id="{{state-short-name}}_disclaimer_{{type}}">{{{content}}}</p>
+                {{/each}}
+            </article>
+        </div>
+    </section>
+    {{/if}}
+</section>

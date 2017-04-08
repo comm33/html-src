@@ -1,0 +1,75 @@
+<section class="{{custom-class}}" style="background-image:url('{{img}}');" {{#if background-img-title}} title='{{background-img-title}}' {{/if}} {{#if background-img-alt}} alt='{{background-img-alt}}' {{else}} title='{{title}}' {{/if}}>
+    <div>
+        <article class="{{article-custom-class}}">
+            {{#if header-copy}}
+            <h1>{{{header-copy}}}</h1>
+            {{/if}}
+
+            {{#if top-copy}}
+            {{#each top-copy}}
+            <h4 class='top-copy{{#if custom-class}} {{custom-class}}{{/if}}'>{{{top-copy}}}</h4>
+            {{/each}}
+            {{/if}}
+
+            <div class="main-container">
+
+                {{#each content-container}}
+                <div class="content-container">
+
+                    <div class="product-container {{product-container-custom-class}}">
+                        {{#if column-image-source}}
+                        <img class="column-image-class {{column-image-custom-class}}" src="{{column-image-source}}" />
+                        {{/if}}
+                        {{#if column-header-copy}}
+                        <h5 class="{{column-header-custom-class}}">{{{column-header-copy}}}</h5>
+                        {{/if}}
+
+                        {{#if hero-ul}}
+                        {{#each hero-ul}}
+                        <ul class="hero-ul {{hero-ul-custom-class}}">
+                            {{#each ul-li}}
+                            <li class="{{hero-li-custom-class}}">{{{ul-li}}}</li>
+                            {{/each}}
+                        </ul>
+                        {{/each}}
+                        {{/if}}
+
+                        {{#if bottom-copy}}
+                        {{#each bottom-copy}}
+                        <p class="bottom-copy">{{{bottom-copy}}}</p>
+                        {{/each}}
+                        {{/if}}
+
+                        {{#if pre-cta-copy}}
+                        {{#each pre-cta-copy}}
+                        <p class="pre-cta-copy {{pre-cta-custom-class}}">{{{pre-cta-copy}}}</p>
+                        {{/each}}
+                        {{/if}}
+                    </div>
+
+                    {{#if button}}
+                    {{#each button}}
+                    <div class="button-container {{button-container-custom-class}}">
+                        {{#if cta-copy}}<button id="{{cta-custom-id}}" class="{{#if button-color}}{{button-color}}{{else}}button-blue{{/if}} {{cta-custom-class}}" value="{{cta-value}}" {{{cta-custom-attribute}}}>{{{cta-copy}}}</button>{{/if}}
+                        {{#if post-cta-copy}}<p class="post-cta-copy {{post-cta-custom-class}}" {{{post-cta-copy-custom-attribute}}}>{{{post-cta-copy}}}</p>{{/if}}
+                    </div>
+                    {{/each}}
+                    {{/if}}
+
+                </div>
+                <div class="container-divider">
+                    {{#if final-copy}}<p class="final-copy mobile-only {{final-copy-custom-class}}" {{{post-anchor-copy-custom-attribute}}}>{{{final-copy}}}</p>{{/if}}
+                    <div class="{{divider-div}}">&nbsp;</div>
+                    {{#if divider-image-source}}<img class="divider-image {{divider-image-custom-class}}" src="{{divider-image-source}}"></img>{{/if}}
+                    <div class="{{divider-div}}">&nbsp;</div>
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="container-bottom desktop-only">
+                {{#if final-copy}}<p class="final-copy {{final-copy-custom-class}}" {{{post-anchor-copy-custom-attribute}}}>{{{final-copy}}}</p>{{/if}}
+            </div>
+
+        </article>
+    </div>
+</section>

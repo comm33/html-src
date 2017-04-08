@@ -1,0 +1,13 @@
+<section class="col1 stack item-list {{custom-class}}">
+    {{#if header}}<h1>{{{header}}}</h1>{{/if}}
+    <div>
+        {{#each col}}
+            {{#if start-block}}<article class='col'>{{/if}}
+            {{#if sub-heading}}<div class='sub-heading'>{{{sub-heading}}}</div>{{/if}}
+            {{#each items}}
+            <div><a href='{{link}}' id="{{link-id}}">{{{prompt}}}</a></div>
+            {{/each}}
+            {{#if end-block}}</article>{{/if}}
+        {{/each}}
+    </div>
+</section>

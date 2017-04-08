@@ -1,0 +1,627 @@
+{
+    "global_nav_version2": {
+        "top_item": [
+            {
+                "name": "Business",
+                "image": "",
+                "link": "",
+                "id": "biz-header-link",
+                "alt_title": "",
+                "sub_nav": [
+                    {
+                        "heading": "Business Formation",
+                        "link": "/",
+                        "id": "biz-formation-subcat",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                                "link": "/limited-liability-company/limited-liability-company-overview.html",
+                                "name": "LLC (Limited Liability Company)",
+                                "id": "biz-forming--llc"
+                            },
+                            {
+                                "link": "/legal-incorporation/incorporation-overview.html",
+                                "name": "Incorporation (S-Corp, C-Corp)",
+                                "id": "biz-forming--inc"
+                            },
+                            {
+                                "link": "/non-profits/non-profit-corporation-overview.html",
+                                "name": "Nonprofit",
+                                "id": "biz-forming--np"
+                            },
+                            {
+                                "link": "/legal-dba/sole-Proprietorship.html",
+                                "name": "Sole Proprietorship",
+                                "id": "biz-forming--sole-prop"
+                            },
+                            {
+                                "link": "/limited-liability-partnerships/limited-liability-partnership-overview.html",
+                                "name": "LLP (Limited Liability Partnership)",
+                                "id": "biz-forming--llp"
+                            },
+                            {
+                                "link": "/limited-partnerships/limited-partnership-overview.html",
+                                "name": "LP (Limited Partnership)",
+                                "id": "biz-forming--lp"
+                            },
+                            {
+                                "link": "/partnership-agreement/partnership-agreement-overview.html",
+                                "name": "General Partnership",
+                                "id": "biz-forming--gp"
+                            },
+                            {
+                                "custom-class": "hide",
+                                "promoheading": "Not sure which one is right for you?",
+                                "link": "/business/start-your-business.html",
+                                "name": "Get help",
+                                "id": "biz-forming--start-your-business-promo",
+                                "is_promo": true
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Business Name",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "biz-business-name-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/legal-dba/dba-doing-business-as-overview.html",
+                                "name": "DBA / Business Names",
+                                "id": "biz-naming--dba"
+                            },
+                            {
+                                "link": "/additional-business-services/entity-name-check.html",
+                                "name": "Business Name Availability Check",
+                                "id": "biz-naming--enc"
+                            },
+                            {
+                                "link": "/additional-business-services/entity-name-reservation.html",
+                                "name": "Business Name Reservation",
+                                "id": "biz-naming--enr"
+                            },
+                            {
+                                "link": "/additional-business-services/articles-of-amendment-corporation-llc.html",
+                                "name": "Corporate Name Change",
+                                "id": "biz-naming--cnc"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Trademarks",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "biz-trademark-subcat",
+                        "sub_items": [
+                            {
+                                "link": "/trademarks/trademarks-overview.html",
+                                "name": "Trademark Registration",
+                                "id": "biz-tm--tm-reg"
+                            },
+                            {
+                                "link": "/trademark-search/trademark-search-overview.html",
+                                "name": "Trademark Search",
+                                "id": "biz-tm--tm-search"
+                            },
+                            {
+                                "link": "/trademark-monitoring/trademark-monitoring-overview.html",
+                                "name": "Trademark Monitoring",
+                                "id": "biz-tm--tm-monitoring"
+                            },
+                            {
+                                "link": "/trademarks-statement-of-use/trademarks-statement-of-use-overview.html",
+                                "name": "Trademark Statement of Use",
+                                "id": "biz-tm--tm-sou"
+                            },
+                            {
+                                "link": "/madrid-protocol/madrid-protocol-overview.html",
+                                "name": "International Trademark Filing",
+                                "id": "biz-tm--int-tm-filing"
+                            },
+                            {
+                                "link": "/tm-office-action-response/tm-office-action-response-overview.html",
+                                "name": "Trademark Office Action Response",
+                                "id": "biz-tm--office-action-response",
+                                "pro_icon": true
+                            },
+                            {
+                                "link": "/trademarks-patents-copyrights/trademark-overview.html",
+                                "name": "Other Trademark Filings",
+                                "id": "biz-tm--other-tm-filings"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Copyrights & Patents",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "biz-copyright-and-patent-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/legal-copyrights/copyrights-overview.html",
+                                "name": "Copyright Registration",
+                                "id": "biz-patents--cpy-reg"
+                            },
+                            {
+                                "link": "/patents/provisional-patent-application-overview.html",
+                                "name": "Provisional Application for Patent",
+                                "id": "biz-patents--prov-app"
+                            },
+                            {
+                                "link": "/patent-search/patent-search-overview.html",
+                                "name": "Patent Search",
+                                "id": "biz-patents--patent-search"
+                            },
+                            {
+                                "link": "/utility-patents/utility-patents-overview.html",
+                                "name": "Utility Patent (Step I)",
+                                "id": "biz-patents--utility-patent"
+                            },
+                            {
+                                "link": "/design-patents/design-patents-overview.html",
+                                "name": "Design Patent",
+                                "id": "biz-patents--design-patent"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Business Compliance",
+                        "link": "/",
+                        "id": "biz-compliance-subcat",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                                "link": "/additional-business-services/annual-reports.html",
+                                "name": "Annual Reports",
+                                "id": "biz-compliance--annual-rep"
+                            },
+                            {
+                                "link": "/additional-business-services/registered-agent-services.html",
+                                "name": "Registered Agent Services",
+                                "id": "biz-compliance--ras"
+                            },
+                            {
+                                "link": "/additional-business-services/stand-alone-operating-agreements.html",
+                                "name": "Operating Agreements",
+                                "id": "biz-compliance--operating-agreements"
+                            },
+                            {
+                                "link": "/additional-business-services/corporate-minutes.html",
+                                "name": "Corporate Minutes",
+                                "id": "biz-compliance--corp-min"
+                            },
+                            {
+                                "link": "/additional-business-services/initial-reports.html",
+                                "name": "Initial Reports",
+                                "id": "biz-compliance--initial-rep"
+                            },
+                            {
+                                "link": "/additional-business-services/stand-alone-bylaws-resolutions.html",
+                                "name": "Bylaws & Resolutions",
+                                "id": "biz-compliance--bylaws-resolutions"
+                            },
+                            {
+                                "link": "/additional-business-services/compliance-calendar-services.html",
+                                "name": "Compliance Calendar",
+                                "id": "biz-compliance--compliance-cal"
+                            },
+                            {
+                                "link": "/additional-business-services/certificates-of-good-standing.html",
+                                "name": "Certificates of Good Standing",
+                                "id": "biz-compliance--cgs"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Business Changes",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "biz-changes-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/additional-business-services/articles-of-amendment-corporation-llc.html",
+                                "name": "Corporate Amendment",
+                                "id": "biz-change--corp-ammend"
+                            },
+                            {
+                                "link": "/additional-business-services/conversion-between-llc-corporation.html",
+                                "name": "Conversion",
+                                "id": "biz-change--conversion"
+                            },
+                            {
+                                "link": "/additional-business-services/articles-of-dissolution-corporation-llc.html",
+                                "name": "Dissolve Business",
+                                "id": "biz-change--dissolution"
+                            },
+                            {
+                                "link": "/additional-business-services/foreign-qualifications-for-business.html",
+                                "name": "Foreign Qualification",
+                                "id": "biz-change--fq"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Tax & Licenses",
+                        "link": "/",
+                        "id": "biz-tax-and-license",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                                "link": "/501c3/501c3-application-overview.html",
+                                "name": "501(c)(3) Application",
+                                "id": "biz-tax-lic--501c3"
+                            },
+                            {
+                                "link": "/additional-business-services/ein-federal-tax-identification-number.html",
+                                "name": "Federal Tax ID (EIN)",
+                                "id": "biz-tax-lic--ein"
+                            },
+                            {
+                                "link": "/additional-business-services/state-tax-id.html",
+                                "name": "State Tax ID",
+                                "id": "biz-tax-lic--stid"
+                            },
+                            {
+                                "link": "/business/business-operations/business-licenses-overview.html",
+                                "name": "Business Licenses",
+                                "target": "_blank",
+                                "id": "biz-tax-lic--bus-lic"
+                            },
+                            {
+                                "link": "/additional-business-services/sellers-permit.html",
+                                "name": "Seller's Permit",
+                                "id": "biz-tax-lic--sellers-permit"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Real Estate",
+                        "link": "/",
+                        "id": "biz-real-estate-subcat",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                                "link": "/real-estate-deed-transfer/real-estate-deed-transfer-overview.html",
+                                "name": "Real Estate Deed Transfer",
+                                "id": "biz-re--real-estate-deed-transfer"
+                            },
+                            {
+                                "link": "/real-estate-leases/real-estate-leases-overview.html",
+                                "name": "Real Estate Lease",
+                                "id": "biz-re--real-estate-lease"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Other Business Services",
+                        "link": "/",
+                        "id": "biz-other-subcat",
+                        "bg_img": "",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/legal-document-review/legal-document-review-overview.html",
+                                "name": "Legal Document Review",
+                                "id": "biz-abs--doc-review",
+                                "pro_icon": true
+                            },
+                            {
+                                "link": "/additional-business-services/certified-copies.html",
+                                "name": "Certified Copies",
+                                "id": "biz-abs--cert-copies"
+                            },
+                            {
+                                "link": "/work-visa/work-visa-overview.html",
+                                "name": "Work Visa",
+                                "id": "biz-abs--ra"
+                            },
+                            {
+                                "link": "/additional-business-services/corporate-supplies.html",
+                                "name": "Corporate Supplies",
+                                "id": "biz-abs--corp-supplies"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "PROMO PLACE HOLDER",
+                        "link": "/attorneys-lawyers/legal-plans/business",
+                        "bg_img": "/resources/img/navpromos/atty_promo.jpg",
+                        "custom-class": "",
+                        "nav_promo": true,
+                        "id": "nav_promo_start_biz"
+                    }
+                ]
+            },
+            {
+                "name": "Personal",
+                "image": "",
+                "link": "",
+                "id": "personal-header-link",
+                "alt_title": "",
+                "sub_nav": [
+                    {
+                        "heading": "Wills & Trusts",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "personal-wills-and-trust-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/personal/estate-planning/last-will-and-testament-overview.html",
+                                "name": "Last Will & Testament",
+                                "id": "personal-wills-trusts--lwt"
+                            },
+                            {
+                                "link": "/personal/estate-planning/living-trust-overview.html",
+                                "name": "Living Trust",
+                                "id": "personal-wills-trusts--lt"
+                            },
+                            {
+                                "link": "/personal/estate-planning/living-will-overview.html",
+                                "name": "Living Will / Advance Health Care Directive",
+                                "id": "personal-wills-trusts--lw"
+                            },
+                            {
+                                "link": "/pet-trust-agreement/pet-protection-overview.html",
+                                "name": "Pet Protection Agreement",
+                                "id": "personal-wills-trusts--ppa"
+                            },
+                            {
+                                "link": "/personal/estate-planning/estate-planning-bundle.html",
+                                "name": "Estate Plan Bundle",
+                                "id": "personal-wills-trusts--ep-bundle"
+                            },
+                            {
+                                "promoheading": "Not sure what you need?",
+                                "link": "/personal/estate-planning/help-me-decide.html",
+                                "name": "Help Me Decide",
+                                "id": "personal-ep-help-me-decide",
+                                "is_promo": true
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Powers of Attorney",
+                        "link": "/",
+                        "id": "personal-poa-subcat",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                            "link": "/power-of-attorney/power-of-attorney-overview.html",
+                            "name": "Financial Power of Attorney",
+                            "custom-class": "",
+                            "id": "personal-poa--financial-poa"
+                            },
+                            {
+                                "link": "/living-wills-guide/health-care-power-of-attorney.html",
+                                "name": "Living Will / Healthcare Power of Attorney",
+                                "id": "personal-poawills-trusts--hcpoa"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "MARRIAGE  & DIVORCE",
+                        "link": "/",
+                        "id": "personal-marraige-and-divorce-subcat",
+                        "bg_img": "",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/legal-name-change/name-change-overview.html",
+                                "name": "Name Change",
+                                "id": "personal-marriage-divorce--name-change"
+                            },
+                            {
+                                "link": "/prenuptial/prenuptial-overview.html",
+                                "name": "Prenuptial Agreements",
+                                "id": "personal-marriage-divorce--prenup"
+                            },
+                            {
+                                "link": "/legal-divorce/divorce-overview.html",
+                                "name": "Divorce",
+                                "id": "personal-marriage-divorce--divorce"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "FINANCIAL",
+                        "link": "/",
+                        "id": "personal-financial-subcat",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                                "link": "/bankruptcy/bankruptcy-overview.html",
+                                "name": "Bankruptcy",
+                                "id": "personal-financial--bk"
+                            },
+                            {
+                                "link": "/power-of-attorney/power-of-attorney-overview.html",
+                                "name": "Financial Power of Attorney",
+                                "id": "personal-financialwills--fpoa"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "Accident & Injury",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "personal-accident-and-injury-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/personal-injury/personal-injury-overview.html",
+                                "name": "Personal Injury",
+                                "id": "personal-accident-injury--pi"
+                            },
+                            {
+                                "link": "/disability/social-security-disability-overview.html",
+                                "name": "Disability Benefits",
+                                "id": "personal-accident-injury--ssd"
+                            },
+                            {
+                                "link": "/dui/dui-overview.html",
+                                "name": "DUI / DWI",
+                                "id": "personal-accident-injury--dui-dwi"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "REAL ESTATE",
+                        "link": "/",
+                        "id": "personal-real-estate-subcat",
+                        "bg_img": "",
+                        "sub_items": [
+                            {
+                                "link": "/real-estate-deed-transfer/real-estate-deed-transfer-overview.html",
+                                "name": "Real Estate Deed Transfer",
+                                "id": "personal-real-estate--redt"
+                            },
+                            {
+                                "link": "/real-estate-leases/real-estate-leases-overview.html",
+                                "name": "Real Estate Lease",
+                                "id": "personal-real-estate--rel"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "IMMIGRATION & WORK",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "personal-immigration-and-work-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/green-card/green-card-overview.html",
+                                "name": "Green Card",
+                                "id": "personal-immigration-work--gc"
+                            },
+                            {
+                                "link": "/work-visa/work-visa-overview.html",
+                                "name": "Work Visa",
+                                "id": "personal-immigration-work--work-visa"
+                            },
+                            {
+                                "link": "/disability/social-security-disability-overview.html",
+                                "name": "Disability Benefits",
+                                "id": "personal-immigration-work--disability-benefits"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "PROMO PLACE HOLDER",
+                        "link": "/personal/estate-planning/estate-planning-bundle.html",
+                        "bg_img": "/resources/img/navpromos/atty_promo_father.jpg",
+                        "nav_promo": true,
+                        "id": "personal--nav_promo_wills_trusts"
+                    }
+                ]
+            },
+            {
+                "name": "Attorney Advice",
+                "image": "",
+                "link": "",
+                "id": "attorney-advice-header-link",
+                "alt_title": "",
+                "sub_nav": [
+                    {
+                        "heading": "ATTORNEY ADVICE",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "attorney-advice-attorney-advice-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/attorneys-lawyers/legal-plans/business.html",
+                                "name": "Business Legal Plan",
+                                "id": "attorney-advice-attorney-advice--bap"
+                            },
+                            {
+                                "link": "/attorneys-lawyers/legal-plans/personal.html",
+                                "name": "Personal Legal Plan",
+                                "id": "attorney-advice-attorney-advice--lap"
+                            },
+                            {
+                                "link": "/attorneys-lawyers/legal-plans/personal.html",
+                                "name": "Schedule a consultation",
+                                "id": "attorney-advice-attorney-advice--schedule-consultation"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "ATTORNEY REVIEW",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "attorney-advice-attorney-review-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/legal-document-review/legal-document-review-overview.html",
+                                "name": "Legal Document Review",
+                                "id": "attorney-advice-attorney-review--legal-doc-review",
+                                "pro_icon": true
+                            },
+                            {
+                                "link": "/fdd-review/fdd-review-overview.html",
+                                "name": "Franchise Disclosure Review",
+                                "id": "attorney-advice-attorney-advice--fdd-review",
+                                "pro_icon": true
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "ATTORNEY DRAFTED DOCUMENTS",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "attorney-advice-drafted-documents-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/legalforms/home.html",
+                                "name": "Downloadable Legal Forms and Agreements",
+                                "id": "attorney-advice-attorney-documents--forms-agreements"
+                            },
+                            {
+                                "link": "/website-terms-and-conditions/website-terms-and-conditions-overview.html",
+                                "name": "Website Terms & Conditions",
+                                "id": "attorney-advice-attorney-documentsas--website-terms-conditions",
+                                "pro_icon": true
+                            },
+                            {
+                                "link": "/tm-office-action-response/tm-office-action-response-overview.html",
+                                "name": "Trademark Office Action Response",
+                                "id": "attorney-advice-attorney-documents-as--tm-office-action-response",
+                                "pro_icon": true
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "FOR ATTORNEY",
+                        "link": "/",
+                        "bg_img": "",
+                        "id": "attorney-advice-for-attorney-subcat",
+                        "custom-class": "columnbreak",
+                        "sub_items": [
+                            {
+                                "link": "/join-attorney-network.html",
+                                "name": "Join our attorney network",
+                                "id": "attorney-advice-for-attorney--join"
+                            }
+                        ]
+                    },
+                    {
+                        "heading": "PROMO PLACE HOLDER",
+                        "link": "/LZWeb/MyAccount/ASMC/AttorneyConsultations.aspx?SubPlanTypeId=2",
+                        "bg_img": "/resources/img/navpromos/atty_promo_fem.jpg",
+                        "nav_promo": true,
+                        "id": "attorney-advice--nav_promo_wills_trusts"
+                    }
+                ]
+            }
+        ],
+        "model-link": "http://www.objgen.com/json/models/D70",
+        "model-type": "navbar_version2"
+    }
+    }

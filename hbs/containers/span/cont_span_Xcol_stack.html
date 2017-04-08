@@ -1,0 +1,17 @@
+<section class="span{{article.length}} {{#if stacked}}stack{{/if}} {{custom-class}}">
+    {{#each article}}
+    <article class="item{{@index}}">
+        <section class="hero2 hero-center background-80 {{#if ../stacked}}height450{{else}}height300{{/if}}" style="background-image:url('{{img}}');">
+            <div class="overlay-dark">
+                <article>
+                    <div class="centerV">
+                        {{#if title}}<h1>{{{title}}}</h1>{{/if}}
+                        <p>{{{text}}}</p>
+                        <button {{#unless qstart}} value="{{button-value}}" {{/unless}} class="{{#if qstart}}qstart{{/if}} button-med button-fluid-weak button-blue button-pad-0" id="{{button-id}}">{{button-title}}</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </article>
+    {{/each}}
+</section>

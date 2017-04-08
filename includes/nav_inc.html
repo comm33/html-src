@@ -1,0 +1,716 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script>
+        $(document).ready(function () {
+            //SCREEN WIDTH DETECTION
+            //$(window).resize(function () { location.reload(); });
+            screenWidth = $(window).width();
+            if (screenWidth < 1000 && screenWidth >= 760) {
+                console.log("hi");
+                $(".nav_upper").click(function () {
+                    $(".subnav:visible").toggle();
+                });
+                $("#topnav>li").click(function () {
+                    $(".subnav:visible").hide();
+                    $(this).find(".subnav:hidden").show();
+                });
+            }
+            else if (screenWidth < 701 && screenWidth >= 360) {
+                $(".category-link").click(function () {
+                    $(".sub_sub_nav:visible").hide();
+                    $(this).closest("li").find(".subnav").toggle();
+                });
+                $(".subnav>li>a").click(function () {
+                    $(".sub_sub_nav:visible").hide();
+                    $(this).closest("li").find(".sub_sub_nav:hidden").toggle();
+                });
+                console.log("ho");
+            }
+            else {
+                console.log("nope");
+            }
+        });
+    </script>
+    <script>
+        var siteSearch = {
+            searchScriptLoad: function (sIdAppend) {
+                var idAppend = sIdAppend || '';
+                try {
+                    google.load('search', '1', {
+                        "callback": function () {
+                            google.search.CustomSearchControl.attachAutoCompletion('013796009449807619047:i9brh-ikdma', document.getElementById('search-input' + idAppend), 'cse-search-box' + idAppend);
+                        }
+                    });
+                } catch (e) { }
+            },
+            defaultSearchTerm: "I'm looking for...",
+            search: function (e) {
+                var sVal = $(".ac_input").val().replace(/^[ ]+||[ ]+$/gim, "");
+                if (sVal == "" || sVal == this.defaultSearchTerm) {
+                    alert("Please enter a search term");
+                    $(".ac_input").val("");
+                    $(".ac_input").focus();
+                    e.preventDefault();
+                }
+            },
+            setFields: function () {
+                $("#search_dropdown").click(function (e) { e.stopPropagation(); });
+                $('.feature-search-icon').on('click', function (event) { siteSearch.search(event); });
+                $('.search-box,#fakeID').submit(function (event) { siteSearch.search(event) });
+                $(".ac_input,#fakeID").on('keydown', function (e) {
+                    var keycode = (e.keyCode ? e.keyCode : e.which);
+                    if (keycode == 13) {
+                        e.stopPropagation();
+                        searchField.search();
+                        return false;
+                    }
+                    return true;
+                });
+            },
+            init: function (idAppend) {
+                this.setFields();
+            }
+        }
+
+
+    </script>
+    <script>
+        $(window).load(function () {
+            siteSearch.searchScriptLoad();
+            siteSearch.searchScriptLoad('-1');
+            siteSearch.setFields();
+            siteSearch.init();
+        });
+
+    </script>
+    <style>
+        body {
+            font-family: Helvetica, Arial;
+        }
+
+            body > header {
+                //position: fixed;
+                height: 105px;
+                z-index: 99999;
+            }
+        #home-page-my-account {
+            margin-left: 15px;
+        }
+
+        #search_dropdown {
+            z-index: 100;
+            box-shadow: none;
+            min-height: 0;
+            background: transparent;
+            right: -15px;
+        }
+
+        section.testimonial div blockquote {
+            width: 90%;
+        }
+
+        section.testimonial div .attribution {font-weight:600
+        }
+        section.testimonial div p{font-family:Helvetica, Arial, sans-serif;color:#333}
+
+        .search-input {
+            width: 325px;
+            border-style: solid;
+            border-color: #ccc;
+            border-radius: 4px;
+            margin: 12px;
+        }
+
+        .feature-search-icon {
+            position: relative;
+            top: -30px;
+            left: 318px;
+        }
+
+        #hamburger {
+            display: none;
+            visibility: hidden;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid #e4e4e4;
+        }
+
+            #hamburger:active, #hamburger:hover {
+                background-color: #f4f4f4;
+            }
+
+        #topnav ul, #topnav li, .nav_outer ol, .nav_outer li {
+            list-style: none;
+            padding: 2px 0 0 2px;
+            margin: 0;
+        }
+
+        #topnav,#help_link {
+            z-index: 99999;
+            padding-left: 0;
+            margin: 0;
+            font-family: psRegular,Helvetica,arial;
+            background-color: #fff;color:#247bd4
+        }
+        #help_dropdown a{color:#2293f9}
+            #topnav > li, .nav_outer ol, .nav_outer li {
+                float: left;
+                margin-right: 10px;
+                font-size: 1em;
+            }
+
+            #topnav li .category-link {
+                font-weight: 600;
+                line-height: 35px;
+                margin-right:10px
+            }
+
+        @media (min-width: 701px) {
+            #topnav > li:hover .subnav {
+                visibility: visible;
+                transition: opacity .2s linear;
+                opacity: 1;
+            }
+
+            #topnav > li:hover > a, .sub_sub_nav li:hover > a {
+                color: #133ba3;
+            }
+
+            .onlyMobile {
+                visibility: hidden;
+                display: none;
+            }
+
+            .fix-search {
+                position: fixed;
+                top: 0px;
+                padding: 0 10px;
+                margin-left: -10px;
+                box-shadow: 0 2px 5px #888888;
+                border-radius: 0 0 5px 5px;
+            }
+
+                .fix-search #topnav li ul.subnav {
+                    margin-left: 10px;
+                }
+        }
+
+        #topnav .subnav, #topnav .sub_sub_nav {
+            position: relative;
+        }
+
+        .nav_menu.fix-search {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+            .nav_menu.fix-search > #topnav {
+            }
+
+        #topnav .subnav {
+            width: 1200px;
+            min-height: 300px;
+            position: absolute;
+            visibility: hidden;
+            background-color: #fff;
+            opacity: 0;
+            font-size: .9em;
+            transition: opacity .2s linear;
+            left: -10px;
+            box-shadow: 0 2px 3px #888888;
+            padding: 0 10px;
+            z-index: 99999;
+        }
+        .feature-search{box-shadow: 0 2px 3px #888888;background-color: #fff;  top: 52px;height:45px;
+    position: relative;}
+        .gstl_50.gssb_c{z-index:99999}
+        .scrollbox {
+            z-index: 999;
+            background-color: #fff;
+            width: 1200px;
+        }
+
+
+
+        #topnav .subnav > li {
+            float: left;
+            width: 24%;
+            margin-top: 30px;
+        }
+
+        #topnav .subnavheading {
+            color: #133ba3;
+            font-weight: 600;
+            text-transform:uppercase;
+        }
+
+        #topnav .sub_sub_nav {
+            width: 89%;
+            padding: 2px 0 0 0;
+        }
+
+            #topnav .sub_sub_nav > li a {
+                margin: 5px 0;
+                font-size: 12px;
+                line-height: 18px;
+                font-family: Helvetica, Arial,sans-serif;
+            }
+             #topnav .sub_sub_nav > li:hover a,#help_dropdown a:hover{text-decoration:underline;color:#133ba3}
+            #topnav .sub_sub_nav > li a img{margin:3px 0 0 5px;float:right}
+        #topnav .is_promo {
+            background-color: #e9f1fb;
+            padding: 10px;
+            margin-top: 40px !important;
+        }
+
+            #topnav .is_promo .promoheading {
+                font-size: 12px;
+                font-weight: 600;
+                color: #133ba3;
+                margin-bottom: 10px;
+            }
+
+            #topnav .is_promo a.subsubnavlink {
+                margin: 10px 0 0;
+            }
+
+        #topnav .sub_sub_nav li {
+            margin-top: 2px;
+            clear: both;
+        }
+
+            #topnav .sub_sub_nav li:not(.is_promo) {
+                padding: 2px 0 0 0;
+            }
+
+        .subsubnavlink {
+            color: #2293f9;
+        }
+
+        .nav_upper {
+            border-bottom: solid 1px #e4e4e4;
+        }
+
+        .login_block {
+            float: right;
+            display: block;
+            margin: 5px 0 0 0;
+        }
+        .login_block > a{font-weight:600}
+            .login_block > a#help_link {
+                margin: 0 10px;
+            }
+.login_block button.button-sm  {padding-bottom:7px}
+        .col1.nav_outer {
+            background-color: #fff;
+            overflow: visible;
+        }
+
+            .col1.nav_outer > div {
+            }
+
+        .nav_upper {
+            padding: 10px 0 5px 0;
+        }
+
+        .hdr_ccare_number {
+            text-align: right;
+            padding: 5px 0 0 0;
+            font-size: 12px;
+            color: #333384;
+        }
+
+        .col1.nav_outer .nav_menu {
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .nav_upper > a {
+            float: left;
+        }
+
+        #topnav .subnav > li.nav_promo {
+            float: right !important;
+            margin: 0 4% 0 0;
+            width: 20%; /*background-color:#237bd4*/
+        }
+
+        li.nav_promo > a {
+            width: 216px;
+            height: 475px;
+            background-color: #237bd4;
+            display: inline-block;
+        }
+
+        #help_dropdown, #search_dropdown {
+            background-color: #fff;
+            box-shadow: 0 2px 3px #888888;
+            z-index: 999;
+            width: 150px;
+            position: absolute;
+            font-size: .9em;
+            right: 0;
+            display: block;
+        }
+
+            #help_dropdown ul {
+                padding: 10px 0 30px 10px;
+            }
+
+        #search_dropdown {
+            width: 350px;
+            min-height: 100px;
+            z-index: 100;
+            box-shadow: none;
+            background: transparent;
+            right: -15px;
+        }
+
+        #search-input {
+            width: 325px;
+            border-style: solid;
+            border-color: #ccc;
+            border-radius: 4px;
+            margin: 12px;
+            line-height:18px
+        }
+
+        .feature-search-icon {
+            position: relative;
+            top: -30px;
+            left: 318px;
+        }
+
+        @media (max-width: 700px) {
+            #topnav, #topnav .subnav, #topnav .sub_sub_nav {
+                opacity: 1;
+                display: none;
+                visibility: visible;
+            }
+
+            .nav_menu {
+                position: fixed;
+                width: 100%;
+                z-index: 99999;
+                box-shadow: 0 1px 3px #e4e4e4;
+            }
+
+                .nav_menu > a {
+                    width: 100%;
+                    position: absolute;
+                    text-align: center;
+                }
+
+            a #lzLogo-mobile {
+                height: 26px;
+                padding: 4px 0;
+                display: inline;
+            }
+
+            .nav_upper {
+                display: none;
+                visibility: hidden;
+            }
+
+            #hamburger {
+                display: block;
+                visibility: visible;
+                float: left;
+            }
+
+            body > .lzhr:first-child {
+                position: fixed;
+            }
+
+            #topnav li, .sub_sub_nav {
+                clear: both;
+            }
+
+            .sub_sub_nav {
+                background-color: #f4f4f4;
+                float: left;
+            }
+
+            #topnav .subnav {
+                display: none;
+                width: 99.5%;
+                min-height: 10px;
+                position: relative;
+                float: left;
+                box-shadow: none;
+            }
+
+            .login_block, .hdr_ccare_number {
+                display: none;
+                visibility: hidden;
+            }
+
+            #topnav .subnav > li {
+                margin-top: 5px;
+            }
+
+            #topnav .subnav .sub_sub_nav li.is_promo {
+                margin: 10px 0 !important;
+            }
+
+            pre {
+                overflow: hidden;
+                width: 99%;
+            }
+
+            #topnav .subnav > li, #topnav .sub_sub_nav {
+                width: 99.9%;
+            }
+        }
+
+        @media (min-width: 701px) and (max-width: 1100px) {
+            #topnav .subnav, #topnav .scrollbox, pre {
+                width: 98%;
+            }
+            header>*, .subnav ul{padding-left:10px}
+        }
+
+        @media (max-width: 1023px) {
+            #topnav .subnav > li.nav_promo {
+                display: none;
+                visibility: hidden;
+            }
+            
+            .scrollbox {
+                width: 100%;
+            }
+        }
+
+        #lzLogo-mobile {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../css/global.css" media="all">
+</head>
+<body>
+    {{#file.data.global_nav}}
+    <header>
+        <div class="lzhr"></div>
+        <section class="col1 nav_outer">
+            <div class="hdr_ccare_number">Customer Care: <strong>(888) 330-5134</strong></div>
+            <div class="nav_upper">
+                <a href="/" name="TopLogo-Home" id="{{id}}"> <img id="lzLogo" src="/assets/images/logos/legalzoom_logo_site_upper_left.gif" title="LegalZoom" alt="LegalZoom" style="border:none;"></a>
+                <div class="login_block">
+                    <span id="loggedout">
+                        <button value="/LZWeb/MyAccount/?SignIn=true" id="home-page-sign-in" class="button-sm button-fluid-weak button-blue button-pad-10" name="My%20Account-_-Top%20Text-_-Membership">Sign In</button>
+                    </span>
+                    <span id="loggedin">
+                        <a href="/LZWeb/Welcome/LogOut.aspx" id="{{id}}">Log Out</a> <button value="/LZWeb/MyAccount/" id="home-page-my-account" class="button-sm button-fluid-weak button-blue button-pad-10" name="My%20Account-_-Top%20Text-_-Membership">My Account</button>
+                    </span>
+                    <a href="#" id="help_link">
+                        Help<i class="font_icon font_icon-sm icon-arrow-down"></i>
+                        <div id="help_dropdown"><ul><li><a href="#" id="{{id}}">Check order status</a></li><li><a href="#" id="{{id}}">Contact us</a></li></ul></div>
+                    </a>
+                    <a href="#" id="search_link"><i class="font_icon font_icon-sm icon-search"></i></a>
+                    <div id="search_dropdown">
+                        <div class="feature-search">
+                            <form id="cse-search-box" class="search-box" style="display:inline" action="//www.legalzoom.com/search.html" role="search">
+                                <input type="hidden" name="cx" value="013796009449807619047:i9brh-ikdma">
+                                <input type="hidden" name="ie" value="UTF-8">
+                                <input type="text" onclick="javascript:this.value=&quot;&quot;;" name="q" value="I&apos;m looking for..." size="20" autocomplete="off" id="search-input" class="ac_input">
+                            </form>
+                            <img class="feature-search-icon" src="/assets/images/header-feature-search-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_menu" role="navigation">
+                <div id="hamburger">&#x2630;</div><a href="/" name="" id="{{id}}"> <img id="lzLogo-mobile" src="/assets/images/logos/legalzoom_logo_site_upper_left.gif" title="LegalZoom" alt="LegalZoom" style="border:none;"></a><div class="scrollbox">
+                    <ul id="topnav" role="menubar" aria-label="Primary">
+                        {{#each top_item}}
+                        <li aria-labelledby="category-link" role="presentation">
+                            <a href="#" class="category-link" id="{{id}}">{{#if image}}<img src="{{image}}" alt="{{alt_title}} link" title="{{alt_title}}">{{else}}{{name}}{{/if}}<i class="font_icon font_icon-sm icon-arrow-down"></i></a> {{#if sub_nav}}
+                            <ul class="subnav" role="menu" aria-label="Secondary">
+                                {{#each sub_nav}}
+                                <li {{#if="" nav_promo}}="" class="nav_promo" {{="" if}}="" role="presentation">
+                                    <a href="#" class="subnavheading" id="">{{#if nav_promo}}<img src="{{bg_img}}" id="promo-image" alt="">{{else}}{{heading}}{{/if}}</a> {{#if sub_items}}
+                                    <ul id="" class="sub_sub_nav" role="menu">
+                                        {{#each sub_items}}
+                                        <li {{#if="" is_promo}}="" class="is_promo" {{="" if}}="" role="presentation">{{#if is_promo}}<div class="promoheading">{{promoheading}}</div>{{/if}}<a href="{{link}}" class="subsubnavlink" id="{{id}}" role="menuitem">{{name}}</a> {{#if pro_icon}}<img src="/assets/images/icons/nav-pro-sign.png" alt="{{name}} is a Pro package">{{/if}}</li>
+                                        {{/each}}
+                                    </ul>
+                                    {{/if}}
+                                </li>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                        </li>
+                        {{/each}}
+                        <li class="onlyMobile">
+                            <a href="#" class="category-link" id="{{id}}">Help <i class="font_icon font_icon-sm icon-arrow-down"></i></a>
+                            <ul class="subnav">
+                                <li><a href="#" id="{{id}}">Check order status</a></li>
+                                <li><a href="#" id="{{id}}">Contact us</a></li>
+                            </ul>
+                        </li>
+                        <li class="onlyMobile">
+                            <a href="#" class="category-link mobileSearch" id="{{id}}">Search <i class="font_icon font_icon-sm icon-arrow-down"></i></a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </header>
+    {{/file.data.global_nav}}
+
+
+
+    <section class="col3 stack {{custom-class}} background-50">
+        <h1>{{header}}</h1>
+        <div>
+            {{#faq}}
+            <article>
+                <div id="questions">
+                    <h2 class="center">{{{title}}}</h2>
+                    {{#each questions}}
+                    <div>
+                        <div class="question"><i class="font_icon font_icon-sm icon-arrow-right"></i>{{{question}}}</div>
+                        <div class="answer">{{{answer}}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+            </article>
+            {{/faq}}
+            <hr>
+            <article>
+                <div id="customercare">
+                    <h2>A specialist is here to help</h2>
+                    <img src="/resources/img/icons/customer-care.png" alt="Ask a Specialist Questions about Last Wills" title="Ask a Specialist Questions about {{ask-away-icon-alt}}">
+                    <p class="ccphone ccpod_phone_num">(866) 679-2319</p>
+                    <p class="cchours">We&apos;re available <span>Mon-Fri 5am to 8pm PT</span> and <span>Weekends 7am to 4pm PT</span></p>
+                    <p class="xeno"><img src="/resources/img/icons/american-flag.png" alt="American Flag">Our agents are based in the United States.</p>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <div id="attorneyhelp">
+                    <h2>Speak with an attorney</h2>
+                    <img src="/resources/img/icons/atty.png" alt="Talk to an Attorney &#x2013; Get Legal Advice" title="Talk to an Attorney &#x2013; Get Legal Advice">
+                    <p>Get legal advice from an independent attorney at a price you can afford.<sup>*</sup></p>
+                    <button value="/attorneys-lawyers/legal-plans/personal" class="qstart button-med button-fluid-weak button-green button-pad-0 button-margin-10 button-width-240">Find out more</button>
+                    <p>Pricing starts at $9.99/month</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="col1 testimonial">
+        <div>
+            <article>
+                <blockquote>&quot;Very easy in filling out the questionnaire and they did a great job on the documents. LegalZoom had the documents to me in a short period of time. Have been very helpful anytime I&apos;ve called with any questions.&quot;</blockquote>
+                <p>- <span class="attribution">Julie C.</span>, <span class="city">McKinney, TX</span></p>
+            </article>
+        </div>
+    </section>
+    <div class="lzhr"></div>
+
+
+    <section class="col1 nav_outer">
+        <h4>Gulp task</h4>
+<pre>
+gulp.task(&apos;nav&apos;, function () {
+    return gulp.src(&apos;./src/templates2/includes/nav_inc.html&apos;)
+        .pipe(plumber())
+        .pipe(data(function (file) { return require(&apos;./src/templates2/includes/nav.json&apos;) }))
+        .pipe(hb())
+        .pipe(gulp.dest(&apos;web/resources/includes/&apos;));
+});
+</pre>
+        <h4>Scroll sticky nav</h4>
+<pre>
+$(window).bind(&apos;scroll&apos;, function () {
+    if ($(window).scrollTop() &gt; 50) {
+        $(&apos;#topnav&apos;).addClass(&apos;fix-search&apos;);
+    } else {
+        $(&apos;#topnav&apos;).removeClass(&apos;fix-search&apos;);
+    }
+});
+</pre>
+        <h4>Screen resolution</h4>
+<pre>
+screenWidth = $( window ).width();
+    if (screenWidth &lt; 1000 &amp;&amp; screenWidth &gt;= 760){
+        console.log(&quot;hi&quot;);
+    }
+    else if (screenWidth &lt; 760 &amp;&amp; screenWidth &gt;= 420){
+           $(&quot;#hamburger&quot;).click(function () {
+            $(&quot;#topnav&quot;).toggle();
+            $(&quot;#help_dropdown&quot;).hide();
+        });
+        $(&quot;.category-link&quot;).click(function () {
+            $(this).closest(&quot;li&quot;).find(&quot;.subnav&quot;).toggle();
+        });
+        $(&quot;.subnav&gt;li&gt;a&quot;).click(function () {
+            $(this).closest(&quot;li&quot;).find(&quot;.sub_sub_nav&quot;).toggle();
+        });
+    }
+    else{
+        console.log(&quot;nope&quot;);
+    }
+</pre>
+        <div>
+            Renders to: http://
+            <script>document.write(window.location.hostname)</script><a href="/resources/includes/nav_inc.html" id="{{id}}">/resources/includes/nav_inc.html</a>
+        </div>
+    </section>
+    <div class="lzhr"></div>
+    <script>
+        $(document).ready(function () {
+            $("#help_dropdown, #search_dropdown").toggle();
+            $("#help_link").click(function () {
+                $("#help_dropdown").toggle();
+                $("#search_dropdown").hide();
+            });
+            $("#search_link").click(function () {
+                $("#search_dropdown").toggle();
+                $("#help_dropdown").hide();
+            });
+            /*$("#hamburger").click(function () {
+                $("#topnav").toggle();
+                $(".subnav,.sub_sub_nav").hide();
+            });*/
+        });
+
+
+
+        //Control logged in state
+        // Get Cookie
+        var Get_Cookie = function (c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + '=');
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(';', c_start);
+                    if (c_end === -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return '';
+        }
+        var lzTimestring = Get_Cookie("TIMESTRING");     //Timestring - User is logged in
+
+        if (lzTimestring) {
+            console.log("logged in");
+            $("#loggedout, #fakeID").hide();
+            $("#loggedin, #fakeID").show();
+        } else {
+            console.log("logged out")
+            $("#loggedout, #fakeID").show();
+            $("#loggedin, #fakeID").hide();
+        }
+        siteSearch.init();
+
+    </script>
+</body>
+</html>

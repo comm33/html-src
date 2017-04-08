@@ -1,0 +1,145 @@
+<section class="col1 desktop-only optional-services bg-soft-blue">
+    <div>
+        <article>
+            <center>
+                <h1>{{{header}}}</h1>
+                <p class="pbottom-20">{{{sub-header}}}</p>
+
+                <table border="0" cellspacing="0" cellpadding="0" summary="{{table-summary}}" class="{{custom-class}}">
+                    <tbody>
+                    <tr>
+                        <td class="col-heading">{{{col-heading}}}</td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col1}}}</h2>
+                            <p>
+                        </td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col2}}}</h2>
+                            <p>
+                        </td>
+                        <td class="pricepoint">
+                            <h2>{{{package-title-col3}}}</h2>
+                            <p>
+                        </td>
+                    </tr>
+                    {{#each row}}
+                        <tr class="{{custom-row-class}}" id="{{id}}">
+                            <td class="{{custom-class}}">
+                                <div class="{{custom-wrapper-class}}">
+                                    <strong>{{{bold-text}}}</strong><br>
+                                </div>
+                            </td>
+                            <td>
+                                {{{includedCol1Text}}}
+                            </td>
+                            <td>
+                                {{{includedCol2Text}}}
+                            </td>
+                            <td>
+                                {{{includedCol3Text}}}
+                            </td>
+                        </tr>
+                    {{/each}}
+                    {{#unless hide-footer}}
+                        <tr>
+                            <td class="bottomrow">{{{footer.bold-text}}}</td>
+                            <td class="bottomrow normal-text" colspan="3" align="center">
+                                {{{footer.includedColText}}}
+                            </td>
+                        </tr>
+                    {{/unless}}
+                    </tbody>
+                </table>
+                <p class="strong additional-copy">{{{additional}}}</p>
+                <p class="normal-text">{{{questions}}}</p>
+            </center>
+        </article>
+    </div>
+</section>
+<section class="modules-accordion col2 mobile-only stack optional-services">
+    <h1 class="center">{{{header}}}</h1>
+    <p class="center pbottom-20">{{{sub-header}}}</p>
+    <div>
+        <article>
+            <h2 class="pbottom-20">{{{package-title-col1}}}</h2>
+            <table border="0" cellspacing="0" cellpadding="0" class="{{custom-class}}">
+                <tbody>
+                {{#each row}}
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}">
+                            <div class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                            </div>
+                        </td>
+                        <td>
+                            {{{includedCol1Text}}}
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </article>
+    </div>
+    <div>
+        <article>
+            <h2 class="pbottom-20">{{{package-title-col2}}}</h2>
+            <table border="0" cellspacing="0" cellpadding="0" class="{{custom-class}}">
+                <tbody>
+                {{#each row}}
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}">
+                            <div class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                            </div>
+                        </td>
+                        <td>
+                            {{{includedCol2Text}}}
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </article>
+    </div>
+    <div>
+        <article>
+            <h2 class="pbottom-20">{{{package-title-col3}}}</h2>
+            <table border="0" cellspacing="0" cellpadding="0" class="{{custom-class}}">
+                <tbody>
+                {{#each row}}
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}">
+                            <div class="{{custom-wrapper-class}}">
+                                <strong>{{{bold-text}}}</strong><br>
+                            </div>
+                        </td>
+                        <td>
+                            {{{includedCol3Text}}}
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </article>
+    </div>
+    {{#unless hide-footer}}
+        <div>
+            <article>
+                <table border="0" cellspacing="0" cellpadding="0" class="footer {{custom-class}}">
+                    <tbody>
+                    <tr class="{{custom-row-class}}">
+                        <td class="{{custom-class}}" colspan="2">
+                            <div class="{{custom-wrapper-class}}">
+                                <p class="strong">{{{footer.bold-text}}}</p>
+                                <span class="normal-text">{{{footer.includedColText}}}</span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+    {{/unless}}
+    <p class="center strong additional-copy">{{{additional}}}</p>
+    <p class="center">{{{questions}}}</p>
+</section>

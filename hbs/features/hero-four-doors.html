@@ -1,0 +1,66 @@
+<section class="hero1 {{custom-class}} desktop-only">
+    <div class="main-container">
+        <h1>
+            {{header}}
+        </h1>
+        <h3>
+            {{sub-header}}
+        </h3>
+        <div class="four-doors-container {{four-doors-container-class}}">
+
+            {{#each individual-door-container}}
+            <a href="{{individual-anchor}}" onclick="{{individual-onclick}}">
+                <div class="individual-door-container {{individual-door-container-class}}">
+                    <div class="individual-door-container-layer">
+                        <h3>
+                            {{{individual-door-header}}}
+                        </h3>
+                        <div class="bottom-copy">
+                            <div class="bottom-left">
+                                {{#if bottom-links}}
+                                <ul>
+                                    <li>{{{link1}}}</li>
+                                    <li>{{{link2}}}</li>
+                                </ul>
+                                {{else}}
+                                <p class='hero-bottom-copy'>
+                                    {{individual-door-bottom-copy}}
+                                </p>
+                                {{/if}}
+                            </div>
+                            <div class="bottom-right">
+                                <svg width="21" height="40">
+                                    <line x1="0" y1="0" x2="21" y2="20" style="stroke:rgb(255,255,255); stroke-width:1" />
+                                    <line x1="21" y1="20" x2="0" y2="40" style="stroke:rgb(255,255,255); stroke-width:1" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {{/each}}
+
+        </div>
+    </div>
+</section>
+
+<section class="hero1 hero-left background-60 background-top {{mobile.custom-class}} mobile-only" id="hero-video-m">
+    <h1>{{{mobile.title}}}</h1>
+    {{#if mobile.links}}
+    {{#each mobile.links}}
+    <a href="{{link-url}}" style="background: url('{{background-img}}')" title="Go to {{{link-text}}}" id="hero_quick_link_{{link-id}}_mobile" {{#if ga_event_label}} onclick="utag.link({ga_event_action:'click', ga_event_category:'global_home', ga_event_label:'{{ga_event_label}}'});" {{/if}}>
+    {{{link-text}}}
+    </a>
+    {{/each}}
+    {{/if}}
+</section>
+
+{{#if get-started-dropdown}}
+<div id="hero-get-started-dropdown">
+    <ul>
+        {{#each get-started-dropdown}}
+        <li><a href="{{dropdown-link}}" id="{{dropdown-link}}" {{#if ga_event_label}} onclick="utag.link({ ga_event_action: 'click', ga_event_category: 'global_home', ga_event_label: '{{ga_event_label}}' });" {{/if}}>{{dropdown-text}}</a></li>
+        {{/each}}
+    </ul>
+</div>
+{{/if}}

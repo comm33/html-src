@@ -1,0 +1,17 @@
+<section class="hero1 hero-left background-60 background-top height500 {{custom-class}}" style="background-image:url('{{img}}');" {{#if background-img-title}} title='{{background-img-title}}'{{else}} title='{{title}}' {{/if}}>
+    <div>
+        <article>
+            <div>
+                <ul class="breadcrumbs">{{{breadcrumbs}}}</ul>
+                <p class="product-title">{{{product-title}}}</p>
+                <h1>{{{title}}}</h1>
+                <ul>{{{sub-heading-list}}}</ul>
+                <div class="overview-pricing-cta">
+                    <a href="{{cta-button-value}}" onclick="{{#if cta-click-event}}{{{cta-click-event}}}{{/if}}" id="hero-cta" class="button button-med button-fluid-weak button-blue button-pad-0 button-width-300">{{{cta-button-text}}}</a>
+                    <p class="button-bottom">{{{button-subtext}}}</p>
+                    <p class="cta-links">{{{button-subtext-followup}}}</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

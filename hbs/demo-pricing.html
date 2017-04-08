@@ -1,0 +1,44 @@
+﻿{{#file.data.lt-pricing}}
+<!doctype html>
+<html>
+<head>
+    <!--#include virtual="/resources/includes/global_includes_env.html" -->    
+    {{#head}}
+    <script>var fkProduct = {{{product-id}}};</script>
+    <!-- inject:meta:html -->
+    <!-- global meta tags will be here -->
+    <!-- endinject -->
+    {{/head}}
+    
+    <!-- inject:vendor:html --><!-- endinject -->
+</head>
+
+<body id="ltp">
+    <!-- inject:nav:html --><!-- endinject -->
+    <!-- inject:pricing-header:html --><!-- endinject -->
+{{#pricing-table}}
+    <!-- inject:pricing-table-2col:html --><!-- endinject -->
+{{/pricing-table}}
+{{#how-it-works}}
+    <!-- inject:how-it-works-3col:html --><!-- endinject -->
+{{/how-it-works}}
+{{#optional-services}}
+    <!-- inject:optional-services:html --><!-- endinject -->
+{{/optional-services}}
+{{#testimonial}}
+    <!-- inject:testimonial-1col:html --><!-- endinject -->
+{{/testimonial}}
+    <hr />
+{{#answers}}
+    <!-- inject:answers:html -->
+    <!-- endinject -->
+{{/answers}}
+    <hr />
+{{#seo-block}}
+    <!-- inject:cont_1col_seo_block:html --><!-- endinject -->
+{{/seo-block}}
+<!--#include virtual="/resources/includes/global_includes_foot.html" -->
+    <script type='text/javascript'>setCustomerService_phone_hours();</script>
+</body>
+</html>
+{{/file.data.lt-pricing}}

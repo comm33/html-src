@@ -1,0 +1,17 @@
+<section class="span{{article.length}} stack {{custom-class}}">
+{{#each article}}
+    <article class="item{{@index}}">
+        <section class="hero2 hero-center background-80 height450" style="background-image:url('{{img}}');">
+            <div class="overlay-dark">
+                <article>
+                    <div class="centerV">
+                        <h1>{{{title}}}</h1>
+                        <p>{{{text}}}</p>
+                        <button value="{{button-value}}" class="{{#unless button-value}}qstart{{/unless}} button-med button-fluid-weak button-blue button-pad-0">{{button-title}}</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </article>
+{{/each}}
+</section>

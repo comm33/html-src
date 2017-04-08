@@ -1,0 +1,11 @@
+<section {{#if leadin-name}} name="{{leadin-name}}" {{/if}} class="col1 {{custom-class}}" {{#if img}} style="background-image:URL('{{img}}')" {{#if background-img-title}} title='{{background-img-title}}' {{/if}} {{#if background-img-alt}} alt='{{background-img-alt}}' {{/if}} {{/if}}>
+    <div>
+        <article>
+            {{#if breadcrumbs}}<ul class="breadcrumbs"><li>{{{breadcrumbs}}}</li></ul>{{/if}}
+            {{#if sub-heading}}<p class="sub-heading">{{sub-heading}}</p>{{/if}}
+            {{#if headline}}<h1>{{{headline}}}</h1>{{/if}}
+            <p class="postHdr">{{#if subtext}}{{{subtext}}}{{/if}}{{#if post-title-text}}{{post-title-text}}{{/if}}</p>
+            {{{custom-field}}}
+        </article>
+    </div>
+</section>

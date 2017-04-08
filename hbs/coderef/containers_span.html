@@ -1,0 +1,646 @@
+﻿{{#file.data.allmodules}}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title>Buildguide : Containers-Spanned</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' type='text/javascript'></script>
+    <link href="syntax/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <script src="syntax/shCore.js" type="text/javascript"></script>
+    <script src="syntax/shBrushXml.js" type="text/javascript"></script>
+    <script src="syntax/shBrushJScript.js" type="text/javascript"></script>
+    <script src="syntax/shAutoloader.js" type="text/javascript"></script>
+    <link href="syntax/syntax.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/global.css?v=1.0.1" media="all">
+    <link rel="stylesheet" type="text/css" href="buildguide.css" media="all">
+</head>
+<body class="buildguide">
+    <h1>Buildguide : Containers-Spanned</h1>
+    <a href="./">table of contents</a>
+<div class="fragWrap">
+    <h2><a name="cont_span_1col">cont_span_1col</a></h2>
+ {{#hero}} <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+    <!-- inject:cont_span_1col:html -->
+    <!-- endinject -->
+    </div>{{/hero}}
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'>
+<!-- inject:cont_span_1colx:html -->
+<!-- endinject -->
+</pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"hero": {
+    "breadcrumbs": "<a href=\"/\">Breadcrumbs</a>",
+    "product-title": "product-title",
+    "img": "/resources/img/heroes/hero_poa.jpg",
+    "title": "hero &gt; title: can contain HTML",
+    "sub-heading": "sub-heading",
+    "pre-cta-button-text": "pre-cta-button-text",
+    "cta-button-text": "cta-button-text",
+    "cta-button-value": "cta-button-value",
+    "cta-button-id": "cta-button-id",
+    "button-subtext": "button-subtext",
+    "button-subtext-followup": "button-subtext-followup"
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_1col_nested_2col">cont_span_1col_nested_2col</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col_nested_2col.html</div>
+{{#question-stack}}  <div class="secondline"><strong>Rendered:</strong></div></div>
+    <!-- inject:cont_span_1col_nested_2col:html --><!-- endinject --></div>
+    {{/question-stack}}
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_1col_nested_2colx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"question-stack": {
+    "header": "header",
+    "description":  "description",
+    "custom-class": "questionstack",
+    "question": [
+        {
+        "title": "title",
+        "answer": "answer",
+        "link": "<a href=\"/\">link (contains html)</a>"
+        },
+        {
+        "title": "Why it's so popular",
+        "answer": "You want to make sure your property goes to the right people, at the right time and at the least cost. A living trust can do all this. It helps you manage and distribute your property efficiently without court interference.",
+        "link": "<a href=\"/articles/will-vs-living-trust-whats-best-for-you\">Is a living trust or will better for me?</a>"
+        }
+    ]
+},
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_1col_nested_2col_bvtt">cont_span_1col_nested_2col_bvtt</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col_nested_2col_bvtt.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+    <!-- inject:cont_span_1col_nested_2col_bvtt:html -->
+    <!-- endinject --></div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_1col_nested_2col_bvttx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    not required
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_1col_nested_2col_pricingtable">cont_span_1col_nested_2col_pricingtable</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>{{#pricing-table2}}
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col_nested_2col_pricingtable.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+    <!-- inject:cont_span_1col_nested_2col_pricingtable:html --><!-- endinject --></div>{{/pricing-table2}}
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_1col_nested_2col_pricingtablex:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"pricing-table": {
+    "custom-class": "pricingtable",
+    "header": header",
+    "background-image": "/resources/img/bread-flour.jpg",
+    "prices": [
+        {
+            "label": "label",
+            "title": "title",
+            "price": "price",
+            "filing-fees": "filing-fees",
+            "upsell": "upsell",
+            "bold-text_1": "bold-text_1",
+            "sub-text_1": "sub-text_1",
+            "bold-text_2": "bold-text_2",
+            "sub-text_2": "sub-text_2",
+            "bold-text_3": "bold-text_3",
+            "more_details": "more_details",
+            "more-details-id": "more-details-id",
+            "more-details-inline-style": "more-details-inline-style",
+            "link": "link",
+            "button-id": "button-id",
+            "button-value": "button-value",
+            "button-title": "button-title"
+        }
+    ]
+}
+
+</pre>
+  </div>
+</div>
+    <div class="fragWrap">
+        <h2><a name="cont_span_1col_nested_3col_pricingtable">cont_span_1col_nested_3col_pricingtable</a></h2>
+        <div class="firstline">
+            <strong>Fragment location:</strong><br>{{#pricing-table3}}
+            C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col_nested_3col_pricingtable.html
+        </div>
+        <div class="secondline">
+            <strong>Rendered:</strong>
+        </div></div>
+            <!-- inject:cont_span_1col_nested_3col_pricingtable:html --><!-- endinject -->
+       {{/pricing-table3}}
+        <div class="fragWrap"><div class="thirdline">
+            <strong>Fragment source:</strong><br>
+            <pre class='brush: html;'><!-- inject:cont_span_1col_nested_3col_pricingtablex:html -->
+<!-- endinject --></pre>
+        </div>
+        <div class="fourthline">
+            <strong>JSON model:</strong><br>
+            <pre class="brush: js;">
+"pricing-table": {
+    "custom-class": "pricingtable",
+    "header": header",
+    "background-image": "/resources/img/bread-flour.jpg",
+    "prices": [
+        {
+            "label": "label",
+            "title": "title",
+            "price": "price",
+            "filing-fees": "filing-fees",
+            "upsell": "upsell",
+            "bold-text_1": "bold-text_1",
+            "sub-text_1": "sub-text_1",
+            "bold-text_2": "bold-text_2",
+            "sub-text_2": "sub-text_2",
+            "bold-text_3": "bold-text_3",
+            "more_details": "more_details",
+            "more-details-id": "more-details-id",
+            "more-details-inline-style": "more-details-inline-style",
+            "link": "link",
+            "button-id": "button-id",
+            "button-value": "button-value",
+            "button-title": "button-title"
+        }
+    ]
+}
+</pre>
+        </div>
+    </div>
+<div class="fragWrap">
+    <h2><a name="cont_span_1col_nested_3col">cont_span_1col_nested_3col</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col_nested_3col.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+{{#reasons}}    <!-- inject:cont_span_1col_nested_3col:html --><!-- endinject --></div>{{/reasons}} 
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_1col_nested_3colx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"reasons": {
+    "custom-class": "reasons",
+    "header": "header",
+    "sub-heading": "sub-heading",
+    "group": [
+        {
+            "icon": "/resources/img/icons/pen.png",
+            "title": "Appoint someone to settle your affairs.",
+            "text": "This person will also ensure that your beneficiaries receive their inheritance."
+        },
+        {
+            "icon": "/resources/img/icons/key.png",
+            "title": "Choose who will receive your property.",
+            "text": "Specify how you'd like to transfer your property to your heirs."
+        },
+        {
+            "icon": "/resources/img/icons/mom-daughter.png",
+            "title": "title",
+            "text": "text"
+        }
+    ]
+}
+
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_1col_nested_3col_answers">cont_span_1col_nested_3col_answers</a></h2>
+{{#answers}} <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_1col_nested_3col_answers.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+    <!-- inject:cont_span_1col_nested_3col_answers:html --><!-- endinject --></div>
+ {{/answers}} <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_1col_nested_3col_answersx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"answers": {
+    "custom-class": "answers",
+    "header": "Ask away. We have answers.",
+    "faq": {
+        "title": "Common Questions",
+        "questions": [
+            {
+                "question": "Can a prenup protect children from a prior marriage?",
+                "answer": "Yes, a prenuptial agreement can help assure that children from a prior marriage will be financially provided for as intended by their parent."
+            },
+            {
+                "question": "Do prenup agreements cover alimony?",
+                "answer": "In many states, your agreement can include provisions to establish, limit or eliminate alimony in the event of a divorce."
+            },
+            {
+                "question": "What’s the difference between a contested and uncontested divorce?",
+                "answer": "An uncontested divorce is when you and your spouse want to get a divorce and you agree on all significant issues, including the division of property and debts, spousal and child support and child custody. A contested divorce is when you and your spouse can’t resolve disagreements regarding these types of issues."
+            },
+            {
+                "question": "How do I divorce a spouse I can’t find?",
+                "answer": "If you can’t find your spouse despite your best efforts, you can still get a divorce. You'll need court approval to publish notice of your intent to divorce your spouse in the local newspaper. If your spouse doesn't respond to your service by publication, you can proceed to finalizing your divorce by default."
+            },
+            {
+                "question": "question",
+                "answer": "answer"
+            }
+        ]
+    }
+}
+</pre>
+  </div>
+</div>
+
+<div class="fragWrap">
+    <h2><a name="cont_span_2col_stack">cont_span_2col_stack</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_2col_stack.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+   {{#cont_span_2col_stack}} <!-- inject:cont_span_2col_stack:html --><!-- endinject --></div>{{/cont_span_2col_stack}}
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_2col_stackx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"cont_span_2col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name ="cont_span_3col_stack">cont_span_3col_stack</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_3col_stack.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+  {{#cont_span_3col_stack}}  <!-- inject:cont_span_3col_stack:html --><!-- endinject -->{{/cont_span_3col_stack}}</div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_3col_stackx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"cont_span_3col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_4col_stack">cont_span_4col_stack</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_4col_stack.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+   {{#cont_span_4col_stack}} <!-- inject:cont_span_4col_stack:html --><!-- endinject -->{{/cont_span_4col_stack}}</div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_4col_stackx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+    <pre class="brush: js;">
+"cont_span_4col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-11.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_4col_stack_2x2">cont_span_4col_stack_2x2</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_4col_stack_2x2.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+ {{#cont_span_4col_stack}}   <!-- inject:cont_span_4col_stack_2x2:html --><!-- endinject -->{{/cont_span_4col_stack}}</div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_4col_stack_2x2x:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+      <pre class="brush: js;">
+"cont_span_4col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-11.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_5col_stack">cont_span_5col_stack</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_5col_stack.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+   {{#cont_span_5col_stack}} <!-- inject:cont_span_5col_stack:html --><!-- endinject -->{{/cont_span_5col_stack}}</div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_5col_stackx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+      <pre class="brush: js;">
+"cont_span_5col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-11.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-8.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_6col_stack">cont_span_6col_stack</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_6col_stack.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+  {{#cont_span_6col_stack}}<!-- inject:cont_span_6col_stack:html --><!-- endinject -->{{/cont_span_6col_stack}}</div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_6col_stackx:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+<pre class="brush: js;">
+"cont_span_6col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-11.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-13.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-14.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+<div class="fragWrap">
+    <h2><a name="cont_span_6col_stack_2x2">cont_span_6col_stack_2x2</a></h2>
+  <div class="firstline"><strong>Fragment location:</strong><br>
+    C:\tfs\TEAMS\Web\External\Website\Web\src\templates2\hbs\containers\span\cont_span_6col_stack_2x2.html</div>
+  <div class="secondline"><strong>Rendered:</strong></div></div>
+{{#cont_span_6col_stack}} <!-- inject:cont_span_6col_stack_2x2:html --><!-- endinject -->{{/cont_span_6col_stack}}</div>
+  <div class="fragWrap"><div class="thirdline"><strong>Fragment source:</strong><br>
+    <pre class='brush: html;'><!-- inject:cont_span_6col_stack_2x2x:html -->
+<!-- endinject --></pre>
+  </div>
+  <div class="fourthline"><strong>JSON model:</strong><br>
+      <pre class="brush: js;">
+"cont_span_6col_stack": {
+    "custom-class": "custom-class",
+    "article": [
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-12.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-9.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-10.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-11.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        {
+        "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-13.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title": "button-title"
+        },
+        { "img": "http://wwwdev.legalzoom.com/styleguide/img/sample-image-14.jpg",
+        "title": "title",
+        "text": "text",
+        "button-value": "button-value",
+        "button-title":  "button-title"
+        }
+    ]
+}
+</pre>
+  </div>
+</div>
+    <script type=text/javascript src="syntax/shCore.js"></script>
+    <script type=text/javascript src="syntax/shBrushXml.js"></script>
+    <script type=text/javascript src="syntax/shBrushJScript.js"></script>
+    <script type=text/javascript src="syntax/shBrushCss.js"></script>
+    <script type=text/javascript src="syntax/shBrushPlain.js"></script>
+    <script type=text/javascript src="syntax/shBrushSql.js"></script>
+    <script type=text/javascript>
+        (function () {
+            var corecss = document.createElement('link');
+            var themecss = document.createElement('link');
+            var themecssurl = "syntax/shThemeDefault.css";
+            if (themecss.setAttribute) {
+                themecss.setAttribute("rel", "stylesheet");
+                themecss.setAttribute("type", "text/css");
+                themecss.setAttribute("href", themecssurl);
+            } else {
+                themecss.rel = "stylesheet";
+                themecss.href = themecssurl;
+            }
+            document.getElementsByTagName("head")[0].appendChild(themecss);
+        })(); SyntaxHighlighter.config.clipboardSwf = 'syntax/clipboard.swf';
+        SyntaxHighlighter.config.strings.expandSource = 'show source';
+        SyntaxHighlighter.config.strings.viewSource = 'view source';
+        SyntaxHighlighter.config.strings.copyToClipboard = 'copy to clipboard';
+        SyntaxHighlighter.config.strings.copyToClipboardConfirmation = 'The code is in your clipboard now';
+        SyntaxHighlighter.config.strings.print = 'print';
+        SyntaxHighlighter.config.strings.help = '?';
+        SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+        SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+        SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+        SyntaxHighlighter.all();
+    </script>
+</body>
+</html>
+{{/file.data.allmodules}}

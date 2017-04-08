@@ -1,0 +1,24 @@
+<section class="col1 bvtt hasBV hasAA">
+	<div>
+		<article>
+            <div itemscope itemtype="http://schema.org/Product">
+                <div id="ReviewsWrapper">
+                    <div id="BVRRContainer"></div>
+                    <script type="text/javascript">
+                        $.getScript(BVURL)
+                            .done(function (script, textStatus) {
+                                $BV.configure('global', { productId: String(fkProduct) });
+
+                                $(document).ready(function () {
+                                    $BV.ui('rr', 'show_reviews');
+                                });
+                            });
+                       var product = legalzoomProducts.where({ productID: fkProduct });
+                       var sProduct = product ? product[0].get('product') : "";
+                       $(".productName").html(sProduct);
+                    </script>
+                </div>
+            </div>
+		</article>
+	</div>
+</section>

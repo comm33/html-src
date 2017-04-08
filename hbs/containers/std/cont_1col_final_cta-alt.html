@@ -1,0 +1,32 @@
+<section class="col1 stack background-50 {{custom-class}}">
+	<div>
+		<article>
+		
+		
+            {{#if state-select}}
+                <div class="select-field">
+                    <div class="select-arrow-container">
+                        <div class="select-arrow llc-redesign-sprite"></div>
+                    </div>
+                    <select id="state-select" class="state-select final-state">
+                        <option value="none">{{stateselecttext}}</option>
+                    </select>
+                </div>
+            </article>
+        <article class="mobile-only-centeralign">
+            <div>
+                {{#if button-type-phone}}
+                <a href="{{cta-button-value}}" id="{{{cta-button-id}}}" {{#if button-title}} title="{{button-title}}" {{/if}} title="{{{button-custom-title}}}" class="{{button-type}} button-med button-fluid-weak button-blue button-pad-0 button-width-300">{{cta-button-text}}</a>
+                {{else}}
+                <button value="{{cta-button-value}}" {{#if button-title}} title="{{button-title}}" {{/if}} {{#if ga-final-cta}} {{{ga-final-cta}}} {{/if}}  id="{{{cta-button-id}}}" title="{{{button-custom-title}}}" class="button-med button-fluid-weak {{#if button-color}}{{button-color}}{{else}}button-blue{{/if}} button-pad-0 button-width-300 {{button-type}}">{{{cta-button-text}}}</button>
+                {{/if}}
+                {{#if cta-mobile-value}}
+                <button value="{{cta-mobile-value}}" {{#if button-title}} title="{{button-title}}" {{/if}} {{#if ga-final-cta}} {{{ga-final-cta}}} {{/if}}  id="{{{cta-button-id}}}" title="{{{button-custom-title}}}" class="button-med button-fluid-weak {{#if button-color}}{{button-color}}{{else}}button-blue{{/if}} button-pad-0 button-width-300 mobile-only">{{{cta-button-text}}}</button>
+                {{/if}}
+            </div>
+            {{/if}}
+           
+           
+		</article>
+	</div>
+</section>
